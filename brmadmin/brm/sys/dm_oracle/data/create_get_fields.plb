@@ -1,0 +1,98 @@
+CREATE OR REPLACE PACKAGE
+-- @(#)%Portal Version: create_get_fields.source:CUPmod7.3PatchInt:1:2006-Oct-25 01:38:58 %
+pin_get_fields wrapped 
+a000000
+367
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+9
+1d0 10f
+w/cSV0wqBnaVL/eQKatd9B3AXk4wg43MNcsVyi/SR9VTdRHgX0GtqJh5UG+F5igAzbWqqAJg
+9v0oQ9/agkfJ3xFOJWKXcKTEdVMttDWJexghOYlEZWsINnEb35eelaGF5G65zOFLqnqzGoUp
+ey5KtzMJNlhwmcRj6ECRKUdidyq4cynGpWN4QcJVqnKitTDj1hvUy/iQUvPXPwpXCoMWe4QL
+dW3JgmnSwwx5XV/n62dIBe3TNzQ1BBaaHuI2e1RVLqQZAxsQIg==
+
+/
+CREATE OR REPLACE PACKAGE BODY
+pin_get_fields wrapped 
+a000000
+367
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+b
+980 4d0
+ukVhrTH2uApEmF9dxxxvZc0u+SkwgzsrTMfsaS/N1fkYECmmPqE921mj1P/KcY1vN4fR3pvb
+BGzwpIw7f82R1Cya7SzKzve8ib03ihkDv79yvgzgxnMGdOfSZrtv4CRHOUYBEE82h+HcJePe
+XdOWYzYGb86hhG0jT4KaHT8CKU2ATVI/AYOy8NP+DgCfFr2TYOFle32/jMqZkPP7U59N2vUR
+BRG/exsOba3tC9FKnlrn+Ahm/CjkUK2L+fIgYzL9A+t+wCjvjFfVAybNVDDpWpS5FSfHmEcl
+CzWstCGRl/AcBw70GdRWTufH5MD7fpxxF1b0HgWQTnGlJWiJG/NEL+5tpj7pyw5r3r0z6wFn
+oxe9YZS3tpO6q95Poazsb4+YFJUG57nluK9PaNYrNWHbTiQthfv9ZlGujPMwh0D7UmSi9GaG
+mKMHzXmiEP3Tjpkb6DazAoT91rYjaDXms2awHy9xMQaLQCsmrGq6lSyfjIDIul1XYGafq+9T
+51EWi1i2i8v+2h/C554uk8rWo2nNzEzYb47AyCBuP2hgtyRd1BepPbkBm99fVCwmM3eD7GYk
+n21pYbhvUrNIBGAsmQ5AzASuawu8Bzxj3kGlmrgl3+5MHvHGYnI54etXYDVvb+vRZV3ZJ1HU
+DaGDDAQqlxUiVEAUNCFYuCMBGIRh0CvaXNfo5SW7nACsrqYf18m2BJ8HxI2ajea+ciufrHul
++J8d0JUrPAYOBEmLp8KX+9WJvqq8VD4kqBZYMsQacXxHMsSUev4rbe6T+lk0GRb6UYmVPtpq
+2pnkyAR72Ma/MfUAqpcb2cGVq8muDmrJA7dmZcrgifA3VatFyhOMK+3CBXoHlc5/gKK+91px
+oHMESMJuJCTRJ92rTLXd107plNSTXlHxeDzWKCKh91kQeg/B1Y0nAMbX6PvanOgppVNu/7kP
+d4PsFUqmP9DqtwcI5Xl3CYN+9V6cFfe9pD78sfxjXb3H33kNbmgveAE25LPjMLzWIH0NDYwy
+IrVuSrE6r6+wLJdxbLWJZEKEnWQsnxIjdk7BqA9DSzT499foV+FE8koKhnUI4J4Kz6znRMjH
+zTLd+XGntJJ2zwDUc1ZProImKkxk9LI+FR6dxxpulR0gJFnnAcBxdkGZ7J/NNj6h3bQ/+ycG
+aijmAdycHZqgOtHCrMCj9POvmjr+OaIiUWe41hao+A8bvCFIJhfND1b41w9jGoQT
+
+/
+CREATE OR REPLACE PROCEDURE get_fields_proc wrapped 
+a000000
+367
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+7
+4c3 1f6
+67kgOFG8vnBrXAjAUe4r6nnWOkswgzvDr0jWfHRVlLwVxAm9XM3iPctnWZwmFMzTISOXtbWV
+bmdrN6CDGjrhLU+QnP7K8tk5k2Tz0RFM2QiXX16JVpt2FmkhCzwq7TkxumlxU0QSyqm8Ppip
+X3cSTVmHhgJtfAs9a9zByKeelSc/1TIWOnwwldThC9w8D9LJbgDj5WrAYM59xdHLNrhupLaN
+UtK3YS0RICdckbRaQMzlaY1gOKRS/OS3A9NKbIpAOLSV1/sQwRw5lCgUn4dtpytBZ1GC21eU
+p2EAoKOf0AlZYDF62ebZ/kknGunoLajApX9BuGqDhMWvcAmKShOn/Xv4FoQhU58hgnRZTZKq
+FVILvlSOdq6B5evG1nApkrbzr9KBEsLvhZ4D6KFZ99/zi5YwjN3VeAMx+ppUOh+WxD/odt+g
+3l24+VkAuhsN0nabVJ1n9kVJ5ZIY29KOeR6u83PBKe+QxxSP/EF7nXOmZYWeGA==
+
+/
+show errors

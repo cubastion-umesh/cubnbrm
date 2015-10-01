@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema 
+	targetNamespace="http://www.portal.com/schemas/BusinessConfig" 
+	xmlns:businessConfig="http://www.portal.com/schemas/BusinessConfig" 
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+	elementFormDefault="qualified" 
+	attributeFormDefault="unqualified">
+
+	<xs:annotation>
+		<xs:documentation xml:lang="en">
+			Copyright (c) 2004 - 2008 Oracle. All rights reserved.
+			This material is the confidential property of Oracle Corporation or its
+			licensors and may be used, reproduced, stored or transmitted only in
+			accordance with a valid Oracle license or sublicense agreement.
+		</xs:documentation>
+	</xs:annotation>
+
+	<xs:complexType name="BusParamsActivityType">
+		<xs:sequence>
+			
+			<xs:element name="BillingTimeDiscountBasedOnPeriod" type="switch">
+				<xs:annotation>
+					<xs:documentation xml:lang="en">
+						This parameter decides if the
+						balances to be used for billing time discounts
+						will be calculated based on a period.
+						When enabled by setting to 1, balances
+						will be calculated based on a period.
+						Default value is 0 which disables this feature
+						where balances will be calculated within the period.
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="LightWeightAuthorization" type="switch">
+				<xs:annotation>
+					<xs:documentation xml:lang="en">
+						This parameter turns on(1)/off(0) Light Weight Authorization feature.
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="MaxLoginAttempts">
+                                <xs:annotation>
+                                        <xs:documentation xml:lang="en">
+                                                This parameter indicates the maximum number of invalid login attempts allowed
+                                                for /service/pcm_client and /service/admin_client before the service is locked.
+                                                The default value is 5.
+                                        </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                                <xs:restriction base="xs:nonNegativeInteger">
+                                                <xs:whiteSpace value="collapse"/>
+                                                </xs:restriction>
+                                </xs:simpleType>
+                        </xs:element>
+
+		</xs:sequence>
+	</xs:complexType>
+
+</xs:schema>

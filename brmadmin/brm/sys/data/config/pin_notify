@@ -1,0 +1,176 @@
+#
+# (#)$Id: pin_notify /cgbubrm_7.3.2.rwsmod/3 2009/11/18 02:18:05 mvenkate Exp $ $
+#
+version 1
+#======================================================================
+#
+# Copyright (c) 1999, 2009, Oracle and/or its affiliates. All rights reserved. 
+#
+#      This material is the confidential property of Oracle Corporation
+#      or its licensors and may be used, reproduced, stored or transmitted
+#      only in accordance with a valid Oracle license or sublicense agreement.
+#
+#======================================================================
+# Use this file to map an event to the policy opcode you want 
+# Infranet to call when that event occurs.
+# 
+# After defining the events and the corresponding opcodes,
+# run the 'load_pin_notify' utility to create the new config/notify
+# storable object and load this notification list into the Infranet
+# database. Then restart the Connection Manager for these changes
+# to take effect. When the event occurs, the system passes the
+# entire /event storable object as the input flist to the opcode.
+#
+# Use the following syntax for defining event notification:
+#
+# <opcode_number>  <opcode_flag>  <event>
+#
+# Where:
+#  <opcode_number> is the identifying number of the policy opcode 
+#       that you want called when the event occurs. You can find 
+#       the identifying numbers for standard policy opcodes in the
+#       pcm_ops.h file in the /include directory. For custom 
+#       opcodes, define their numbers either in the pcm_ops.h file
+#       or in a different header file that you link with the code.
+#       The numbers from 1 through 10000 are reserved for standard
+#       Infranet opcodes.
+#  <opcode_flag> is the flag that is passed to the opcode when
+#       Infranet calls the opcode.
+#  <event> is the event that triggers the notification. You can use
+#       standard event types or a custom event type, as long as
+#       the event type has a corresponding /event storable
+#       object in the database.
+#
+# Note: You can have more than one notification opcode for an
+#       event. Infranet calls the opcodes in the order they appear
+#       in the list.
+#======================================================================
+#
+#
+#======================================================================
+# The following entries set up Infranet to automatically notify a
+# customer by email about the status of their purchase order. When
+# they approach their purchase order amount (threshold) or expiration
+# date (datethreshold), the event calls the PCM_OP_ACT_POL_EVENT_NOTIFY
+# opcode (#301), which sends the customer a reminder. When the
+# customer exceeds the purchase order amount or the purchase order
+# expires, the event calls the PCM_OP_ACT_POL_EVENT_LIMIT opcode
+# (#304), which notifies the customer. This opcode can also deactivate
+# the account.
+#
+301	0	/event/session
+301	0	/event/session/dialup
+301	0	/event/notification/threshold
+301	0	/event/notification/datethreshold
+304	0	/event/notification/limit
+304	0	/event/notification/datexpire
+
+#
+# The following entries set up Infranet to automatically log the 
+# the activities that need to be audited. this happens by calling the 
+# opcode PCM_OP_ACT_LOG_USER_ACTIVITY(#179), which stores information in 
+# user_activity storable class. Only activities that are 
+# configured for auditing are recorded. The information that is tracked 
+# is the type of activity, the date and time and the IP Address of the 
+# client machine are stored on the server side.Later if the user wants to 
+# more information then he can customize it by using the policy opcode
+# PCM_OP_ACT_POL_LOG_USER_ACTIVITY.
+#
+179	0	/event/notification/account/create
+179    	0       /event/customer/login
+179	0	/event/customer/password
+179    	0       /event/billing/product/action/purchase
+179    	0       /event/billing/product/action/modify
+179    	0       /event/billing/product/action/cancel
+179    	0       /event/group/parent
+179    	0       /event/group/member
+179    	0       /event/billing/limit
+179    	0       /event/customer/billinfo/modify
+179    	0       /event/billing/credit
+179    	0       /event/billing/adjustment/event
+179    	0       /event/billing/adjustment/item
+179    	0       /event/billing/adjustment/account
+179    	0       /event/notification/billing/start
+179    	0       /event/billing/dispute
+179    	0       /event/billing/settlement/event
+179    	0       /event/billing/payment
+179    	0       /event/billing/writeoff
+179    	0       /event/billing/refund
+179    	0       /event/schedule/create
+179    	0       /event/schedule/modify
+179    	0       /event/schedule/delete
+179    	0       /event/billing/vouchertopup
+179    	0       /event/group/sharing/charges/create
+179    	0       /event/group/sharing/discounts/create
+179    	0       /event/group/sharing/monitor/create
+179    	0       /event/group/sharing/profiles/create
+179    	0       /event/group/sharing/charges/modify
+179    	0       /event/group/sharing/discounts/modify
+179    	0       /event/group/sharing/monitor/modify
+179    	0       /event/group/sharing/profiles/modify
+179    	0       /event/group/sharing/charges/delete
+179    	0       /event/group/sharing/discounts/delete
+179    	0       /event/group/sharing/monitor/delete
+179    	0       /event/group/sharing/profiles/delete
+	
+
+#
+# Device Management Framework related event notification
+# For regesting new Event notification provide the Complete event object name
+2706	0	/event/notification/device/state
+2706	0	/event/notification/device/state/in_transition
+
+#
+# Settlements and disputes related event notifications
+2354	0	/event/billing/settlement/notify
+2355	0	/event/billing/dispute/notify
+#
+# Rerating related event notification
+3787	0	/event/notification/auto_rerate
+3787	0	/event/notification/rate_change
+3787	0	/event/notification/rollover_correction/rerate
+#
+# Rate change related event notification
+3768    0       /event/audit/price/product_update
+3768    0       /event/audit/price/product_complete
+#
+# Events impacting discounts based on number of lines
+#3773    0       /event/notification/billing/start$
+#3773    0       /event/notification/billing/start_partial$
+#3773    0       /event/group/sharing/discounts/create
+#
+# Automated Monitor Setup related event notification
+# Uncomment these lines when AMS feature is enabled
+#7853    0       /event/group/sharing/monitor/create
+#7854    0       /event/notification/service/pre_purchase
+#7855    0       /event/notification/service/pre_purchase
+#7856    0       /event/notification/service/pre_purchase
+#7857    0       /event/customer/billinfo/modify
+#7855    0       /event/customer/billinfo/modify
+#7857    0       /event/group/member
+#7854    0       /event/group/member
+#7857    0       /event/notification/bal_grp/modify
+#7855    0       /event/notification/bal_grp/modify
+#7854    0       /event/audit/subscription/transfer
+#7860    0       /event/billing/monitor/update
+#
+# Event notifications related to aggregation counter (JP1035/36)
+#3774   0       /event/billing/adjustment/account
+#3774   0       /event/billing/adjustment/event
+#3774   0       /event/billing/adjustment/item
+#3774   0       /event/billing/adjustment/tax_event
+#
+# Event notifications related to contract days counter (JP1033)
+#3775   0       /event/notification/billing/start_partial$
+#3775   0       /event/notification/billing/start$
+#3775   0       /event/notification/billing/end$
+#3775   0       /event/customer/status
+#
+# Event notifications related to Rollover Enhancements across accounts
+#9069   0       /event/billing/cycle/rollover/monthly
+#9069   0       /event/billing/cycle/rollover_correction
+
+# Event notifications related to Automated subscription to sharing groups
+#3788   0	/event/group/sharing/profiles/create
+#3788   0	/event/group/sharing/profiles/modify
+#3789   0	/event/notification/service/create

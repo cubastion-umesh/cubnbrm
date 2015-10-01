@@ -1,0 +1,14 @@
+D Wed Sep 30 11:00:51 2015  cubnbrm1  infmgr:1434  pcm_tbls.c(21):313 1:<machine>:<program>:0:0:0:0:0
+	libpcmext.so Library initialized
+D Wed Sep 30 11:00:51 2015  cubnbrm1  infmgr:1434  pcm_tbls.c(21):316 1:<machine>:<program>:0:0:0:0:0
+	PCMEXT initialized with 0 function failures
+W Wed Sep 30 11:00:51 2015  cubnbrm1  infmgr:1434  pcpst.c(82):360 1:<machine>:<program>:0:0:0:0:0
+	connect to host=cubnbrm1, port=11990 FAILED, err=111
+W Wed Sep 30 11:00:51 2015  cubnbrm1  infmgr:1434  pcpst.c(82):1910 1:<machine>:<program>:0:0:0:0:0
+	connect to host=cubnbrm1, port=11990 FAILED,  returned ebufp->pin_err=27
+E Wed Sep 30 11:00:51 2015  cubnbrm1  infmgr:1434  pcpst.c(82):1950 1:<machine>:<program>:0:0:0:0:0
+	(1434): pcp_connect(), connecting - failed
+E Wed Sep 30 11:00:51 2015  cubnbrm1  infmgr:1434  pin_nmgr.c(11):286 1:<machine>:<program>:0:0:0:0:0
+	Connect open failed (27/111) in nmgr_conn
+E Wed Sep 30 11:00:51 2015  cubnbrm1  infmgr:1434  infmgr_load_config.c(11):496 1:<machine>:<program>:0:0:0:0:0
+	INFMGR(infmgr_do_add_node): nmgr_connect_failed 27

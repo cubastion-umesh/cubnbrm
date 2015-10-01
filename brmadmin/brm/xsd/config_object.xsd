@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+================================================================================
+ Copyright (c) 2011, Oracle and/or its affiliates. All rights reserved. 
+This material is the confidential property of Oracle Corporation or its
+licensors and may be used, reproduced, stored or transmitted only in
+accordance with a valid Oracle license or sublicense agreement.
+================================================================================
+-->
+<xs:schema targetNamespace="http://www.oracle.com/schemas/BusinessConfig"
+           xmlns="http://www.oracle.com/schemas/BusinessConfig"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           attributeFormDefault="unqualified" elementFormDefault="qualified">
+
+  <xs:annotation>
+    <xs:documentation xml:lang="en">
+    Schema definition for config object.
+    </xs:documentation>
+  </xs:annotation>
+
+  <xs:include schemaLocation="PinTypes.xsd"/>
+
+  <xs:element name="ObjectList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ConfigObject" minOccurs="1" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="POID" type="PinPoid" minOccurs="0"/>
+              <xs:element name="ACCOUNT_OBJ" type="PinPoid" minOccurs="0"/>
+              <xs:element name="DESCR" type="xs:string" minOccurs="0"/>
+              <xs:element name="HOSTNAME" type="xs:string" minOccurs="0"/>
+              <xs:element name="NAME" type="xs:string" minOccurs="1"/>
+              <xs:element name="PROGRAM_NAME" type="xs:string" minOccurs="0"/>
+              <xs:element name="VALUE" type="xs:string" minOccurs="0"/>
+              <xs:element name="VERSION" type="xs:string" minOccurs="0"/>
+              <xs:choice>
+                <xs:element name="BALANCES" minOccurs="0" maxOccurs="unbounded">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="APPLY_MODE" type="PinBeidApplyMode"
+                                  minOccurs="0"/>
+                      <xs:element name="BEID_STR_CODE" type="xs:string"
+                                  minOccurs="0"/>
+                      <xs:element name="CONSUMPTION_RULE" type="PinBeidConsRule"
+                                  minOccurs="0"/>
+                      <xs:element name="NAME" type="xs:string" minOccurs="1"/>
+                      <xs:element name="STATUS" type="PinBeidStatus"
+                                  minOccurs="0"/>
+                      <xs:element name="SYMBOL" type="xs:string" minOccurs="0"/>
+                      <xs:element name="RULES" minOccurs="0"
+                                  maxOccurs="unbounded">
+                        <xs:complexType>
+                          <xs:sequence>
+                            <xs:element name="EVENT_TYPE" type="PinEventObjType"
+                                        minOccurs="1"/>
+                            <xs:element name="PROCESSING_STAGE"
+                                        type="PinBeidProcStage" minOccurs="1"/>
+                            <xs:element name="ROUNDING" type="xs:integer"
+                                        minOccurs="1"/>
+                            <xs:element name="ROUNDING_MODE"
+                                        type="PinBeidRoundMode" minOccurs="0"/>
+                            <xs:element name="TOLERANCE_AMOUNT_MAX"
+                                        type="xs:decimal" minOccurs="1"/>
+                            <xs:element name="TOLERANCE_AMOUNT_MIN"
+                                        type="xs:decimal" minOccurs="1"/>
+                            <xs:element name="TOLERANCE_PERCENT"
+                                        type="xs:decimal" minOccurs="1"/>
+                          </xs:sequence>
+                          <xs:attribute name="elem"
+                                        type="xs:nonNegativeInteger"/>
+                        </xs:complexType>
+                      </xs:element>
+                    </xs:sequence>
+                    <xs:attribute name="elem" type="xs:nonNegativeInteger"/>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="RUM_MAP" minOccurs="0" maxOccurs="unbounded">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="EVENT_TYPE" type="PinEventObjType"
+                                  minOccurs="0"/>
+                      <xs:element name="CANDIDATE_RUMS" minOccurs="0"
+                                  maxOccurs="unbounded">
+                        <xs:complexType>
+                          <xs:sequence>
+                            <xs:element name="QUANTITY_EXPR"
+                                        type="PinRumExpression" minOccurs="1"/>
+                            <xs:element name="RUM_NAME" type="xs:string"
+                                        minOccurs="1"/>
+                            <xs:element name="UNIT" type="PinRateUnit"
+                                        minOccurs="1"/>
+                          </xs:sequence>
+                          <xs:attribute name="elem"
+                                        type="xs:nonNegativeInteger"/>
+                        </xs:complexType>
+                      </xs:element>
+                    </xs:sequence>
+                    <xs:attribute name="elem" type="xs:nonNegativeInteger"/>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="IMPACT_CATEGORIES" minOccurs="0" maxOccurs="unbounded">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="IMPACT_CATEGORY" type="xs:string"
+                                  minOccurs="0"/>
+                      <xs:element name="RATE_CATEGORY" type="xs:string"
+                                  minOccurs="0"/>
+                      <xs:element name="SERVICE_TYPE" type="PinServiceObjType"
+                                  minOccurs="0"/>
+                    </xs:sequence>
+                    <xs:attribute name="elem" type="xs:nonNegativeInteger"/>
+                  </xs:complexType>
+                </xs:element>
+              </xs:choice>
+            </xs:sequence>
+            <xs:attribute name="configName" type="xs:string"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="configMode" type="xs:string" default="replace" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

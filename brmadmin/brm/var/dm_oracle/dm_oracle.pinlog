@@ -1,0 +1,802 @@
+D Wed Sep 30 10:58:21 2015  cubnbrm1  dm:734  dm_main.c(63):2336 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	DMm dm_name set to "cubnbrm1"
+M Wed Sep 30 10:58:21 2015  cubnbrm1  dm:737  dm_back.c(31):534 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	dm_crypt_init: no pin.conf entry for  pin_crypt4dm library not loaded
+M Wed Sep 30 10:58:21 2015  cubnbrm1  dm:737  dm_if_oracle.c(183):1724 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	prune partitions in search is enabled
+M Wed Sep 30 10:58:21 2015  cubnbrm1  dm:737  dm_if_oracle.c(183):2556 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	scoped_system is 0 (Normal System)
+M Wed Sep 30 10:58:21 2015  cubnbrm1  dm:737  dm_if_oracle.c(183):4474 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	dm_get_passwd: password not encrypted
+M Wed Sep 30 10:58:21 2015  cubnbrm1  dm:737  dm_if_oracle.c(183):4603 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	dm_oracle_get_lda: sm_svcname is not configured
+M Wed Sep 30 10:58:21 2015  cubnbrm1  dm:737  dm_if_oracle.c(183):2694 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	num of stmt handle cache entries is 0
+M Wed Sep 30 10:58:21 2015  cubnbrm1  dm:737  dm_if_oracle.c(183):1593 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	in batch size is 80
+E Wed Sep 30 10:58:21 2015  cubnbrm1  dm:737  dm_subr.c(154):1904 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	ORACLE error: do_sql_select: PINStmtExecute: code 942, op 0
+	=ORA-00942: table or view does not exist
+
+D Wed Sep 30 10:58:21 2015  cubnbrm1  dm:737  pcm_tbls.c(21):313 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	libpcmext64.so Library initialized
+D Wed Sep 30 10:58:21 2015  cubnbrm1  dm:737  pcm_tbls.c(21):316 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	PCMEXT initialized with 0 function failures
+E Wed Sep 30 10:58:21 2015  cubnbrm1  dm:737  dm_sql_mapping.c(91):4255 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	get_database_db_no: sql_select failed with err=43(PIN_ERR_STORAGE), x = 1
+W Wed Sep 30 10:58:21 2015  cubnbrm1  dm:737  dm_if_oracle.c(183):4009 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	account_t table unavailable, getting db no from pin.conf
+M Wed Sep 30 10:58:21 2015  cubnbrm1  dm:737  dm_if_oracle.c(183):5447 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	trying to read dm_sql_retryp
+M Wed Sep 30 10:58:21 2015  cubnbrm1  dm:737  sm_ora_dd_sql.c(34):653 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	scan_crypt_key: PIN_ERR_NOT_FOUND for crypt tag
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:761  dm_back.c(31):534 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	dm_crypt_init: no pin.conf entry for  pin_crypt4dm library not loaded
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:761  dm_if_oracle.c(183):1724 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	prune partitions in search is enabled
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:761  dm_if_oracle.c(183):2556 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	scoped_system is 0 (Normal System)
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:761  dm_if_oracle.c(183):4474 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	dm_get_passwd: password not encrypted
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:761  dm_if_oracle.c(183):4603 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	dm_oracle_get_lda: sm_svcname is not configured
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:763  dm_back.c(31):534 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	dm_crypt_init: no pin.conf entry for  pin_crypt4dm library not loaded
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:763  dm_if_oracle.c(183):1724 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	prune partitions in search is enabled
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:763  dm_if_oracle.c(183):2556 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	scoped_system is 0 (Normal System)
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:763  dm_if_oracle.c(183):4474 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	dm_get_passwd: password not encrypted
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:763  dm_if_oracle.c(183):4603 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	dm_oracle_get_lda: sm_svcname is not configured
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:762  dm_back.c(31):534 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	dm_crypt_init: no pin.conf entry for  pin_crypt4dm library not loaded
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:762  dm_if_oracle.c(183):1724 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	prune partitions in search is enabled
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:762  dm_if_oracle.c(183):2556 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	scoped_system is 0 (Normal System)
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:762  dm_if_oracle.c(183):4474 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	dm_get_passwd: password not encrypted
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:762  dm_if_oracle.c(183):4603 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	dm_oracle_get_lda: sm_svcname is not configured
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:759  dm_back.c(31):534 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	dm_crypt_init: no pin.conf entry for  pin_crypt4dm library not loaded
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:759  dm_if_oracle.c(183):1724 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	prune partitions in search is enabled
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:759  dm_if_oracle.c(183):2556 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	scoped_system is 0 (Normal System)
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:759  dm_if_oracle.c(183):4474 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	dm_get_passwd: password not encrypted
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:759  dm_if_oracle.c(183):4603 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	dm_oracle_get_lda: sm_svcname is not configured
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:756  dm_back.c(31):534 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	dm_crypt_init: no pin.conf entry for  pin_crypt4dm library not loaded
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:756  dm_if_oracle.c(183):1724 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	prune partitions in search is enabled
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:756  dm_if_oracle.c(183):2556 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	scoped_system is 0 (Normal System)
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:756  dm_if_oracle.c(183):4474 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	dm_get_passwd: password not encrypted
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:756  dm_if_oracle.c(183):4603 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	dm_oracle_get_lda: sm_svcname is not configured
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:760  dm_back.c(31):534 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	dm_crypt_init: no pin.conf entry for  pin_crypt4dm library not loaded
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:760  dm_if_oracle.c(183):1724 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	prune partitions in search is enabled
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:760  dm_if_oracle.c(183):2556 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	scoped_system is 0 (Normal System)
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:760  dm_if_oracle.c(183):4474 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	dm_get_passwd: password not encrypted
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:760  dm_if_oracle.c(183):4603 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	dm_oracle_get_lda: sm_svcname is not configured
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:758  dm_back.c(31):534 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	dm_crypt_init: no pin.conf entry for  pin_crypt4dm library not loaded
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:758  dm_if_oracle.c(183):1724 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	prune partitions in search is enabled
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:758  dm_if_oracle.c(183):2556 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	scoped_system is 0 (Normal System)
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:758  dm_if_oracle.c(183):4474 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	dm_get_passwd: password not encrypted
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:758  dm_if_oracle.c(183):4603 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	dm_oracle_get_lda: sm_svcname is not configured
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:757  dm_back.c(31):534 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	dm_crypt_init: no pin.conf entry for  pin_crypt4dm library not loaded
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:757  dm_if_oracle.c(183):1724 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	prune partitions in search is enabled
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:757  dm_if_oracle.c(183):2556 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	scoped_system is 0 (Normal System)
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:757  dm_if_oracle.c(183):4474 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	dm_get_passwd: password not encrypted
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:757  dm_if_oracle.c(183):4603 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	dm_oracle_get_lda: sm_svcname is not configured
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:755  dm_back.c(31):534 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	dm_crypt_init: no pin.conf entry for  pin_crypt4dm library not loaded
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:755  dm_if_oracle.c(183):1724 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	prune partitions in search is enabled
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:755  dm_if_oracle.c(183):2556 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	scoped_system is 0 (Normal System)
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:755  dm_if_oracle.c(183):4474 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	dm_get_passwd: password not encrypted
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:755  dm_if_oracle.c(183):4603 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	dm_oracle_get_lda: sm_svcname is not configured
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:760  dm_if_oracle.c(183):2694 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	num of stmt handle cache entries is 0
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:760  dm_if_oracle.c(183):1593 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	in batch size is 80
+E Wed Sep 30 10:58:23 2015  cubnbrm1  dm:760  dm_subr.c(154):1904 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	ORACLE error: do_sql_select: PINStmtExecute: code 942, op 0
+	=ORA-00942: table or view does not exist
+
+D Wed Sep 30 10:58:23 2015  cubnbrm1  dm:760  pcm_tbls.c(21):313 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	libpcmext64.so Library initialized
+D Wed Sep 30 10:58:23 2015  cubnbrm1  dm:760  pcm_tbls.c(21):316 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	PCMEXT initialized with 0 function failures
+E Wed Sep 30 10:58:23 2015  cubnbrm1  dm:760  dm_sql_mapping.c(91):4255 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	get_database_db_no: sql_select failed with err=43(PIN_ERR_STORAGE), x = 1
+W Wed Sep 30 10:58:23 2015  cubnbrm1  dm:760  dm_if_oracle.c(183):4009 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	account_t table unavailable, getting db no from pin.conf
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:760  dm_if_oracle.c(183):5447 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	trying to read dm_sql_retryp
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:756  dm_if_oracle.c(183):2694 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	num of stmt handle cache entries is 0
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:756  dm_if_oracle.c(183):1593 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	in batch size is 80
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:759  dm_if_oracle.c(183):2694 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	num of stmt handle cache entries is 0
+E Wed Sep 30 10:58:23 2015  cubnbrm1  dm:756  dm_subr.c(154):1904 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	ORACLE error: do_sql_select: PINStmtExecute: code 942, op 0
+	=ORA-00942: table or view does not exist
+
+D Wed Sep 30 10:58:23 2015  cubnbrm1  dm:756  pcm_tbls.c(21):313 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	libpcmext64.so Library initialized
+D Wed Sep 30 10:58:23 2015  cubnbrm1  dm:756  pcm_tbls.c(21):316 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	PCMEXT initialized with 0 function failures
+E Wed Sep 30 10:58:23 2015  cubnbrm1  dm:756  dm_sql_mapping.c(91):4255 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	get_database_db_no: sql_select failed with err=43(PIN_ERR_STORAGE), x = 1
+W Wed Sep 30 10:58:23 2015  cubnbrm1  dm:756  dm_if_oracle.c(183):4009 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	account_t table unavailable, getting db no from pin.conf
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:756  dm_if_oracle.c(183):5447 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	trying to read dm_sql_retryp
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:759  dm_if_oracle.c(183):1593 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	in batch size is 80
+E Wed Sep 30 10:58:23 2015  cubnbrm1  dm:759  dm_subr.c(154):1904 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	ORACLE error: do_sql_select: PINStmtExecute: code 942, op 0
+	=ORA-00942: table or view does not exist
+
+D Wed Sep 30 10:58:23 2015  cubnbrm1  dm:759  pcm_tbls.c(21):313 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	libpcmext64.so Library initialized
+D Wed Sep 30 10:58:23 2015  cubnbrm1  dm:759  pcm_tbls.c(21):316 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	PCMEXT initialized with 0 function failures
+E Wed Sep 30 10:58:23 2015  cubnbrm1  dm:759  dm_sql_mapping.c(91):4255 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	get_database_db_no: sql_select failed with err=43(PIN_ERR_STORAGE), x = 1
+W Wed Sep 30 10:58:23 2015  cubnbrm1  dm:759  dm_if_oracle.c(183):4009 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	account_t table unavailable, getting db no from pin.conf
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:759  dm_if_oracle.c(183):5447 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	trying to read dm_sql_retryp
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:763  dm_if_oracle.c(183):2694 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	num of stmt handle cache entries is 0
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:763  dm_if_oracle.c(183):1593 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	in batch size is 80
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:758  dm_if_oracle.c(183):2694 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	num of stmt handle cache entries is 0
+E Wed Sep 30 10:58:23 2015  cubnbrm1  dm:763  dm_subr.c(154):1904 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	ORACLE error: do_sql_select: PINStmtExecute: code 942, op 0
+	=ORA-00942: table or view does not exist
+
+D Wed Sep 30 10:58:23 2015  cubnbrm1  dm:763  pcm_tbls.c(21):313 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	libpcmext64.so Library initialized
+D Wed Sep 30 10:58:23 2015  cubnbrm1  dm:763  pcm_tbls.c(21):316 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	PCMEXT initialized with 0 function failures
+E Wed Sep 30 10:58:23 2015  cubnbrm1  dm:763  dm_sql_mapping.c(91):4255 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	get_database_db_no: sql_select failed with err=43(PIN_ERR_STORAGE), x = 1
+W Wed Sep 30 10:58:23 2015  cubnbrm1  dm:763  dm_if_oracle.c(183):4009 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	account_t table unavailable, getting db no from pin.conf
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:763  dm_if_oracle.c(183):5447 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	trying to read dm_sql_retryp
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:758  dm_if_oracle.c(183):1593 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	in batch size is 80
+E Wed Sep 30 10:58:23 2015  cubnbrm1  dm:758  dm_subr.c(154):1904 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	ORACLE error: do_sql_select: PINStmtExecute: code 942, op 0
+	=ORA-00942: table or view does not exist
+
+D Wed Sep 30 10:58:23 2015  cubnbrm1  dm:758  pcm_tbls.c(21):313 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	libpcmext64.so Library initialized
+D Wed Sep 30 10:58:23 2015  cubnbrm1  dm:758  pcm_tbls.c(21):316 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	PCMEXT initialized with 0 function failures
+E Wed Sep 30 10:58:23 2015  cubnbrm1  dm:758  dm_sql_mapping.c(91):4255 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	get_database_db_no: sql_select failed with err=43(PIN_ERR_STORAGE), x = 1
+W Wed Sep 30 10:58:23 2015  cubnbrm1  dm:758  dm_if_oracle.c(183):4009 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	account_t table unavailable, getting db no from pin.conf
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:758  dm_if_oracle.c(183):5447 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	trying to read dm_sql_retryp
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:761  dm_if_oracle.c(183):2694 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	num of stmt handle cache entries is 0
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:755  dm_if_oracle.c(183):2694 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	num of stmt handle cache entries is 0
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:761  dm_if_oracle.c(183):1593 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	in batch size is 80
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:755  dm_if_oracle.c(183):1593 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	in batch size is 80
+E Wed Sep 30 10:58:23 2015  cubnbrm1  dm:761  dm_subr.c(154):1904 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	ORACLE error: do_sql_select: PINStmtExecute: code 942, op 0
+	=ORA-00942: table or view does not exist
+
+D Wed Sep 30 10:58:23 2015  cubnbrm1  dm:761  pcm_tbls.c(21):313 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	libpcmext64.so Library initialized
+D Wed Sep 30 10:58:23 2015  cubnbrm1  dm:761  pcm_tbls.c(21):316 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	PCMEXT initialized with 0 function failures
+E Wed Sep 30 10:58:23 2015  cubnbrm1  dm:761  dm_sql_mapping.c(91):4255 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	get_database_db_no: sql_select failed with err=43(PIN_ERR_STORAGE), x = 1
+W Wed Sep 30 10:58:23 2015  cubnbrm1  dm:761  dm_if_oracle.c(183):4009 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	account_t table unavailable, getting db no from pin.conf
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:761  dm_if_oracle.c(183):5447 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	trying to read dm_sql_retryp
+E Wed Sep 30 10:58:23 2015  cubnbrm1  dm:755  dm_subr.c(154):1904 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	ORACLE error: do_sql_select: PINStmtExecute: code 942, op 0
+	=ORA-00942: table or view does not exist
+
+D Wed Sep 30 10:58:23 2015  cubnbrm1  dm:755  pcm_tbls.c(21):313 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	libpcmext64.so Library initialized
+D Wed Sep 30 10:58:23 2015  cubnbrm1  dm:755  pcm_tbls.c(21):316 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	PCMEXT initialized with 0 function failures
+E Wed Sep 30 10:58:23 2015  cubnbrm1  dm:755  dm_sql_mapping.c(91):4255 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	get_database_db_no: sql_select failed with err=43(PIN_ERR_STORAGE), x = 1
+W Wed Sep 30 10:58:23 2015  cubnbrm1  dm:755  dm_if_oracle.c(183):4009 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	account_t table unavailable, getting db no from pin.conf
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:755  dm_if_oracle.c(183):5447 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	trying to read dm_sql_retryp
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:757  dm_if_oracle.c(183):2694 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	num of stmt handle cache entries is 0
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:757  dm_if_oracle.c(183):1593 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	in batch size is 80
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:762  dm_if_oracle.c(183):2694 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	num of stmt handle cache entries is 0
+E Wed Sep 30 10:58:23 2015  cubnbrm1  dm:757  dm_subr.c(154):1904 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	ORACLE error: do_sql_select: PINStmtExecute: code 942, op 0
+	=ORA-00942: table or view does not exist
+
+D Wed Sep 30 10:58:23 2015  cubnbrm1  dm:757  pcm_tbls.c(21):313 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	libpcmext64.so Library initialized
+D Wed Sep 30 10:58:23 2015  cubnbrm1  dm:757  pcm_tbls.c(21):316 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	PCMEXT initialized with 0 function failures
+E Wed Sep 30 10:58:23 2015  cubnbrm1  dm:757  dm_sql_mapping.c(91):4255 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	get_database_db_no: sql_select failed with err=43(PIN_ERR_STORAGE), x = 1
+W Wed Sep 30 10:58:23 2015  cubnbrm1  dm:757  dm_if_oracle.c(183):4009 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	account_t table unavailable, getting db no from pin.conf
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:757  dm_if_oracle.c(183):5447 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	trying to read dm_sql_retryp
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:762  dm_if_oracle.c(183):1593 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	in batch size is 80
+E Wed Sep 30 10:58:23 2015  cubnbrm1  dm:762  dm_subr.c(154):1904 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	ORACLE error: do_sql_select: PINStmtExecute: code 942, op 0
+	=ORA-00942: table or view does not exist
+
+D Wed Sep 30 10:58:23 2015  cubnbrm1  dm:762  pcm_tbls.c(21):313 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	libpcmext64.so Library initialized
+D Wed Sep 30 10:58:23 2015  cubnbrm1  dm:762  pcm_tbls.c(21):316 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	PCMEXT initialized with 0 function failures
+E Wed Sep 30 10:58:23 2015  cubnbrm1  dm:762  dm_sql_mapping.c(91):4255 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	get_database_db_no: sql_select failed with err=43(PIN_ERR_STORAGE), x = 1
+W Wed Sep 30 10:58:23 2015  cubnbrm1  dm:762  dm_if_oracle.c(183):4009 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	account_t table unavailable, getting db no from pin.conf
+M Wed Sep 30 10:58:23 2015  cubnbrm1  dm:762  dm_if_oracle.c(183):5447 1:cubnbrm1:dm:734:-1596815584:0:1443590901:0
+	trying to read dm_sql_retryp
+W Wed Sep 30 10:58:31 2015  cubnbrm1  dm:757  sm_ora_dd_partition_utils.c(3):87 1:cubnbrm1:<no_name>:656:-143689520:21:1443590911:1
+	tti_enforce_inheritance_is_partitioned: the is_partitioned attribute for /event/billing/monitor has to be the same as its parent
+W Wed Sep 30 10:58:31 2015  cubnbrm1  dm:757  sm_ora_dd_partition_utils.c(3):87 1:cubnbrm1:<no_name>:656:-143689520:21:1443590911:1
+	tti_enforce_inheritance_is_partitioned: the is_partitioned attribute for /event/billing/reversal/failed has to be the same as its parent
+D Wed Sep 30 10:58:54 2015  cubnbrm1  dm:764  pcm_tbls.c(21):313 1:cubnbrm1:<no_name>:656:-143689520:21:1443590911:1
+	libpcmext64.so Library initialized
+D Wed Sep 30 10:58:54 2015  cubnbrm1  dm:764  pcm_tbls.c(21):316 1:cubnbrm1:<no_name>:656:-143689520:21:1443590911:1
+	PCMEXT initialized with 0 function failures
+W Wed Sep 30 10:58:55 2015  cubnbrm1  dm:737  dm_subr.c(154):1095 1:cubnbrm1:<no_name>:656:-143689520:1:1443590934:2
+	get_poid_id_from_cache: get_new_poid_id_range failed in retrieving the range of poids.
+W Wed Sep 30 10:58:55 2015  cubnbrm1  dm:756  dm_subr.c(154):1095 1:cubnbrm1:<no_name>:656:-143689520:5:1443590935:3
+	get_poid_id_from_cache: get_new_poid_id_range failed in retrieving the range of poids.
+W Wed Sep 30 10:58:55 2015  cubnbrm1  dm:737  dm_subr.c(154):1095 1:cubnbrm1:<no_name>:656:-143689520:1:1443590935:6
+	get_poid_id_from_cache: get_new_poid_id_range failed in retrieving the range of poids.
+W Wed Sep 30 10:58:55 2015  cubnbrm1  dm:763  dm_subr.c(154):1095 1:cubnbrm1:<no_name>:656:-143689520:1:1443590935:7
+	get_poid_id_from_cache: get_new_poid_id_range failed in retrieving the range of poids.
+W Wed Sep 30 10:58:55 2015  cubnbrm1  dm:763  dm_subr.c(154):1095 1:cubnbrm1:<no_name>:656:-143689520:1:1443590935:9
+	get_poid_id_from_cache: get_new_poid_id_range failed in retrieving the range of poids.
+W Wed Sep 30 10:58:55 2015  cubnbrm1  dm:755  dm_subr.c(154):1095 1:cubnbrm1:<no_name>:656:-143689520:1:1443590935:11
+	get_poid_id_from_cache: get_new_poid_id_range failed in retrieving the range of poids.
+W Wed Sep 30 10:58:55 2015  cubnbrm1  dm:737  dm_subr.c(154):1095 1:cubnbrm1:<no_name>:656:-143689520:1:1443590935:14
+	get_poid_id_from_cache: get_new_poid_id_range failed in retrieving the range of poids.
+W Wed Sep 30 10:58:55 2015  cubnbrm1  dm:761  dm_subr.c(154):1095 1:cubnbrm1:<no_name>:656:-143689520:1:1443590935:15
+	get_poid_id_from_cache: get_new_poid_id_range failed in retrieving the range of poids.
+W Wed Sep 30 10:58:55 2015  cubnbrm1  dm:755  dm_subr.c(154):1095 1:cubnbrm1:<no_name>:656:-143689520:1:1443590935:16
+	get_poid_id_from_cache: get_new_poid_id_range failed in retrieving the range of poids.
+W Wed Sep 30 10:58:55 2015  cubnbrm1  dm:761  dm_subr.c(154):1095 1:cubnbrm1:<no_name>:656:-143689520:1:1443590935:17
+	get_poid_id_from_cache: get_new_poid_id_range failed in retrieving the range of poids.
+W Wed Sep 30 10:58:55 2015  cubnbrm1  dm:755  dm_subr.c(154):1095 1:cubnbrm1:<no_name>:656:-143689520:1:1443590935:18
+	get_poid_id_from_cache: get_new_poid_id_range failed in retrieving the range of poids.
+W Wed Sep 30 10:58:55 2015  cubnbrm1  dm:761  dm_subr.c(154):1095 1:cubnbrm1:<no_name>:656:-143689520:1:1443590935:19
+	get_poid_id_from_cache: get_new_poid_id_range failed in retrieving the range of poids.
+W Wed Sep 30 10:58:55 2015  cubnbrm1  dm:763  dm_subr.c(154):1095 1:cubnbrm1:<no_name>:656:-143689520:1:1443590935:20
+	get_poid_id_from_cache: get_new_poid_id_range failed in retrieving the range of poids.
+W Wed Sep 30 10:58:55 2015  cubnbrm1  dm:761  dm_subr.c(154):1095 1:cubnbrm1:<no_name>:656:-143689520:1:1443590935:21
+	get_poid_id_from_cache: get_new_poid_id_range failed in retrieving the range of poids.
+W Wed Sep 30 10:58:55 2015  cubnbrm1  dm:763  dm_subr.c(154):1095 1:cubnbrm1:<no_name>:656:-143689520:1:1443590935:22
+	get_poid_id_from_cache: get_new_poid_id_range failed in retrieving the range of poids.
+W Wed Sep 30 10:58:55 2015  cubnbrm1  dm:761  dm_subr.c(154):1095 1:cubnbrm1:<no_name>:656:-143689520:1:1443590935:23
+	get_poid_id_from_cache: get_new_poid_id_range failed in retrieving the range of poids.
+W Wed Sep 30 10:58:55 2015  cubnbrm1  dm:763  dm_subr.c(154):1095 1:cubnbrm1:<no_name>:656:-143689520:1:1443590935:24
+	get_poid_id_from_cache: get_new_poid_id_range failed in retrieving the range of poids.
+W Wed Sep 30 10:58:55 2015  cubnbrm1  dm:761  dm_subr.c(154):1095 1:cubnbrm1:<no_name>:656:-143689520:1:1443590935:25
+	get_poid_id_from_cache: get_new_poid_id_range failed in retrieving the range of poids.
+W Wed Sep 30 10:58:55 2015  cubnbrm1  dm:763  dm_subr.c(154):1095 1:cubnbrm1:<no_name>:656:-143689520:1:1443590935:26
+	get_poid_id_from_cache: get_new_poid_id_range failed in retrieving the range of poids.
+W Wed Sep 30 10:58:55 2015  cubnbrm1  dm:761  dm_subr.c(154):1095 1:cubnbrm1:<no_name>:656:-143689520:1:1443590935:27
+	get_poid_id_from_cache: get_new_poid_id_range failed in retrieving the range of poids.
+W Wed Sep 30 10:58:55 2015  cubnbrm1  dm:763  dm_subr.c(154):1095 1:cubnbrm1:<no_name>:656:-143689520:1:1443590935:28
+	get_poid_id_from_cache: get_new_poid_id_range failed in retrieving the range of poids.
+D Wed Sep 30 11:01:15 2015  cubnbrm1  dm:1590  dm_main.c(63):2336 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	DMm dm_name set to "cubnbrm1"
+M Wed Sep 30 11:01:15 2015  cubnbrm1  dm:1593  dm_back.c(31):534 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	dm_crypt_init: no pin.conf entry for  pin_crypt4dm library not loaded
+M Wed Sep 30 11:01:15 2015  cubnbrm1  dm:1593  dm_if_oracle.c(183):1724 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	prune partitions in search is enabled
+M Wed Sep 30 11:01:15 2015  cubnbrm1  dm:1593  dm_if_oracle.c(183):2556 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	scoped_system is 0 (Normal System)
+M Wed Sep 30 11:01:15 2015  cubnbrm1  dm:1593  dm_if_oracle.c(183):4438 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	dm_get_passwd[ORA]: password decrypt successful
+M Wed Sep 30 11:01:15 2015  cubnbrm1  dm:1593  dm_if_oracle.c(183):4603 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	dm_oracle_get_lda: sm_svcname is not configured
+M Wed Sep 30 11:01:15 2015  cubnbrm1  dm:1593  dm_if_oracle.c(183):2694 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	num of stmt handle cache entries is 0
+M Wed Sep 30 11:01:15 2015  cubnbrm1  dm:1593  dm_if_oracle.c(183):1593 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	in batch size is 80
+M Wed Sep 30 11:01:15 2015  cubnbrm1  dm:1593  dm_if_oracle.c(183):5447 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	trying to read dm_sql_retryp
+D Wed Sep 30 11:01:15 2015  cubnbrm1  dm:1593  pcm_tbls.c(21):313 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	libpcmext64.so Library initialized
+D Wed Sep 30 11:01:15 2015  cubnbrm1  dm:1593  pcm_tbls.c(21):316 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	PCMEXT initialized with 0 function failures
+M Wed Sep 30 11:01:15 2015  cubnbrm1  dm:1593  sm_ora_dd_sql.c(34):653 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	scan_crypt_key: PIN_ERR_NOT_FOUND for crypt tag
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1618  dm_back.c(31):534 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	dm_crypt_init: no pin.conf entry for  pin_crypt4dm library not loaded
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1618  dm_if_oracle.c(183):1724 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	prune partitions in search is enabled
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1618  dm_if_oracle.c(183):2556 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	scoped_system is 0 (Normal System)
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1618  dm_if_oracle.c(183):4438 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	dm_get_passwd[ORA]: password decrypt successful
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1618  dm_if_oracle.c(183):4603 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	dm_oracle_get_lda: sm_svcname is not configured
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1619  dm_back.c(31):534 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	dm_crypt_init: no pin.conf entry for  pin_crypt4dm library not loaded
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1617  dm_back.c(31):534 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	dm_crypt_init: no pin.conf entry for  pin_crypt4dm library not loaded
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1619  dm_if_oracle.c(183):1724 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	prune partitions in search is enabled
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1619  dm_if_oracle.c(183):2556 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	scoped_system is 0 (Normal System)
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1617  dm_if_oracle.c(183):1724 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	prune partitions in search is enabled
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1617  dm_if_oracle.c(183):2556 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	scoped_system is 0 (Normal System)
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1619  dm_if_oracle.c(183):4438 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	dm_get_passwd[ORA]: password decrypt successful
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1619  dm_if_oracle.c(183):4603 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	dm_oracle_get_lda: sm_svcname is not configured
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1617  dm_if_oracle.c(183):4438 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	dm_get_passwd[ORA]: password decrypt successful
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1617  dm_if_oracle.c(183):4603 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	dm_oracle_get_lda: sm_svcname is not configured
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1616  dm_back.c(31):534 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	dm_crypt_init: no pin.conf entry for  pin_crypt4dm library not loaded
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1616  dm_if_oracle.c(183):1724 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	prune partitions in search is enabled
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1616  dm_if_oracle.c(183):2556 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	scoped_system is 0 (Normal System)
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1616  dm_if_oracle.c(183):4438 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	dm_get_passwd[ORA]: password decrypt successful
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1616  dm_if_oracle.c(183):4603 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	dm_oracle_get_lda: sm_svcname is not configured
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1614  dm_back.c(31):534 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	dm_crypt_init: no pin.conf entry for  pin_crypt4dm library not loaded
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1613  dm_back.c(31):534 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	dm_crypt_init: no pin.conf entry for  pin_crypt4dm library not loaded
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1614  dm_if_oracle.c(183):1724 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	prune partitions in search is enabled
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1614  dm_if_oracle.c(183):2556 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	scoped_system is 0 (Normal System)
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1613  dm_if_oracle.c(183):1724 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	prune partitions in search is enabled
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1613  dm_if_oracle.c(183):2556 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	scoped_system is 0 (Normal System)
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1614  dm_if_oracle.c(183):4438 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	dm_get_passwd[ORA]: password decrypt successful
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1614  dm_if_oracle.c(183):4603 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	dm_oracle_get_lda: sm_svcname is not configured
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1613  dm_if_oracle.c(183):4438 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	dm_get_passwd[ORA]: password decrypt successful
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1613  dm_if_oracle.c(183):4603 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	dm_oracle_get_lda: sm_svcname is not configured
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1615  dm_back.c(31):534 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	dm_crypt_init: no pin.conf entry for  pin_crypt4dm library not loaded
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1615  dm_if_oracle.c(183):1724 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	prune partitions in search is enabled
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1615  dm_if_oracle.c(183):2556 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	scoped_system is 0 (Normal System)
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1615  dm_if_oracle.c(183):4438 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	dm_get_passwd[ORA]: password decrypt successful
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1615  dm_if_oracle.c(183):4603 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	dm_oracle_get_lda: sm_svcname is not configured
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1612  dm_back.c(31):534 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	dm_crypt_init: no pin.conf entry for  pin_crypt4dm library not loaded
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1612  dm_if_oracle.c(183):1724 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	prune partitions in search is enabled
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1612  dm_if_oracle.c(183):2556 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	scoped_system is 0 (Normal System)
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1612  dm_if_oracle.c(183):4438 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	dm_get_passwd[ORA]: password decrypt successful
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1612  dm_if_oracle.c(183):4603 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	dm_oracle_get_lda: sm_svcname is not configured
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1611  dm_back.c(31):534 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	dm_crypt_init: no pin.conf entry for  pin_crypt4dm library not loaded
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1611  dm_if_oracle.c(183):1724 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	prune partitions in search is enabled
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1611  dm_if_oracle.c(183):2556 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	scoped_system is 0 (Normal System)
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1611  dm_if_oracle.c(183):4438 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	dm_get_passwd[ORA]: password decrypt successful
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1611  dm_if_oracle.c(183):4603 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	dm_oracle_get_lda: sm_svcname is not configured
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1617  dm_if_oracle.c(183):2694 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	num of stmt handle cache entries is 0
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1617  dm_if_oracle.c(183):1593 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	in batch size is 80
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1617  dm_if_oracle.c(183):5447 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	trying to read dm_sql_retryp
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1612  dm_if_oracle.c(183):2694 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	num of stmt handle cache entries is 0
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1612  dm_if_oracle.c(183):1593 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	in batch size is 80
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1612  dm_if_oracle.c(183):5447 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	trying to read dm_sql_retryp
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1618  dm_if_oracle.c(183):2694 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	num of stmt handle cache entries is 0
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1618  dm_if_oracle.c(183):1593 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	in batch size is 80
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1618  dm_if_oracle.c(183):5447 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	trying to read dm_sql_retryp
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1613  dm_if_oracle.c(183):2694 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	num of stmt handle cache entries is 0
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1613  dm_if_oracle.c(183):1593 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	in batch size is 80
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1614  dm_if_oracle.c(183):2694 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	num of stmt handle cache entries is 0
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1613  dm_if_oracle.c(183):5447 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	trying to read dm_sql_retryp
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1614  dm_if_oracle.c(183):1593 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	in batch size is 80
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1614  dm_if_oracle.c(183):5447 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	trying to read dm_sql_retryp
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1616  dm_if_oracle.c(183):2694 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	num of stmt handle cache entries is 0
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1615  dm_if_oracle.c(183):2694 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	num of stmt handle cache entries is 0
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1616  dm_if_oracle.c(183):1593 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	in batch size is 80
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1616  dm_if_oracle.c(183):5447 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	trying to read dm_sql_retryp
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1611  dm_if_oracle.c(183):2694 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	num of stmt handle cache entries is 0
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1615  dm_if_oracle.c(183):1593 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	in batch size is 80
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1615  dm_if_oracle.c(183):5447 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	trying to read dm_sql_retryp
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1619  dm_if_oracle.c(183):2694 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	num of stmt handle cache entries is 0
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1619  dm_if_oracle.c(183):1593 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	in batch size is 80
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1619  dm_if_oracle.c(183):5447 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	trying to read dm_sql_retryp
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1611  dm_if_oracle.c(183):1593 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	in batch size is 80
+M Wed Sep 30 11:01:17 2015  cubnbrm1  dm:1611  dm_if_oracle.c(183):5447 1:cubnbrm1:dm:1590:71210784:0:1443591075:0
+	trying to read dm_sql_retryp
+D Wed Sep 30 11:01:27 2015  cubnbrm1  dm:1620  pcm_tbls.c(21):313 1:cubnbrm1:cm:1677:-154409264:0:1443591087:0
+	libpcmext64.so Library initialized
+D Wed Sep 30 11:01:27 2015  cubnbrm1  dm:1620  pcm_tbls.c(21):316 1:cubnbrm1:cm:1677:-154409264:0:1443591087:0
+	PCMEXT initialized with 0 function failures
+D Wed Sep 30 11:01:27 2015  cubnbrm1  dm:1616  pcm_tbls.c(21):313 1:cubnbrm1:cm:1677:-154409264:0:1443591087:0
+	libpcmext64.so Library initialized
+D Wed Sep 30 11:01:27 2015  cubnbrm1  dm:1616  pcm_tbls.c(21):316 1:cubnbrm1:cm:1677:-154409264:0:1443591087:0
+	PCMEXT initialized with 0 function failures
+M Wed Sep 30 11:01:27 2015  cubnbrm1  dm:1616  dm_search.c(106):3243 1:cubnbrm1:cm:1677:-154409264:0:1443591087:0
+	in update size is 1000 (default)
+D Wed Sep 30 11:01:27 2015  cubnbrm1  dm:1621  pcm_tbls.c(21):313 1:cubnbrm1:cm:1677:-154409264:0:1443591087:0
+	libpcmext64.so Library initialized
+D Wed Sep 30 11:01:27 2015  cubnbrm1  dm:1621  pcm_tbls.c(21):316 1:cubnbrm1:cm:1677:-154409264:0:1443591087:0
+	PCMEXT initialized with 0 function failures
+M Wed Sep 30 11:01:27 2015  cubnbrm1  dm:1611  dm_search.c(106):3243 1:cubnbrm1:cm:1677:-154409264:0:1443591087:0
+	in update size is 1000 (default)
+D Wed Sep 30 11:01:27 2015  cubnbrm1  dm:1611  pcm_tbls.c(21):313 1:cubnbrm1:cm:1677:-154409264:0:1443591087:0
+	libpcmext64.so Library initialized
+D Wed Sep 30 11:01:27 2015  cubnbrm1  dm:1611  pcm_tbls.c(21):316 1:cubnbrm1:cm:1677:-154409264:0:1443591087:0
+	PCMEXT initialized with 0 function failures
+D Wed Sep 30 11:01:27 2015  cubnbrm1  dm:1617  pcm_tbls.c(21):313 1:cubnbrm1:cm:1677:-154409264:0:1443591087:0
+	libpcmext64.so Library initialized
+D Wed Sep 30 11:01:27 2015  cubnbrm1  dm:1617  pcm_tbls.c(21):316 1:cubnbrm1:cm:1677:-154409264:0:1443591087:0
+	PCMEXT initialized with 0 function failures
+M Wed Sep 30 11:01:27 2015  cubnbrm1  dm:1617  dm_search.c(106):3243 1:cubnbrm1:cm:1677:-154409264:0:1443591087:0
+	in update size is 1000 (default)
+D Wed Sep 30 11:01:27 2015  cubnbrm1  dm:1615  pcm_tbls.c(21):313 1:cubnbrm1:cm:1677:-154409264:0:1443591087:0
+	libpcmext64.so Library initialized
+D Wed Sep 30 11:01:27 2015  cubnbrm1  dm:1615  pcm_tbls.c(21):316 1:cubnbrm1:cm:1677:-154409264:0:1443591087:0
+	PCMEXT initialized with 0 function failures
+M Wed Sep 30 11:01:27 2015  cubnbrm1  dm:1615  dm_search.c(106):3243 1:cubnbrm1:cm:1677:-154409264:0:1443591087:0
+	in update size is 1000 (default)
+D Wed Sep 30 11:01:27 2015  cubnbrm1  dm:1618  pcm_tbls.c(21):313 1:cubnbrm1:cm:1677:-154409264:0:1443591087:0
+	libpcmext64.so Library initialized
+D Wed Sep 30 11:01:27 2015  cubnbrm1  dm:1618  pcm_tbls.c(21):316 1:cubnbrm1:cm:1677:-154409264:0:1443591087:0
+	PCMEXT initialized with 0 function failures
+M Wed Sep 30 11:01:27 2015  cubnbrm1  dm:1618  dm_search.c(106):3243 1:cubnbrm1:cm:1677:-154409264:0:1443591087:0
+	in update size is 1000 (default)
+D Wed Sep 30 11:01:27 2015  cubnbrm1  dm:1612  pcm_tbls.c(21):313 1:cubnbrm1:cm:1677:-154409264:0:1443591087:0
+	libpcmext64.so Library initialized
+D Wed Sep 30 11:01:27 2015  cubnbrm1  dm:1612  pcm_tbls.c(21):316 1:cubnbrm1:cm:1677:-154409264:0:1443591087:0
+	PCMEXT initialized with 0 function failures
+M Wed Sep 30 11:01:27 2015  cubnbrm1  dm:1612  dm_search.c(106):3243 1:cubnbrm1:cm:1677:-154409264:0:1443591087:0
+	in update size is 1000 (default)
+D Wed Sep 30 11:01:27 2015  cubnbrm1  dm:1619  pcm_tbls.c(21):313 1:cubnbrm1:cm:1677:-154409264:0:1443591087:0
+	libpcmext64.so Library initialized
+D Wed Sep 30 11:01:27 2015  cubnbrm1  dm:1619  pcm_tbls.c(21):316 1:cubnbrm1:cm:1677:-154409264:0:1443591087:0
+	PCMEXT initialized with 0 function failures
+M Wed Sep 30 11:01:27 2015  cubnbrm1  dm:1619  dm_search.c(106):3243 1:cubnbrm1:cm:1677:-154409264:0:1443591087:0
+	in update size is 1000 (default)
+D Wed Sep 30 11:01:27 2015  cubnbrm1  dm:1613  pcm_tbls.c(21):313 1:cubnbrm1:cm:1677:-154409264:0:1443591087:0
+	libpcmext64.so Library initialized
+D Wed Sep 30 11:01:27 2015  cubnbrm1  dm:1613  pcm_tbls.c(21):316 1:cubnbrm1:cm:1677:-154409264:0:1443591087:0
+	PCMEXT initialized with 0 function failures
+M Wed Sep 30 11:01:27 2015  cubnbrm1  dm:1613  dm_search.c(106):3243 1:cubnbrm1:cm:1677:-154409264:0:1443591087:0
+	in update size is 1000 (default)
+M Wed Sep 30 11:01:27 2015  cubnbrm1  dm:1593  dm_search.c(106):3243 1:cubnbrm1:cm:1677:-154409264:0:1443591087:0
+	in update size is 1000 (default)
+D Wed Sep 30 11:01:27 2015  cubnbrm1  dm:1614  pcm_tbls.c(21):313 1:cubnbrm1:cm:1677:-154409264:0:1443591087:0
+	libpcmext64.so Library initialized
+D Wed Sep 30 11:01:27 2015  cubnbrm1  dm:1614  pcm_tbls.c(21):316 1:cubnbrm1:cm:1677:-154409264:0:1443591087:0
+	PCMEXT initialized with 0 function failures
+M Wed Sep 30 11:01:27 2015  cubnbrm1  dm:1614  dm_search.c(106):3243 1:cubnbrm1:cm:1677:-154409264:0:1443591087:0
+	in update size is 1000 (default)
+D Wed Sep 30 11:01:27 2015  cubnbrm1  dm:1622  pcm_tbls.c(21):313 1:cubnbrm1:cm:1677:-154409264:0:1443591087:0
+	libpcmext64.so Library initialized
+D Wed Sep 30 11:01:27 2015  cubnbrm1  dm:1622  pcm_tbls.c(21):316 1:cubnbrm1:cm:1677:-154409264:0:1443591087:0
+	PCMEXT initialized with 0 function failures
+D Wed Sep 30 11:03:30 2015  cubnbrm1  dm:2195  dm_main.c(63):2336 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	DMm dm_name set to "cubnbrm1"
+M Wed Sep 30 11:03:30 2015  cubnbrm1  dm:2198  dm_back.c(31):534 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	dm_crypt_init: no pin.conf entry for  pin_crypt4dm library not loaded
+M Wed Sep 30 11:03:30 2015  cubnbrm1  dm:2198  dm_if_oracle.c(183):1724 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	prune partitions in search is enabled
+M Wed Sep 30 11:03:30 2015  cubnbrm1  dm:2198  dm_if_oracle.c(183):2556 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	scoped_system is 0 (Normal System)
+M Wed Sep 30 11:03:30 2015  cubnbrm1  dm:2198  dm_if_oracle.c(183):4438 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	dm_get_passwd[ORA]: password decrypt successful
+M Wed Sep 30 11:03:30 2015  cubnbrm1  dm:2198  dm_if_oracle.c(183):4603 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	dm_oracle_get_lda: sm_svcname is not configured
+M Wed Sep 30 11:03:30 2015  cubnbrm1  dm:2198  dm_if_oracle.c(183):2694 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	num of stmt handle cache entries is 32
+M Wed Sep 30 11:03:30 2015  cubnbrm1  dm:2198  dm_if_oracle.c(183):1593 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	in batch size is 80
+M Wed Sep 30 11:03:30 2015  cubnbrm1  dm:2198  dm_if_oracle.c(183):5447 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	trying to read dm_sql_retryp
+D Wed Sep 30 11:03:30 2015  cubnbrm1  dm:2198  pcm_tbls.c(21):313 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	libpcmext64.so Library initialized
+D Wed Sep 30 11:03:30 2015  cubnbrm1  dm:2198  pcm_tbls.c(21):316 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	PCMEXT initialized with 0 function failures
+M Wed Sep 30 11:03:31 2015  cubnbrm1  dm:2198  sm_ora_dd_sql.c(34):653 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	scan_crypt_key: PIN_ERR_NOT_FOUND for crypt tag
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2220  dm_back.c(31):534 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	dm_crypt_init: no pin.conf entry for  pin_crypt4dm library not loaded
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2225  dm_back.c(31):534 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	dm_crypt_init: no pin.conf entry for  pin_crypt4dm library not loaded
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2225  dm_if_oracle.c(183):1724 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	prune partitions in search is enabled
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2225  dm_if_oracle.c(183):2556 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	scoped_system is 0 (Normal System)
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2225  dm_if_oracle.c(183):4438 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	dm_get_passwd[ORA]: password decrypt successful
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2225  dm_if_oracle.c(183):4603 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	dm_oracle_get_lda: sm_svcname is not configured
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2223  dm_back.c(31):534 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	dm_crypt_init: no pin.conf entry for  pin_crypt4dm library not loaded
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2223  dm_if_oracle.c(183):1724 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	prune partitions in search is enabled
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2223  dm_if_oracle.c(183):2556 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	scoped_system is 0 (Normal System)
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2223  dm_if_oracle.c(183):4438 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	dm_get_passwd[ORA]: password decrypt successful
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2223  dm_if_oracle.c(183):4603 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	dm_oracle_get_lda: sm_svcname is not configured
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2221  dm_back.c(31):534 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	dm_crypt_init: no pin.conf entry for  pin_crypt4dm library not loaded
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2221  dm_if_oracle.c(183):1724 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	prune partitions in search is enabled
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2221  dm_if_oracle.c(183):2556 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	scoped_system is 0 (Normal System)
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2221  dm_if_oracle.c(183):4438 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	dm_get_passwd[ORA]: password decrypt successful
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2221  dm_if_oracle.c(183):4603 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	dm_oracle_get_lda: sm_svcname is not configured
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2224  dm_back.c(31):534 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	dm_crypt_init: no pin.conf entry for  pin_crypt4dm library not loaded
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2224  dm_if_oracle.c(183):1724 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	prune partitions in search is enabled
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2224  dm_if_oracle.c(183):2556 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	scoped_system is 0 (Normal System)
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2224  dm_if_oracle.c(183):4438 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	dm_get_passwd[ORA]: password decrypt successful
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2224  dm_if_oracle.c(183):4603 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	dm_oracle_get_lda: sm_svcname is not configured
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2219  dm_back.c(31):534 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	dm_crypt_init: no pin.conf entry for  pin_crypt4dm library not loaded
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2219  dm_if_oracle.c(183):1724 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	prune partitions in search is enabled
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2219  dm_if_oracle.c(183):2556 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	scoped_system is 0 (Normal System)
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2222  dm_back.c(31):534 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	dm_crypt_init: no pin.conf entry for  pin_crypt4dm library not loaded
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2222  dm_if_oracle.c(183):1724 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	prune partitions in search is enabled
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2219  dm_if_oracle.c(183):4438 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	dm_get_passwd[ORA]: password decrypt successful
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2222  dm_if_oracle.c(183):2556 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	scoped_system is 0 (Normal System)
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2219  dm_if_oracle.c(183):4603 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	dm_oracle_get_lda: sm_svcname is not configured
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2222  dm_if_oracle.c(183):4438 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	dm_get_passwd[ORA]: password decrypt successful
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2222  dm_if_oracle.c(183):4603 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	dm_oracle_get_lda: sm_svcname is not configured
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2220  dm_if_oracle.c(183):1724 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	prune partitions in search is enabled
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2220  dm_if_oracle.c(183):2556 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	scoped_system is 0 (Normal System)
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2220  dm_if_oracle.c(183):4438 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	dm_get_passwd[ORA]: password decrypt successful
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2220  dm_if_oracle.c(183):4603 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	dm_oracle_get_lda: sm_svcname is not configured
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2217  dm_back.c(31):534 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	dm_crypt_init: no pin.conf entry for  pin_crypt4dm library not loaded
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2217  dm_if_oracle.c(183):1724 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	prune partitions in search is enabled
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2217  dm_if_oracle.c(183):2556 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	scoped_system is 0 (Normal System)
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2217  dm_if_oracle.c(183):4438 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	dm_get_passwd[ORA]: password decrypt successful
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2217  dm_if_oracle.c(183):4603 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	dm_oracle_get_lda: sm_svcname is not configured
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2216  dm_back.c(31):534 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	dm_crypt_init: no pin.conf entry for  pin_crypt4dm library not loaded
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2216  dm_if_oracle.c(183):1724 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	prune partitions in search is enabled
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2216  dm_if_oracle.c(183):2556 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	scoped_system is 0 (Normal System)
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2216  dm_if_oracle.c(183):4438 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	dm_get_passwd[ORA]: password decrypt successful
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2216  dm_if_oracle.c(183):4603 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	dm_oracle_get_lda: sm_svcname is not configured
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2222  dm_if_oracle.c(183):2694 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	num of stmt handle cache entries is 32
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2222  dm_if_oracle.c(183):1593 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	in batch size is 80
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2222  dm_if_oracle.c(183):5447 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	trying to read dm_sql_retryp
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2225  dm_if_oracle.c(183):2694 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	num of stmt handle cache entries is 32
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2225  dm_if_oracle.c(183):1593 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	in batch size is 80
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2225  dm_if_oracle.c(183):5447 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	trying to read dm_sql_retryp
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2220  dm_if_oracle.c(183):2694 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	num of stmt handle cache entries is 32
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2220  dm_if_oracle.c(183):1593 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	in batch size is 80
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2220  dm_if_oracle.c(183):5447 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	trying to read dm_sql_retryp
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2216  dm_if_oracle.c(183):2694 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	num of stmt handle cache entries is 32
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2216  dm_if_oracle.c(183):1593 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	in batch size is 80
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2216  dm_if_oracle.c(183):5447 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	trying to read dm_sql_retryp
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2224  dm_if_oracle.c(183):2694 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	num of stmt handle cache entries is 32
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2224  dm_if_oracle.c(183):1593 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	in batch size is 80
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2224  dm_if_oracle.c(183):5447 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	trying to read dm_sql_retryp
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2221  dm_if_oracle.c(183):2694 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	num of stmt handle cache entries is 32
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2223  dm_if_oracle.c(183):2694 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	num of stmt handle cache entries is 32
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2221  dm_if_oracle.c(183):1593 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	in batch size is 80
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2221  dm_if_oracle.c(183):5447 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	trying to read dm_sql_retryp
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2223  dm_if_oracle.c(183):1593 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	in batch size is 80
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2223  dm_if_oracle.c(183):5447 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	trying to read dm_sql_retryp
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2217  dm_if_oracle.c(183):2694 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	num of stmt handle cache entries is 32
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2217  dm_if_oracle.c(183):1593 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	in batch size is 80
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2217  dm_if_oracle.c(183):5447 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	trying to read dm_sql_retryp
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2219  dm_if_oracle.c(183):2694 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	num of stmt handle cache entries is 32
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2219  dm_if_oracle.c(183):1593 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	in batch size is 80
+M Wed Sep 30 11:03:32 2015  cubnbrm1  dm:2219  dm_if_oracle.c(183):5447 1:cubnbrm1:dm:2195:-353970400:0:1443591210:0
+	trying to read dm_sql_retryp
+D Wed Sep 30 11:03:40 2015  cubnbrm1  dm:2227  pcm_tbls.c(21):313 1:cubnbrm1:cm:2270:-154315056:0:1443591220:0
+	libpcmext64.so Library initialized
+D Wed Sep 30 11:03:40 2015  cubnbrm1  dm:2227  pcm_tbls.c(21):316 1:cubnbrm1:cm:2270:-154315056:0:1443591220:0
+	PCMEXT initialized with 0 function failures
+D Wed Sep 30 11:03:40 2015  cubnbrm1  dm:2217  pcm_tbls.c(21):313 1:cubnbrm1:cm:2270:-154315056:0:1443591220:0
+	libpcmext64.so Library initialized
+D Wed Sep 30 11:03:40 2015  cubnbrm1  dm:2217  pcm_tbls.c(21):316 1:cubnbrm1:cm:2270:-154315056:0:1443591220:0
+	PCMEXT initialized with 0 function failures
+M Wed Sep 30 11:03:40 2015  cubnbrm1  dm:2217  dm_search.c(106):3243 1:cubnbrm1:cm:2270:-154315056:0:1443591220:0
+	in update size is 1000 (default)
+D Wed Sep 30 11:03:40 2015  cubnbrm1  dm:2228  pcm_tbls.c(21):313 1:cubnbrm1:cm:2270:-154315056:0:1443591220:0
+	libpcmext64.so Library initialized
+D Wed Sep 30 11:03:40 2015  cubnbrm1  dm:2228  pcm_tbls.c(21):316 1:cubnbrm1:cm:2270:-154315056:0:1443591220:0
+	PCMEXT initialized with 0 function failures
+M Wed Sep 30 11:03:40 2015  cubnbrm1  dm:2219  dm_search.c(106):3243 1:cubnbrm1:cm:2270:-154315056:0:1443591220:0
+	in update size is 1000 (default)
+D Wed Sep 30 11:03:40 2015  cubnbrm1  dm:2219  pcm_tbls.c(21):313 1:cubnbrm1:cm:2270:-154315056:0:1443591220:0
+	libpcmext64.so Library initialized
+D Wed Sep 30 11:03:40 2015  cubnbrm1  dm:2219  pcm_tbls.c(21):316 1:cubnbrm1:cm:2270:-154315056:0:1443591220:0
+	PCMEXT initialized with 0 function failures
+M Wed Sep 30 11:03:40 2015  cubnbrm1  dm:2198  dm_search.c(106):3243 1:cubnbrm1:cm:2270:-154315056:0:1443591220:0
+	in update size is 1000 (default)
+D Wed Sep 30 11:03:40 2015  cubnbrm1  dm:2223  pcm_tbls.c(21):313 1:cubnbrm1:cm:2270:-154315056:0:1443591220:0
+	libpcmext64.so Library initialized
+D Wed Sep 30 11:03:40 2015  cubnbrm1  dm:2223  pcm_tbls.c(21):316 1:cubnbrm1:cm:2270:-154315056:0:1443591220:0
+	PCMEXT initialized with 0 function failures
+M Wed Sep 30 11:03:40 2015  cubnbrm1  dm:2223  dm_search.c(106):3243 1:cubnbrm1:cm:2270:-154315056:0:1443591220:0
+	in update size is 1000 (default)
+D Wed Sep 30 11:03:40 2015  cubnbrm1  dm:2221  pcm_tbls.c(21):313 1:cubnbrm1:cm:2270:-154315056:0:1443591220:0
+	libpcmext64.so Library initialized
+D Wed Sep 30 11:03:40 2015  cubnbrm1  dm:2221  pcm_tbls.c(21):316 1:cubnbrm1:cm:2270:-154315056:0:1443591220:0
+	PCMEXT initialized with 0 function failures
+M Wed Sep 30 11:03:40 2015  cubnbrm1  dm:2221  dm_search.c(106):3243 1:cubnbrm1:cm:2270:-154315056:0:1443591220:0
+	in update size is 1000 (default)
+D Wed Sep 30 11:03:40 2015  cubnbrm1  dm:2222  pcm_tbls.c(21):313 1:cubnbrm1:cm:2270:-154315056:0:1443591220:0
+	libpcmext64.so Library initialized
+D Wed Sep 30 11:03:40 2015  cubnbrm1  dm:2222  pcm_tbls.c(21):316 1:cubnbrm1:cm:2270:-154315056:0:1443591220:0
+	PCMEXT initialized with 0 function failures
+M Wed Sep 30 11:03:40 2015  cubnbrm1  dm:2222  dm_search.c(106):3243 1:cubnbrm1:cm:2270:-154315056:0:1443591220:0
+	in update size is 1000 (default)
+D Wed Sep 30 11:03:40 2015  cubnbrm1  dm:2225  pcm_tbls.c(21):313 1:cubnbrm1:cm:2270:-154315056:0:1443591220:0
+	libpcmext64.so Library initialized
+D Wed Sep 30 11:03:40 2015  cubnbrm1  dm:2225  pcm_tbls.c(21):316 1:cubnbrm1:cm:2270:-154315056:0:1443591220:0
+	PCMEXT initialized with 0 function failures
+M Wed Sep 30 11:03:40 2015  cubnbrm1  dm:2225  dm_search.c(106):3243 1:cubnbrm1:cm:2270:-154315056:0:1443591220:0
+	in update size is 1000 (default)
+D Wed Sep 30 11:03:40 2015  cubnbrm1  dm:2220  pcm_tbls.c(21):313 1:cubnbrm1:cm:2270:-154315056:0:1443591220:0
+	libpcmext64.so Library initialized
+D Wed Sep 30 11:03:40 2015  cubnbrm1  dm:2220  pcm_tbls.c(21):316 1:cubnbrm1:cm:2270:-154315056:0:1443591220:0
+	PCMEXT initialized with 0 function failures
+M Wed Sep 30 11:03:40 2015  cubnbrm1  dm:2220  dm_search.c(106):3243 1:cubnbrm1:cm:2270:-154315056:0:1443591220:0
+	in update size is 1000 (default)
+D Wed Sep 30 11:03:40 2015  cubnbrm1  dm:2224  pcm_tbls.c(21):313 1:cubnbrm1:cm:2270:-154315056:0:1443591220:0
+	libpcmext64.so Library initialized
+D Wed Sep 30 11:03:40 2015  cubnbrm1  dm:2224  pcm_tbls.c(21):316 1:cubnbrm1:cm:2270:-154315056:0:1443591220:0
+	PCMEXT initialized with 0 function failures
+M Wed Sep 30 11:03:40 2015  cubnbrm1  dm:2224  dm_search.c(106):3243 1:cubnbrm1:cm:2270:-154315056:0:1443591220:0
+	in update size is 1000 (default)
+M Wed Sep 30 11:03:40 2015  cubnbrm1  dm:2216  dm_search.c(106):3243 1:cubnbrm1:cm:2270:-154315056:0:1443591220:0
+	in update size is 1000 (default)
+D Wed Sep 30 11:03:40 2015  cubnbrm1  dm:2216  pcm_tbls.c(21):313 1:cubnbrm1:cm:2270:-154315056:0:1443591220:0
+	libpcmext64.so Library initialized
+D Wed Sep 30 11:03:40 2015  cubnbrm1  dm:2216  pcm_tbls.c(21):316 1:cubnbrm1:cm:2270:-154315056:0:1443591220:0
+	PCMEXT initialized with 0 function failures

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema 
+	targetNamespace="http://www.portal.com/schemas/BusinessConfig" 
+	xmlns:businessConfig="http://www.portal.com/schemas/BusinessConfig" 
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+	elementFormDefault="qualified" 
+	attributeFormDefault="unqualified">
+
+	<xs:annotation>
+		<xs:documentation xml:lang="en">
+ Copyright (c) 2004, 2009, Oracle and/or its affiliates.All rights reserved. 
+			This material is the confidential property of Oracle Corporation or its
+			licensors and may be used, reproduced, stored or transmitted only in
+			accordance with a valid Oracle license or sublicense agreement.
+		</xs:documentation>
+	</xs:annotation>
+
+	<xs:complexType name="BusParamsARType">
+		<xs:sequence>
+			
+			<xs:element name="SearchBillAmount" type="switch">
+			<xs:annotation>
+				<xs:documentation xml:lang="en">
+					Enable/Disable Search of Bill Object by matching Bill Amount. The parameter values can be
+					0 (disabled), 1 (enabled). Default is 0 (disabled).
+				</xs:documentation>
+			</xs:annotation>
+			</xs:element>
+
+			<xs:element name="AutoWriteOffReversal" type="switch">
+				<xs:annotation>
+					<xs:documentation xml:lang="en">
+						Enable/Disable automatic write-off reversal on Payment receipt.The Parameter values can be
+						0 (disabled), 1 (enabled). Default is 0 (disabled).
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+
+			<xs:element name="WriteOffLevel">
+				<xs:annotation>
+					<xs:documentation xml:lang="en">
+						Level of writeoff to be tracked for the purpose of writeoff reversal.Default is account 
+						and currently only account level is supported."
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:whiteSpace value="collapse"/>
+						<xs:enumeration value="account"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+	
+			<xs:element name="PaymentIncentive" type="switch">
+				<xs:annotation>
+					<xs:documentation xml:lang="en">
+						Enable/Disable Payment incentives on early payment in full. The parameter values can be 0
+						(disabled), 1 (enabled). Default is 0 (disabled).
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+
+			<xs:element name="PaymentSuspense" type="switch">
+				<xs:annotation>
+					<xs:documentation xml:lang="en">
+						Enable/Disable Payment Suspense Management . The parameter values can be 0 (disabled), 1 (
+						enabled). Default is 0 (disabled).	
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+
+			<xs:element name="NonrefundableCreditItems">
+                                <xs:annotation>
+                                        <xs:documentation xml:lang="en">
+						Types of items which will NOT be refunded in case of outstanding credit balance.
+The values should be separated by commas. Default is /item/refund .
+                                        </xs:documentation>
+                                </xs:annotation>
+                        </xs:element>
+
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:simpleType name="switch">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="enabled"/>
+			<xs:enumeration value="disabled"/>
+			<xs:whiteSpace value="collapse"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+</xs:schema>

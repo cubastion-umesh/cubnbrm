@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--==================================================================================
+ Copyright (c) 2004, 2011, Oracle and/or its affiliates. All rights reserved. 
+        This material is the confidential property of Oracle Corporation or its
+        licensors and may be used, reproduced, stored or transmitted only in
+        accordance with a valid Oracle license or sublicense agreement.
+        =================================================================================--> 
+ <BusinessConfiguration 
+	xmlns="http://www.portal.com/schemas/BusinessConfig" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation=
+		"http://www.portal.com/schemas/BusinessConfig 
+			       	business_configuration.xsd">
+
+ <!-- Sample file. Modify according to guidelines -->
+
+ <BusinessProfileConfiguration>
+	
+	<!-- List business profiles -->
+	<BusinessProfileList>
+ 	
+		<BusinessProfile name="Prepaid" >
+
+  			<Desc> Description of the business profile </Desc>
+
+			<!-- List templates -->
+  			<TemplateId name="Service A" type="/service" /> 
+  			<TemplateId name="Balance Group" type="/balance_group" /> 
+			<TemplateId name="Billinfo" type="/billinfo" />
+
+			<!-- List key values -->
+  			<NameValue key="Prepaid" value="yes" /> 
+
+  		</BusinessProfile>
+
+		<BusinessProfile name="ConsumerInvoice" type="Invoice">
+
+                        <Desc> Description of the business profile </Desc>
+
+                        <!-- List templates -->
+                        <TemplateId name="InvoiceIntegration" type="/billinfo" />
+
+                        <!-- List key values -->
+                        <NameValue key="Report_Name" value="BRM_Consumer_Invoice_Report" />
+                        <NameValue key="Template_Name" value="BRM_Consumer_Invoice" />
+			<NameValue key="Replacement_Report_Name" value="BRM_Consumer_Replacement_Invoice_Report"/>
+			<NameValue key="Replacement_Template_Name" value="BRM_Consumer_Replacement_Invoice"/>
+
+			<NameValue key="Correction_Report_Name" value="BRM_Consumer_Correction_Invoice_Report"/>
+			<NameValue key="Correction_Template_Name" value="BRM_Consumer_Correction_Invoice"/>
+
+                </BusinessProfile>
+                <BusinessProfile name="CorporateInvoice" type="Invoice">
+
+                        <Desc> Description of the business profile </Desc>
+
+                        <!-- List templates -->
+                        <TemplateId name="InvoiceIntegration" type="/billinfo" />
+
+                        <!-- List key values -->
+                        <NameValue key="Report_Name" value="BRM_Corporate_Invoice_Report" />
+                        <NameValue key="Template_Name" value="BRM_Corporate_Invoice" />
+			<NameValue key="Replacement_Report_Name" value="BRM_Corporate_Replacement_Invoice_Report"/>
+			<NameValue key="Replacement_Template_Name" value="BRM_Corporate_Replacement_Invoice"/>
+
+			<NameValue key="Correction_Report_Name" value="BRM_Corporate_Correction_Invoice_Report"/>
+			<NameValue key="Correction_Template_Name" value="BRM_Corporate_Correction_Invoice"/>
+
+                </BusinessProfile>
+
+		<!-- List business profiles to delete -->
+		<BusinessProfile name="Postpaid" action = "delete" />
+
+  	</BusinessProfileList>
+
+	<!-- List templates -->
+ 	<TemplateList>
+ 
+ 		<Template name="Service A" type="/service" >
+
+ 			<Desc> Description of the template </Desc>
+			
+			<!-- List the rules for validating the service -->
+  			<Iscript>
+ 			</Iscript>
+
+			<!-- List key values -->
+  			<NameValue key="Service Gold" value="Yes" /> 
+
+ 		 </Template>
+
+		<Template  name="InvoiceIntegration"  type="/billinfo">
+                        <Desc> Description of the template </Desc>
+                        <!-- List the rules for validating the billinfo -->
+                       <Iscript>
+
+                        Long parentFlags = flistGetLong(IN,PIN_FLD_PARENT_FLAGS);
+                        if (parentFlags == 0) {
+                                flistSetEnum( OUT, PIN_FLD_RESULT, 1);
+		   		flistSetStr(OUT, PIN_FLD_NAME, "ConsumerInvoice");
+                        } else if(parentFlags > 0) {
+                                flistSetEnum(OUT, PIN_FLD_RESULT, 1);
+                                flistSetStr(OUT, PIN_FLD_NAME, "CorporateInvoice");
+                        }
+                        </Iscript>
+                        <!-- List key values -->
+		</Template>
+
+
+		<Template name="Balance Group" type="/balance_group">
+
+		  <Desc>Balance group with a check for zero limit </Desc>
+			
+		  <!-- List the rules for validating the balance group -->
+		  <Iscript>
+		   Decimal CREDIT_LIMIT_ALLOWED = 0;
+		   Poid inPoid = flistGetPoid(IN,PIN_FLD_POID);
+		   String dbID = poidGetDbStr( inPoid );
+
+		   Flist search = flistCreate();
+		   Poid p = poidCreate (dbID,"/search", 500);
+		   flistSetPoid( search, PIN_FLD_POID, p );
+		   flistSetStr(search, PIN_FLD_PARAMETERS, "credit_profile");
+
+		   Flist argFlist = flistCreate();
+                   Poid cpPoid = poidCreate (dbID,"/config/credit_profile", -1);
+                   flistSetPoid( argFlist, PIN_FLD_POID, cpPoid );
+                   flistSetElem( search, PIN_FLD_ARGS, argFlist, 1 );
+
+                   Flist result = flistCreate();
+                   flistSetElem(search, PIN_FLD_RESULTS,result, 0);
+
+                   pinlog(3, "Search Flist\n" + flistToStr( search ) );
+
+                   // Do a readobject
+                   Flist out = pcmOpCatch(7, 0, search, PINERR);
+                   pinlog(3, "Result Flist\n\n" + flistToStr( out) );
+
+                   Flist creditFlist = flistGetElem(out, PIN_FLD_RESULTS, 0);
+                   flistSetEnum( OUT, PIN_FLD_RESULT, 1);
+
+                   // Get the credit profile index from each balances 
+		   // in the input flist
+                   Iterator j = flistGetElements( IN, PIN_FLD_BALANCES );
+                   while( iteratorHasMore( j ) ) {
+                       Flist h = iteratorGetNext( j );
+                       Long recid = iteratorGetRecId( j );
+                       if( flistFldExists( h, PIN_FLD_CREDIT_PROFILE )) {
+                           Long index = flistGetLong( h, PIN_FLD_CREDIT_PROFILE );
+                           Flist tmpFlist = flistGetElem
+			       (creditFlist,PIN_FLD_PROFILES, index);
+                           Decimal creditLimit = flistGetDecimal
+			       (tmpFlist, PIN_FLD_CREDIT_LIMIT);
+                           pinlog(3, " Credit Profile Index :" + longToStr(index) +
+                                 " Credit Limit :" + decimalToStr(creditLimit) );
+                           if ( creditLimit > CREDIT_LIMIT_ALLOWED ) {
+                                   flistSetEnum( OUT, PIN_FLD_RESULT, 0);
+                           }
+                        }
+                        else {
+                            pinlog(2,  "PIN_FLD_CREDIT_PROFILE not found");
+                                flistSetEnum( OUT, PIN_FLD_RESULT, 0);
+                        }
+                   }
+         	  </Iscript>
+
+		  <!-- List key values -->
+  		  <NameValue key="Credit Limit" value="0" /> 
+
+		</Template>
+
+  		<Template name="Billinfo" type="/billinfo">
+
+ 			<Desc> Description of the template </Desc>
+
+			<!-- List the rules for validating the billinfo -->
+ 			<Iscript>
+ 			</Iscript>
+
+			<!-- List key values -->
+  			<NameValue key="Prepaid" value="yes" />
+
+		</Template>
+
+		<!-- List templates to delete -->
+		 <Template name="Service X" type="/service" action = "delete"/>
+
+  	</TemplateList>
+
+  </BusinessProfileConfiguration>
+
+  </BusinessConfiguration>

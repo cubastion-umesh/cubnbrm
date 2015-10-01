@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema 
+	targetNamespace="http://www.portal.com/schemas/BusinessConfig" 
+	xmlns:businessConfig="http://www.portal.com/schemas/BusinessConfig" 
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+	elementFormDefault="qualified" 
+	attributeFormDefault="unqualified">
+
+	<xs:annotation>
+		<xs:documentation xml:lang="en">
+ Copyright (c) 2006, 2011, Oracle and/or its affiliates. All rights reserved. 
+                        This material is the confidential property of Oracle Corporation
+                        or its licensors and may be used, reproduced, stored or transmitted
+                        only in accordance with a valid Oracle license or sublicense agreement.
+		</xs:documentation>
+	</xs:annotation>
+
+	<xs:complexType name="BusParamsInvoicingType">
+		<xs:sequence>
+			
+			<xs:element name="ADSTTaxHandle" type="switchinv">
+				<xs:annotation>
+					<xs:documentation xml:lang="en">
+						Enable/Disable ADST Tax handling Feature for Invoicing. 
+						Parameter values can be 0 (disable), 1 (enable). Default is 0 (disabled).
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+
+
+			<xs:element name="ThresholdSubordsSummary">
+				<xs:annotation>
+					<xs:documentation xml:lang="en">
+						Threshold for number of subordinates for summary invoices.
+						(0=default(no split invoices for hierarchy))
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:nonNegativeInteger">
+						<xs:whiteSpace value="collapse"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			
+			<xs:element name="ThresholdSubordsDetail">
+				<xs:annotation>
+					<xs:documentation xml:lang="en">
+						Threshold for number of subordinates for detail invoice.
+						(0=default(no split invoices for hierarchy))
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:nonNegativeInteger">
+						<xs:whiteSpace value="collapse"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+
+			<xs:element name="SubARItemsIncluded" type="switchinv">
+				<xs:annotation>
+					<xs:documentation xml:lang="en">
+						Indicates whether Subordinate account invoice includes AR items or not.
+						(0- default , AR items not included and 1 - AR items included)
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+                        
+			<xs:element name="PromotionDetailDisplay" type="switchinv">
+                        	<xs:annotation>
+                                	<xs:documentation xml:lang="en">
+                                        	Indicates whether promotion details should be shown on the invoice.
+                                        	(1- default , show promotion details and 0 - Do not show promotion details)
+                                	</xs:documentation>
+                        	</xs:annotation>
+                        </xs:element>
+
+			<xs:element name="EnableInvoicingIntegration" type="switchinv">
+                        	<xs:annotation>
+                                	<xs:documentation xml:lang="en">
+                                        	Enable/Disable BRM-BIP integration for final invoice document generation.
+                                        	Parameter values can be 0 (disable), 1 (enable). Default is 0 (disabled).
+                                	</xs:documentation>
+                        	</xs:annotation>
+                        </xs:element>
+			
+			<xs:element name="InvoiceStorageType">
+                        	<xs:annotation>
+                                	<xs:documentation xml:lang="en">
+                                        	Format of invoice which needs to be stored in BRM database.
+                                        	Parameter values can be 0 (flist), 1 (xml). Default is 0 (flist).
+                                	</xs:documentation>
+                        	</xs:annotation>
+				<xs:simpleType>
+                        		<xs:restriction base="xs:nonNegativeInteger">
+                                		<xs:whiteSpace value="collapse"/>
+                                	</xs:restriction>
+                        	</xs:simpleType>	
+                        </xs:element>
+			<xs:element name="InOperatorSize">
+                        	<xs:annotation>
+                                	<xs:documentation xml:lang="en">
+						IN operator size in sql statement limited by string length. 
+                                        	Parameter values can be based on database capacity. Default value is 500. It cannot be more than 500 but can be less than 500. 
+                                	</xs:documentation>
+                        	</xs:annotation>
+				<xs:simpleType>
+                                        <xs:restriction base="xs:nonNegativeInteger">
+                                                <xs:whiteSpace value="collapse"/>
+                                        </xs:restriction>
+                                </xs:simpleType>
+                        </xs:element>
+
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:simpleType name="switchinv">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="enabled"/>
+			<xs:enumeration value="disabled"/>
+			<xs:whiteSpace value="collapse"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+</xs:schema>

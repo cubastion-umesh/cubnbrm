@@ -1,0 +1,980 @@
+D Wed Sep 30 11:00:27 2015  cubnbrm1  cm_proxy:1334  qm_main.c(18):1686 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	"cm_proxy" started at "Wed Sep 30 11:00:27 2015"
+D Wed Sep 30 11:00:27 2015  cubnbrm1  cm_proxy:1343  pcm_tbls.c(21):313 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	libpcmext.so Library initialized
+D Wed Sep 30 11:00:27 2015  cubnbrm1  cm_proxy:1343  pcm_tbls.c(21):316 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	PCMEXT initialized with 0 function failures
+D Wed Sep 30 11:00:27 2015  cubnbrm1  cm_proxy:1341  pcm_tbls.c(21):313 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	libpcmext.so Library initialized
+D Wed Sep 30 11:00:27 2015  cubnbrm1  cm_proxy:1341  pcm_tbls.c(21):316 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	PCMEXT initialized with 0 function failures
+D Wed Sep 30 11:00:27 2015  cubnbrm1  cm_proxy:1339  pcm_tbls.c(21):313 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	libpcmext.so Library initialized
+D Wed Sep 30 11:00:27 2015  cubnbrm1  cm_proxy:1339  pcm_tbls.c(21):316 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	PCMEXT initialized with 0 function failures
+D Wed Sep 30 11:00:27 2015  cubnbrm1  cm_proxy:1337  pcm_tbls.c(21):313 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	libpcmext.so Library initialized
+D Wed Sep 30 11:00:27 2015  cubnbrm1  cm_proxy:1337  pcm_tbls.c(21):316 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	PCMEXT initialized with 0 function failures
+D Wed Sep 30 11:00:27 2015  cubnbrm1  cm_proxy:1342  pcm_tbls.c(21):313 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	libpcmext.so Library initialized
+D Wed Sep 30 11:00:27 2015  cubnbrm1  cm_proxy:1342  pcm_tbls.c(21):316 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	PCMEXT initialized with 0 function failures
+D Wed Sep 30 11:00:27 2015  cubnbrm1  cm_proxy:1336  pcm_tbls.c(21):313 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	libpcmext.so Library initialized
+D Wed Sep 30 11:00:27 2015  cubnbrm1  cm_proxy:1336  pcm_tbls.c(21):316 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	PCMEXT initialized with 0 function failures
+D Wed Sep 30 11:00:27 2015  cubnbrm1  cm_proxy:1340  pcm_tbls.c(21):313 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	libpcmext.so Library initialized
+D Wed Sep 30 11:00:27 2015  cubnbrm1  cm_proxy:1340  pcm_tbls.c(21):316 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	PCMEXT initialized with 0 function failures
+D Wed Sep 30 11:00:27 2015  cubnbrm1  cm_proxy:1338  pcm_tbls.c(21):313 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	libpcmext.so Library initialized
+D Wed Sep 30 11:00:27 2015  cubnbrm1  cm_proxy:1338  pcm_tbls.c(21):316 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	PCMEXT initialized with 0 function failures
+W Wed Sep 30 11:00:27 2015  cubnbrm1  cm_proxy:1341  pcpst.c(82):360 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED, err=111
+W Wed Sep 30 11:00:27 2015  cubnbrm1  cm_proxy:1341  pcpst.c(82):1910 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED,  returned ebufp->pin_err=27
+E Wed Sep 30 11:00:27 2015  cubnbrm1  cm_proxy:1341  pcpst.c(82):1950 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	(1341): pcp_connect(), connecting - failed
+W Wed Sep 30 11:00:27 2015  cubnbrm1  cm_proxy:1343  pcpst.c(82):360 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED, err=111
+W Wed Sep 30 11:00:27 2015  cubnbrm1  cm_proxy:1343  pcpst.c(82):1910 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED,  returned ebufp->pin_err=27
+E Wed Sep 30 11:00:27 2015  cubnbrm1  cm_proxy:1343  pcpst.c(82):1950 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	(1343): pcp_connect(), connecting - failed
+W Wed Sep 30 11:00:27 2015  cubnbrm1  cm_proxy:1339  pcpst.c(82):360 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED, err=111
+W Wed Sep 30 11:00:27 2015  cubnbrm1  cm_proxy:1339  pcpst.c(82):1910 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED,  returned ebufp->pin_err=27
+E Wed Sep 30 11:00:27 2015  cubnbrm1  cm_proxy:1339  pcpst.c(82):1950 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	(1339): pcp_connect(), connecting - failed
+W Wed Sep 30 11:00:27 2015  cubnbrm1  cm_proxy:1342  pcpst.c(82):360 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED, err=111
+W Wed Sep 30 11:00:27 2015  cubnbrm1  cm_proxy:1342  pcpst.c(82):1910 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED,  returned ebufp->pin_err=27
+E Wed Sep 30 11:00:27 2015  cubnbrm1  cm_proxy:1342  pcpst.c(82):1950 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	(1342): pcp_connect(), connecting - failed
+W Wed Sep 30 11:00:27 2015  cubnbrm1  cm_proxy:1337  pcpst.c(82):360 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED, err=111
+W Wed Sep 30 11:00:27 2015  cubnbrm1  cm_proxy:1337  pcpst.c(82):1910 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED,  returned ebufp->pin_err=27
+E Wed Sep 30 11:00:27 2015  cubnbrm1  cm_proxy:1337  pcpst.c(82):1950 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	(1337): pcp_connect(), connecting - failed
+E Wed Sep 30 11:00:27 2015  cubnbrm1  cm_proxy:1342  pcm.c(57):192 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:00:27 2015  cubnbrm1  cm_proxy:1342  pcm_conn.c(6):282 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	pcm_connect: bad pcm_context_open, err 27
+W Wed Sep 30 11:00:27 2015  cubnbrm1  cm_proxy:1340  pcpst.c(82):360 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED, err=111
+W Wed Sep 30 11:00:27 2015  cubnbrm1  cm_proxy:1340  pcpst.c(82):1910 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED,  returned ebufp->pin_err=27
+E Wed Sep 30 11:00:27 2015  cubnbrm1  cm_proxy:1340  pcpst.c(82):1950 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	(1340): pcp_connect(), connecting - failed
+E Wed Sep 30 11:00:27 2015  cubnbrm1  cm_proxy:1343  pcm.c(57):192 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:00:27 2015  cubnbrm1  cm_proxy:1343  pcm_conn.c(6):282 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	pcm_connect: bad pcm_context_open, err 27
+W Wed Sep 30 11:00:27 2015  cubnbrm1  cm_proxy:1336  pcpst.c(82):360 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED, err=111
+W Wed Sep 30 11:00:27 2015  cubnbrm1  cm_proxy:1336  pcpst.c(82):1910 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED,  returned ebufp->pin_err=27
+E Wed Sep 30 11:00:27 2015  cubnbrm1  cm_proxy:1336  pcpst.c(82):1950 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	(1336): pcp_connect(), connecting - failed
+E Wed Sep 30 11:00:27 2015  cubnbrm1  cm_proxy:1341  pcm.c(57):192 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:00:27 2015  cubnbrm1  cm_proxy:1341  pcm_conn.c(6):282 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	pcm_connect: bad pcm_context_open, err 27
+E Wed Sep 30 11:00:27 2015  cubnbrm1  cm_proxy:1339  pcm.c(57):192 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:00:27 2015  cubnbrm1  cm_proxy:1339  pcm_conn.c(6):282 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	pcm_connect: bad pcm_context_open, err 27
+E Wed Sep 30 11:00:27 2015  cubnbrm1  cm_proxy:1337  pcm.c(57):192 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:00:27 2015  cubnbrm1  cm_proxy:1337  pcm_conn.c(6):282 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	pcm_connect: bad pcm_context_open, err 27
+W Wed Sep 30 11:00:27 2015  cubnbrm1  cm_proxy:1338  pcpst.c(82):360 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED, err=111
+W Wed Sep 30 11:00:27 2015  cubnbrm1  cm_proxy:1338  pcpst.c(82):1910 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED,  returned ebufp->pin_err=27
+E Wed Sep 30 11:00:27 2015  cubnbrm1  cm_proxy:1338  pcpst.c(82):1950 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	(1338): pcp_connect(), connecting - failed
+E Wed Sep 30 11:00:27 2015  cubnbrm1  cm_proxy:1340  pcm.c(57):192 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:00:27 2015  cubnbrm1  cm_proxy:1340  pcm_conn.c(6):282 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	pcm_connect: bad pcm_context_open, err 27
+E Wed Sep 30 11:00:27 2015  cubnbrm1  cm_proxy:1336  pcm.c(57):192 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:00:27 2015  cubnbrm1  cm_proxy:1336  pcm_conn.c(6):282 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	pcm_connect: bad pcm_context_open, err 27
+E Wed Sep 30 11:00:27 2015  cubnbrm1  cm_proxy:1338  pcm.c(57):192 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:00:27 2015  cubnbrm1  cm_proxy:1338  pcm_conn.c(6):282 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	pcm_connect: bad pcm_context_open, err 27
+E Wed Sep 30 11:00:27 2015  cubnbrm1  cm_proxy:1344  qfe_proxy.c(6):546 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	ERROR: bad gethostbyname() for "somehost"
+E Wed Sep 30 11:00:27 2015  cubnbrm1  cm_proxy:1344  qfe_proxy.c(6):958 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	qfe_proxy: bad parse_allowed() by fe #0
+E Wed Sep 30 11:00:27 2015  cubnbrm1  cm_proxy:1344  qm_front.c(11):549 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	QMfe(0): bad init, err 4
+E Wed Sep 30 11:00:27 2015  cubnbrm1  cm_proxy:1334  qm_main.c(18):772 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	QMm: sigchld: front end 0, pid 1344, stat 0x400
+E Wed Sep 30 11:00:27 2015  cubnbrm1  cm_proxy:1334  qm_main.c(18):788 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	QMm: DDD sigchld: pin_conf restart_children OK. 0
+W Wed Sep 30 11:00:29 2015  cubnbrm1  cm_proxy:1342  pcpst.c(82):360 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED, err=111
+W Wed Sep 30 11:00:29 2015  cubnbrm1  cm_proxy:1342  pcpst.c(82):1910 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED,  returned ebufp->pin_err=27
+E Wed Sep 30 11:00:29 2015  cubnbrm1  cm_proxy:1342  pcpst.c(82):1950 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	(1342): pcp_connect(), connecting - failed
+E Wed Sep 30 11:00:29 2015  cubnbrm1  cm_proxy:1342  pcm.c(57):192 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:00:29 2015  cubnbrm1  cm_proxy:1342  pcm_conn.c(6):282 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	pcm_connect: bad pcm_context_open, err 27
+W Wed Sep 30 11:00:29 2015  cubnbrm1  cm_proxy:1343  pcpst.c(82):360 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED, err=111
+W Wed Sep 30 11:00:29 2015  cubnbrm1  cm_proxy:1343  pcpst.c(82):1910 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED,  returned ebufp->pin_err=27
+E Wed Sep 30 11:00:29 2015  cubnbrm1  cm_proxy:1343  pcpst.c(82):1950 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	(1343): pcp_connect(), connecting - failed
+E Wed Sep 30 11:00:29 2015  cubnbrm1  cm_proxy:1343  pcm.c(57):192 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:00:29 2015  cubnbrm1  cm_proxy:1343  pcm_conn.c(6):282 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	pcm_connect: bad pcm_context_open, err 27
+W Wed Sep 30 11:00:29 2015  cubnbrm1  cm_proxy:1341  pcpst.c(82):360 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED, err=111
+W Wed Sep 30 11:00:29 2015  cubnbrm1  cm_proxy:1341  pcpst.c(82):1910 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED,  returned ebufp->pin_err=27
+E Wed Sep 30 11:00:29 2015  cubnbrm1  cm_proxy:1341  pcpst.c(82):1950 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	(1341): pcp_connect(), connecting - failed
+E Wed Sep 30 11:00:29 2015  cubnbrm1  cm_proxy:1341  pcm.c(57):192 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:00:29 2015  cubnbrm1  cm_proxy:1341  pcm_conn.c(6):282 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	pcm_connect: bad pcm_context_open, err 27
+W Wed Sep 30 11:00:29 2015  cubnbrm1  cm_proxy:1339  pcpst.c(82):360 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED, err=111
+W Wed Sep 30 11:00:29 2015  cubnbrm1  cm_proxy:1339  pcpst.c(82):1910 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED,  returned ebufp->pin_err=27
+E Wed Sep 30 11:00:29 2015  cubnbrm1  cm_proxy:1339  pcpst.c(82):1950 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	(1339): pcp_connect(), connecting - failed
+E Wed Sep 30 11:00:29 2015  cubnbrm1  cm_proxy:1339  pcm.c(57):192 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:00:29 2015  cubnbrm1  cm_proxy:1339  pcm_conn.c(6):282 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	pcm_connect: bad pcm_context_open, err 27
+W Wed Sep 30 11:00:29 2015  cubnbrm1  cm_proxy:1337  pcpst.c(82):360 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED, err=111
+W Wed Sep 30 11:00:29 2015  cubnbrm1  cm_proxy:1337  pcpst.c(82):1910 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED,  returned ebufp->pin_err=27
+E Wed Sep 30 11:00:29 2015  cubnbrm1  cm_proxy:1337  pcpst.c(82):1950 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	(1337): pcp_connect(), connecting - failed
+E Wed Sep 30 11:00:29 2015  cubnbrm1  cm_proxy:1337  pcm.c(57):192 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:00:29 2015  cubnbrm1  cm_proxy:1337  pcm_conn.c(6):282 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	pcm_connect: bad pcm_context_open, err 27
+W Wed Sep 30 11:00:29 2015  cubnbrm1  cm_proxy:1340  pcpst.c(82):360 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED, err=111
+W Wed Sep 30 11:00:29 2015  cubnbrm1  cm_proxy:1340  pcpst.c(82):1910 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED,  returned ebufp->pin_err=27
+E Wed Sep 30 11:00:29 2015  cubnbrm1  cm_proxy:1340  pcpst.c(82):1950 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	(1340): pcp_connect(), connecting - failed
+E Wed Sep 30 11:00:29 2015  cubnbrm1  cm_proxy:1340  pcm.c(57):192 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:00:29 2015  cubnbrm1  cm_proxy:1340  pcm_conn.c(6):282 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	pcm_connect: bad pcm_context_open, err 27
+W Wed Sep 30 11:00:29 2015  cubnbrm1  cm_proxy:1336  pcpst.c(82):360 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED, err=111
+W Wed Sep 30 11:00:29 2015  cubnbrm1  cm_proxy:1336  pcpst.c(82):1910 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED,  returned ebufp->pin_err=27
+E Wed Sep 30 11:00:29 2015  cubnbrm1  cm_proxy:1336  pcpst.c(82):1950 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	(1336): pcp_connect(), connecting - failed
+E Wed Sep 30 11:00:29 2015  cubnbrm1  cm_proxy:1336  pcm.c(57):192 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:00:29 2015  cubnbrm1  cm_proxy:1336  pcm_conn.c(6):282 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	pcm_connect: bad pcm_context_open, err 27
+W Wed Sep 30 11:00:29 2015  cubnbrm1  cm_proxy:1338  pcpst.c(82):360 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED, err=111
+W Wed Sep 30 11:00:29 2015  cubnbrm1  cm_proxy:1338  pcpst.c(82):1910 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED,  returned ebufp->pin_err=27
+E Wed Sep 30 11:00:29 2015  cubnbrm1  cm_proxy:1338  pcpst.c(82):1950 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	(1338): pcp_connect(), connecting - failed
+E Wed Sep 30 11:00:29 2015  cubnbrm1  cm_proxy:1338  pcm.c(57):192 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:00:29 2015  cubnbrm1  cm_proxy:1338  pcm_conn.c(6):282 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	pcm_connect: bad pcm_context_open, err 27
+W Wed Sep 30 11:00:33 2015  cubnbrm1  cm_proxy:1342  pcpst.c(82):360 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED, err=111
+W Wed Sep 30 11:00:33 2015  cubnbrm1  cm_proxy:1342  pcpst.c(82):1910 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED,  returned ebufp->pin_err=27
+E Wed Sep 30 11:00:33 2015  cubnbrm1  cm_proxy:1342  pcpst.c(82):1950 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	(1342): pcp_connect(), connecting - failed
+E Wed Sep 30 11:00:33 2015  cubnbrm1  cm_proxy:1342  pcm.c(57):192 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:00:33 2015  cubnbrm1  cm_proxy:1342  pcm_conn.c(6):282 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	pcm_connect: bad pcm_context_open, err 27
+W Wed Sep 30 11:00:33 2015  cubnbrm1  cm_proxy:1343  pcpst.c(82):360 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED, err=111
+W Wed Sep 30 11:00:33 2015  cubnbrm1  cm_proxy:1343  pcpst.c(82):1910 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED,  returned ebufp->pin_err=27
+E Wed Sep 30 11:00:33 2015  cubnbrm1  cm_proxy:1343  pcpst.c(82):1950 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	(1343): pcp_connect(), connecting - failed
+E Wed Sep 30 11:00:33 2015  cubnbrm1  cm_proxy:1343  pcm.c(57):192 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:00:33 2015  cubnbrm1  cm_proxy:1343  pcm_conn.c(6):282 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	pcm_connect: bad pcm_context_open, err 27
+W Wed Sep 30 11:00:33 2015  cubnbrm1  cm_proxy:1341  pcpst.c(82):360 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED, err=111
+W Wed Sep 30 11:00:33 2015  cubnbrm1  cm_proxy:1341  pcpst.c(82):1910 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED,  returned ebufp->pin_err=27
+E Wed Sep 30 11:00:33 2015  cubnbrm1  cm_proxy:1341  pcpst.c(82):1950 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	(1341): pcp_connect(), connecting - failed
+E Wed Sep 30 11:00:33 2015  cubnbrm1  cm_proxy:1341  pcm.c(57):192 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:00:33 2015  cubnbrm1  cm_proxy:1341  pcm_conn.c(6):282 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	pcm_connect: bad pcm_context_open, err 27
+W Wed Sep 30 11:00:33 2015  cubnbrm1  cm_proxy:1339  pcpst.c(82):360 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED, err=111
+W Wed Sep 30 11:00:33 2015  cubnbrm1  cm_proxy:1339  pcpst.c(82):1910 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED,  returned ebufp->pin_err=27
+E Wed Sep 30 11:00:33 2015  cubnbrm1  cm_proxy:1339  pcpst.c(82):1950 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	(1339): pcp_connect(), connecting - failed
+E Wed Sep 30 11:00:33 2015  cubnbrm1  cm_proxy:1339  pcm.c(57):192 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:00:33 2015  cubnbrm1  cm_proxy:1339  pcm_conn.c(6):282 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	pcm_connect: bad pcm_context_open, err 27
+W Wed Sep 30 11:00:33 2015  cubnbrm1  cm_proxy:1337  pcpst.c(82):360 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED, err=111
+W Wed Sep 30 11:00:33 2015  cubnbrm1  cm_proxy:1337  pcpst.c(82):1910 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED,  returned ebufp->pin_err=27
+E Wed Sep 30 11:00:33 2015  cubnbrm1  cm_proxy:1337  pcpst.c(82):1950 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	(1337): pcp_connect(), connecting - failed
+E Wed Sep 30 11:00:33 2015  cubnbrm1  cm_proxy:1337  pcm.c(57):192 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:00:33 2015  cubnbrm1  cm_proxy:1337  pcm_conn.c(6):282 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	pcm_connect: bad pcm_context_open, err 27
+W Wed Sep 30 11:00:33 2015  cubnbrm1  cm_proxy:1340  pcpst.c(82):360 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED, err=111
+W Wed Sep 30 11:00:33 2015  cubnbrm1  cm_proxy:1340  pcpst.c(82):1910 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED,  returned ebufp->pin_err=27
+E Wed Sep 30 11:00:33 2015  cubnbrm1  cm_proxy:1340  pcpst.c(82):1950 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	(1340): pcp_connect(), connecting - failed
+E Wed Sep 30 11:00:33 2015  cubnbrm1  cm_proxy:1340  pcm.c(57):192 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:00:33 2015  cubnbrm1  cm_proxy:1340  pcm_conn.c(6):282 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	pcm_connect: bad pcm_context_open, err 27
+W Wed Sep 30 11:00:33 2015  cubnbrm1  cm_proxy:1336  pcpst.c(82):360 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED, err=111
+W Wed Sep 30 11:00:33 2015  cubnbrm1  cm_proxy:1336  pcpst.c(82):1910 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED,  returned ebufp->pin_err=27
+E Wed Sep 30 11:00:33 2015  cubnbrm1  cm_proxy:1336  pcpst.c(82):1950 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	(1336): pcp_connect(), connecting - failed
+E Wed Sep 30 11:00:33 2015  cubnbrm1  cm_proxy:1336  pcm.c(57):192 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:00:33 2015  cubnbrm1  cm_proxy:1336  pcm_conn.c(6):282 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	pcm_connect: bad pcm_context_open, err 27
+W Wed Sep 30 11:00:33 2015  cubnbrm1  cm_proxy:1338  pcpst.c(82):360 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED, err=111
+W Wed Sep 30 11:00:33 2015  cubnbrm1  cm_proxy:1338  pcpst.c(82):1910 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED,  returned ebufp->pin_err=27
+E Wed Sep 30 11:00:33 2015  cubnbrm1  cm_proxy:1338  pcpst.c(82):1950 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	(1338): pcp_connect(), connecting - failed
+E Wed Sep 30 11:00:33 2015  cubnbrm1  cm_proxy:1338  pcm.c(57):192 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:00:33 2015  cubnbrm1  cm_proxy:1338  pcm_conn.c(6):282 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	pcm_connect: bad pcm_context_open, err 27
+W Wed Sep 30 11:00:39 2015  cubnbrm1  cm_proxy:1342  pcpst.c(82):360 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED, err=111
+W Wed Sep 30 11:00:39 2015  cubnbrm1  cm_proxy:1342  pcpst.c(82):1910 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED,  returned ebufp->pin_err=27
+E Wed Sep 30 11:00:39 2015  cubnbrm1  cm_proxy:1342  pcpst.c(82):1950 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	(1342): pcp_connect(), connecting - failed
+E Wed Sep 30 11:00:39 2015  cubnbrm1  cm_proxy:1342  pcm.c(57):192 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:00:39 2015  cubnbrm1  cm_proxy:1342  pcm_conn.c(6):282 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	pcm_connect: bad pcm_context_open, err 27
+W Wed Sep 30 11:00:39 2015  cubnbrm1  cm_proxy:1343  pcpst.c(82):360 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED, err=111
+W Wed Sep 30 11:00:39 2015  cubnbrm1  cm_proxy:1343  pcpst.c(82):1910 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED,  returned ebufp->pin_err=27
+E Wed Sep 30 11:00:39 2015  cubnbrm1  cm_proxy:1343  pcpst.c(82):1950 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	(1343): pcp_connect(), connecting - failed
+E Wed Sep 30 11:00:39 2015  cubnbrm1  cm_proxy:1343  pcm.c(57):192 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:00:39 2015  cubnbrm1  cm_proxy:1343  pcm_conn.c(6):282 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	pcm_connect: bad pcm_context_open, err 27
+W Wed Sep 30 11:00:39 2015  cubnbrm1  cm_proxy:1341  pcpst.c(82):360 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED, err=111
+W Wed Sep 30 11:00:39 2015  cubnbrm1  cm_proxy:1341  pcpst.c(82):1910 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED,  returned ebufp->pin_err=27
+E Wed Sep 30 11:00:39 2015  cubnbrm1  cm_proxy:1341  pcpst.c(82):1950 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	(1341): pcp_connect(), connecting - failed
+E Wed Sep 30 11:00:39 2015  cubnbrm1  cm_proxy:1341  pcm.c(57):192 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:00:39 2015  cubnbrm1  cm_proxy:1341  pcm_conn.c(6):282 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	pcm_connect: bad pcm_context_open, err 27
+W Wed Sep 30 11:00:39 2015  cubnbrm1  cm_proxy:1339  pcpst.c(82):360 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED, err=111
+W Wed Sep 30 11:00:39 2015  cubnbrm1  cm_proxy:1339  pcpst.c(82):1910 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED,  returned ebufp->pin_err=27
+E Wed Sep 30 11:00:39 2015  cubnbrm1  cm_proxy:1339  pcpst.c(82):1950 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	(1339): pcp_connect(), connecting - failed
+E Wed Sep 30 11:00:39 2015  cubnbrm1  cm_proxy:1339  pcm.c(57):192 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:00:39 2015  cubnbrm1  cm_proxy:1339  pcm_conn.c(6):282 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	pcm_connect: bad pcm_context_open, err 27
+W Wed Sep 30 11:00:39 2015  cubnbrm1  cm_proxy:1337  pcpst.c(82):360 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED, err=111
+W Wed Sep 30 11:00:39 2015  cubnbrm1  cm_proxy:1337  pcpst.c(82):1910 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED,  returned ebufp->pin_err=27
+E Wed Sep 30 11:00:39 2015  cubnbrm1  cm_proxy:1337  pcpst.c(82):1950 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	(1337): pcp_connect(), connecting - failed
+E Wed Sep 30 11:00:39 2015  cubnbrm1  cm_proxy:1337  pcm.c(57):192 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:00:39 2015  cubnbrm1  cm_proxy:1337  pcm_conn.c(6):282 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	pcm_connect: bad pcm_context_open, err 27
+W Wed Sep 30 11:00:39 2015  cubnbrm1  cm_proxy:1340  pcpst.c(82):360 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED, err=111
+W Wed Sep 30 11:00:39 2015  cubnbrm1  cm_proxy:1340  pcpst.c(82):1910 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED,  returned ebufp->pin_err=27
+E Wed Sep 30 11:00:39 2015  cubnbrm1  cm_proxy:1340  pcpst.c(82):1950 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	(1340): pcp_connect(), connecting - failed
+E Wed Sep 30 11:00:39 2015  cubnbrm1  cm_proxy:1340  pcm.c(57):192 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:00:39 2015  cubnbrm1  cm_proxy:1340  pcm_conn.c(6):282 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	pcm_connect: bad pcm_context_open, err 27
+W Wed Sep 30 11:00:39 2015  cubnbrm1  cm_proxy:1336  pcpst.c(82):360 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED, err=111
+W Wed Sep 30 11:00:39 2015  cubnbrm1  cm_proxy:1336  pcpst.c(82):1910 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED,  returned ebufp->pin_err=27
+E Wed Sep 30 11:00:39 2015  cubnbrm1  cm_proxy:1336  pcpst.c(82):1950 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	(1336): pcp_connect(), connecting - failed
+E Wed Sep 30 11:00:39 2015  cubnbrm1  cm_proxy:1336  pcm.c(57):192 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:00:39 2015  cubnbrm1  cm_proxy:1336  pcm_conn.c(6):282 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	pcm_connect: bad pcm_context_open, err 27
+W Wed Sep 30 11:00:39 2015  cubnbrm1  cm_proxy:1338  pcpst.c(82):360 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED, err=111
+W Wed Sep 30 11:00:39 2015  cubnbrm1  cm_proxy:1338  pcpst.c(82):1910 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED,  returned ebufp->pin_err=27
+E Wed Sep 30 11:00:39 2015  cubnbrm1  cm_proxy:1338  pcpst.c(82):1950 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	(1338): pcp_connect(), connecting - failed
+E Wed Sep 30 11:00:39 2015  cubnbrm1  cm_proxy:1338  pcm.c(57):192 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:00:39 2015  cubnbrm1  cm_proxy:1338  pcm_conn.c(6):282 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	pcm_connect: bad pcm_context_open, err 27
+W Wed Sep 30 11:00:47 2015  cubnbrm1  cm_proxy:1342  pcpst.c(82):360 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED, err=111
+W Wed Sep 30 11:00:47 2015  cubnbrm1  cm_proxy:1342  pcpst.c(82):1910 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED,  returned ebufp->pin_err=27
+E Wed Sep 30 11:00:47 2015  cubnbrm1  cm_proxy:1342  pcpst.c(82):1950 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	(1342): pcp_connect(), connecting - failed
+E Wed Sep 30 11:00:47 2015  cubnbrm1  cm_proxy:1342  pcm.c(57):192 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:00:47 2015  cubnbrm1  cm_proxy:1342  pcm_conn.c(6):282 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	pcm_connect: bad pcm_context_open, err 27
+W Wed Sep 30 11:00:47 2015  cubnbrm1  cm_proxy:1343  pcpst.c(82):360 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED, err=111
+W Wed Sep 30 11:00:47 2015  cubnbrm1  cm_proxy:1343  pcpst.c(82):1910 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED,  returned ebufp->pin_err=27
+E Wed Sep 30 11:00:47 2015  cubnbrm1  cm_proxy:1343  pcpst.c(82):1950 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	(1343): pcp_connect(), connecting - failed
+E Wed Sep 30 11:00:47 2015  cubnbrm1  cm_proxy:1343  pcm.c(57):192 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:00:47 2015  cubnbrm1  cm_proxy:1343  pcm_conn.c(6):282 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	pcm_connect: bad pcm_context_open, err 27
+W Wed Sep 30 11:00:47 2015  cubnbrm1  cm_proxy:1341  pcpst.c(82):360 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED, err=111
+W Wed Sep 30 11:00:47 2015  cubnbrm1  cm_proxy:1341  pcpst.c(82):1910 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED,  returned ebufp->pin_err=27
+E Wed Sep 30 11:00:47 2015  cubnbrm1  cm_proxy:1341  pcpst.c(82):1950 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	(1341): pcp_connect(), connecting - failed
+E Wed Sep 30 11:00:47 2015  cubnbrm1  cm_proxy:1341  pcm.c(57):192 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:00:47 2015  cubnbrm1  cm_proxy:1341  pcm_conn.c(6):282 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	pcm_connect: bad pcm_context_open, err 27
+W Wed Sep 30 11:00:47 2015  cubnbrm1  cm_proxy:1339  pcpst.c(82):360 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED, err=111
+W Wed Sep 30 11:00:47 2015  cubnbrm1  cm_proxy:1339  pcpst.c(82):1910 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED,  returned ebufp->pin_err=27
+E Wed Sep 30 11:00:47 2015  cubnbrm1  cm_proxy:1339  pcpst.c(82):1950 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	(1339): pcp_connect(), connecting - failed
+E Wed Sep 30 11:00:47 2015  cubnbrm1  cm_proxy:1339  pcm.c(57):192 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:00:47 2015  cubnbrm1  cm_proxy:1339  pcm_conn.c(6):282 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	pcm_connect: bad pcm_context_open, err 27
+W Wed Sep 30 11:00:47 2015  cubnbrm1  cm_proxy:1337  pcpst.c(82):360 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED, err=111
+W Wed Sep 30 11:00:47 2015  cubnbrm1  cm_proxy:1337  pcpst.c(82):1910 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED,  returned ebufp->pin_err=27
+E Wed Sep 30 11:00:47 2015  cubnbrm1  cm_proxy:1337  pcpst.c(82):1950 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	(1337): pcp_connect(), connecting - failed
+E Wed Sep 30 11:00:47 2015  cubnbrm1  cm_proxy:1337  pcm.c(57):192 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:00:47 2015  cubnbrm1  cm_proxy:1337  pcm_conn.c(6):282 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	pcm_connect: bad pcm_context_open, err 27
+W Wed Sep 30 11:00:47 2015  cubnbrm1  cm_proxy:1340  pcpst.c(82):360 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED, err=111
+W Wed Sep 30 11:00:47 2015  cubnbrm1  cm_proxy:1340  pcpst.c(82):1910 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED,  returned ebufp->pin_err=27
+E Wed Sep 30 11:00:47 2015  cubnbrm1  cm_proxy:1340  pcpst.c(82):1950 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	(1340): pcp_connect(), connecting - failed
+E Wed Sep 30 11:00:47 2015  cubnbrm1  cm_proxy:1340  pcm.c(57):192 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:00:47 2015  cubnbrm1  cm_proxy:1340  pcm_conn.c(6):282 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	pcm_connect: bad pcm_context_open, err 27
+W Wed Sep 30 11:00:47 2015  cubnbrm1  cm_proxy:1336  pcpst.c(82):360 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED, err=111
+W Wed Sep 30 11:00:47 2015  cubnbrm1  cm_proxy:1336  pcpst.c(82):1910 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED,  returned ebufp->pin_err=27
+E Wed Sep 30 11:00:47 2015  cubnbrm1  cm_proxy:1336  pcpst.c(82):1950 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	(1336): pcp_connect(), connecting - failed
+E Wed Sep 30 11:00:47 2015  cubnbrm1  cm_proxy:1336  pcm.c(57):192 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:00:47 2015  cubnbrm1  cm_proxy:1336  pcm_conn.c(6):282 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	pcm_connect: bad pcm_context_open, err 27
+W Wed Sep 30 11:00:47 2015  cubnbrm1  cm_proxy:1338  pcpst.c(82):360 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED, err=111
+W Wed Sep 30 11:00:47 2015  cubnbrm1  cm_proxy:1338  pcpst.c(82):1910 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED,  returned ebufp->pin_err=27
+E Wed Sep 30 11:00:47 2015  cubnbrm1  cm_proxy:1338  pcpst.c(82):1950 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	(1338): pcp_connect(), connecting - failed
+E Wed Sep 30 11:00:47 2015  cubnbrm1  cm_proxy:1338  pcm.c(57):192 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:00:47 2015  cubnbrm1  cm_proxy:1338  pcm_conn.c(6):282 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	pcm_connect: bad pcm_context_open, err 27
+W Wed Sep 30 11:00:57 2015  cubnbrm1  cm_proxy:1342  pcpst.c(82):360 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED, err=111
+W Wed Sep 30 11:00:57 2015  cubnbrm1  cm_proxy:1342  pcpst.c(82):1910 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED,  returned ebufp->pin_err=27
+E Wed Sep 30 11:00:57 2015  cubnbrm1  cm_proxy:1342  pcpst.c(82):1950 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	(1342): pcp_connect(), connecting - failed
+E Wed Sep 30 11:00:57 2015  cubnbrm1  cm_proxy:1342  pcm.c(57):192 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:00:57 2015  cubnbrm1  cm_proxy:1342  pcm_conn.c(6):282 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	pcm_connect: bad pcm_context_open, err 27
+W Wed Sep 30 11:00:57 2015  cubnbrm1  cm_proxy:1343  pcpst.c(82):360 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED, err=111
+W Wed Sep 30 11:00:57 2015  cubnbrm1  cm_proxy:1343  pcpst.c(82):1910 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED,  returned ebufp->pin_err=27
+E Wed Sep 30 11:00:57 2015  cubnbrm1  cm_proxy:1343  pcpst.c(82):1950 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	(1343): pcp_connect(), connecting - failed
+E Wed Sep 30 11:00:57 2015  cubnbrm1  cm_proxy:1343  pcm.c(57):192 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:00:57 2015  cubnbrm1  cm_proxy:1343  pcm_conn.c(6):282 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	pcm_connect: bad pcm_context_open, err 27
+W Wed Sep 30 11:00:57 2015  cubnbrm1  cm_proxy:1341  pcpst.c(82):360 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED, err=111
+W Wed Sep 30 11:00:57 2015  cubnbrm1  cm_proxy:1341  pcpst.c(82):1910 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED,  returned ebufp->pin_err=27
+E Wed Sep 30 11:00:57 2015  cubnbrm1  cm_proxy:1341  pcpst.c(82):1950 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	(1341): pcp_connect(), connecting - failed
+E Wed Sep 30 11:00:57 2015  cubnbrm1  cm_proxy:1341  pcm.c(57):192 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:00:57 2015  cubnbrm1  cm_proxy:1341  pcm_conn.c(6):282 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	pcm_connect: bad pcm_context_open, err 27
+W Wed Sep 30 11:00:57 2015  cubnbrm1  cm_proxy:1339  pcpst.c(82):360 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED, err=111
+W Wed Sep 30 11:00:57 2015  cubnbrm1  cm_proxy:1339  pcpst.c(82):1910 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED,  returned ebufp->pin_err=27
+E Wed Sep 30 11:00:57 2015  cubnbrm1  cm_proxy:1339  pcpst.c(82):1950 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	(1339): pcp_connect(), connecting - failed
+E Wed Sep 30 11:00:57 2015  cubnbrm1  cm_proxy:1339  pcm.c(57):192 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:00:57 2015  cubnbrm1  cm_proxy:1339  pcm_conn.c(6):282 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	pcm_connect: bad pcm_context_open, err 27
+W Wed Sep 30 11:00:57 2015  cubnbrm1  cm_proxy:1337  pcpst.c(82):360 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED, err=111
+W Wed Sep 30 11:00:57 2015  cubnbrm1  cm_proxy:1337  pcpst.c(82):1910 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED,  returned ebufp->pin_err=27
+E Wed Sep 30 11:00:57 2015  cubnbrm1  cm_proxy:1337  pcpst.c(82):1950 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	(1337): pcp_connect(), connecting - failed
+E Wed Sep 30 11:00:57 2015  cubnbrm1  cm_proxy:1337  pcm.c(57):192 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:00:57 2015  cubnbrm1  cm_proxy:1337  pcm_conn.c(6):282 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	pcm_connect: bad pcm_context_open, err 27
+W Wed Sep 30 11:00:57 2015  cubnbrm1  cm_proxy:1340  pcpst.c(82):360 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED, err=111
+W Wed Sep 30 11:00:57 2015  cubnbrm1  cm_proxy:1340  pcpst.c(82):1910 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED,  returned ebufp->pin_err=27
+E Wed Sep 30 11:00:57 2015  cubnbrm1  cm_proxy:1340  pcpst.c(82):1950 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	(1340): pcp_connect(), connecting - failed
+E Wed Sep 30 11:00:57 2015  cubnbrm1  cm_proxy:1340  pcm.c(57):192 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:00:57 2015  cubnbrm1  cm_proxy:1340  pcm_conn.c(6):282 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	pcm_connect: bad pcm_context_open, err 27
+W Wed Sep 30 11:00:57 2015  cubnbrm1  cm_proxy:1336  pcpst.c(82):360 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED, err=111
+W Wed Sep 30 11:00:57 2015  cubnbrm1  cm_proxy:1336  pcpst.c(82):1910 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED,  returned ebufp->pin_err=27
+E Wed Sep 30 11:00:57 2015  cubnbrm1  cm_proxy:1336  pcpst.c(82):1950 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	(1336): pcp_connect(), connecting - failed
+E Wed Sep 30 11:00:57 2015  cubnbrm1  cm_proxy:1336  pcm.c(57):192 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:00:57 2015  cubnbrm1  cm_proxy:1336  pcm_conn.c(6):282 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	pcm_connect: bad pcm_context_open, err 27
+W Wed Sep 30 11:00:57 2015  cubnbrm1  cm_proxy:1338  pcpst.c(82):360 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED, err=111
+W Wed Sep 30 11:00:57 2015  cubnbrm1  cm_proxy:1338  pcpst.c(82):1910 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED,  returned ebufp->pin_err=27
+E Wed Sep 30 11:00:57 2015  cubnbrm1  cm_proxy:1338  pcpst.c(82):1950 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	(1338): pcp_connect(), connecting - failed
+E Wed Sep 30 11:00:57 2015  cubnbrm1  cm_proxy:1338  pcm.c(57):192 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:00:57 2015  cubnbrm1  cm_proxy:1338  pcm_conn.c(6):282 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	pcm_connect: bad pcm_context_open, err 27
+W Wed Sep 30 11:01:09 2015  cubnbrm1  cm_proxy:1342  pcpst.c(82):360 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED, err=111
+W Wed Sep 30 11:01:09 2015  cubnbrm1  cm_proxy:1342  pcpst.c(82):1910 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED,  returned ebufp->pin_err=27
+E Wed Sep 30 11:01:09 2015  cubnbrm1  cm_proxy:1342  pcpst.c(82):1950 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	(1342): pcp_connect(), connecting - failed
+E Wed Sep 30 11:01:09 2015  cubnbrm1  cm_proxy:1342  pcm.c(57):192 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:01:09 2015  cubnbrm1  cm_proxy:1342  pcm_conn.c(6):282 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	pcm_connect: bad pcm_context_open, err 27
+W Wed Sep 30 11:01:09 2015  cubnbrm1  cm_proxy:1343  pcpst.c(82):360 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED, err=111
+W Wed Sep 30 11:01:09 2015  cubnbrm1  cm_proxy:1343  pcpst.c(82):1910 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED,  returned ebufp->pin_err=27
+E Wed Sep 30 11:01:09 2015  cubnbrm1  cm_proxy:1343  pcpst.c(82):1950 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	(1343): pcp_connect(), connecting - failed
+E Wed Sep 30 11:01:09 2015  cubnbrm1  cm_proxy:1343  pcm.c(57):192 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:01:09 2015  cubnbrm1  cm_proxy:1343  pcm_conn.c(6):282 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	pcm_connect: bad pcm_context_open, err 27
+W Wed Sep 30 11:01:09 2015  cubnbrm1  cm_proxy:1341  pcpst.c(82):360 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED, err=111
+W Wed Sep 30 11:01:09 2015  cubnbrm1  cm_proxy:1341  pcpst.c(82):1910 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED,  returned ebufp->pin_err=27
+E Wed Sep 30 11:01:09 2015  cubnbrm1  cm_proxy:1341  pcpst.c(82):1950 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	(1341): pcp_connect(), connecting - failed
+E Wed Sep 30 11:01:09 2015  cubnbrm1  cm_proxy:1341  pcm.c(57):192 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:01:09 2015  cubnbrm1  cm_proxy:1341  pcm_conn.c(6):282 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	pcm_connect: bad pcm_context_open, err 27
+W Wed Sep 30 11:01:09 2015  cubnbrm1  cm_proxy:1339  pcpst.c(82):360 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED, err=111
+W Wed Sep 30 11:01:09 2015  cubnbrm1  cm_proxy:1339  pcpst.c(82):1910 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED,  returned ebufp->pin_err=27
+E Wed Sep 30 11:01:09 2015  cubnbrm1  cm_proxy:1339  pcpst.c(82):1950 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	(1339): pcp_connect(), connecting - failed
+E Wed Sep 30 11:01:09 2015  cubnbrm1  cm_proxy:1339  pcm.c(57):192 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:01:09 2015  cubnbrm1  cm_proxy:1339  pcm_conn.c(6):282 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	pcm_connect: bad pcm_context_open, err 27
+W Wed Sep 30 11:01:09 2015  cubnbrm1  cm_proxy:1337  pcpst.c(82):360 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED, err=111
+W Wed Sep 30 11:01:09 2015  cubnbrm1  cm_proxy:1337  pcpst.c(82):1910 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED,  returned ebufp->pin_err=27
+E Wed Sep 30 11:01:09 2015  cubnbrm1  cm_proxy:1337  pcpst.c(82):1950 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	(1337): pcp_connect(), connecting - failed
+E Wed Sep 30 11:01:09 2015  cubnbrm1  cm_proxy:1337  pcm.c(57):192 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:01:09 2015  cubnbrm1  cm_proxy:1337  pcm_conn.c(6):282 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	pcm_connect: bad pcm_context_open, err 27
+W Wed Sep 30 11:01:09 2015  cubnbrm1  cm_proxy:1340  pcpst.c(82):360 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED, err=111
+W Wed Sep 30 11:01:09 2015  cubnbrm1  cm_proxy:1340  pcpst.c(82):1910 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED,  returned ebufp->pin_err=27
+E Wed Sep 30 11:01:09 2015  cubnbrm1  cm_proxy:1340  pcpst.c(82):1950 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	(1340): pcp_connect(), connecting - failed
+E Wed Sep 30 11:01:09 2015  cubnbrm1  cm_proxy:1340  pcm.c(57):192 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:01:09 2015  cubnbrm1  cm_proxy:1340  pcm_conn.c(6):282 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	pcm_connect: bad pcm_context_open, err 27
+W Wed Sep 30 11:01:09 2015  cubnbrm1  cm_proxy:1336  pcpst.c(82):360 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED, err=111
+W Wed Sep 30 11:01:09 2015  cubnbrm1  cm_proxy:1336  pcpst.c(82):1910 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED,  returned ebufp->pin_err=27
+E Wed Sep 30 11:01:09 2015  cubnbrm1  cm_proxy:1336  pcpst.c(82):1950 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	(1336): pcp_connect(), connecting - failed
+E Wed Sep 30 11:01:09 2015  cubnbrm1  cm_proxy:1336  pcm.c(57):192 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:01:09 2015  cubnbrm1  cm_proxy:1336  pcm_conn.c(6):282 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	pcm_connect: bad pcm_context_open, err 27
+W Wed Sep 30 11:01:09 2015  cubnbrm1  cm_proxy:1338  pcpst.c(82):360 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED, err=111
+W Wed Sep 30 11:01:09 2015  cubnbrm1  cm_proxy:1338  pcpst.c(82):1910 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED,  returned ebufp->pin_err=27
+E Wed Sep 30 11:01:09 2015  cubnbrm1  cm_proxy:1338  pcpst.c(82):1950 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	(1338): pcp_connect(), connecting - failed
+E Wed Sep 30 11:01:09 2015  cubnbrm1  cm_proxy:1338  pcm.c(57):192 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:01:09 2015  cubnbrm1  cm_proxy:1338  pcm_conn.c(6):282 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	pcm_connect: bad pcm_context_open, err 27
+W Wed Sep 30 11:01:23 2015  cubnbrm1  cm_proxy:1342  pcpst.c(82):360 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED, err=111
+W Wed Sep 30 11:01:23 2015  cubnbrm1  cm_proxy:1342  pcpst.c(82):1910 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED,  returned ebufp->pin_err=27
+E Wed Sep 30 11:01:23 2015  cubnbrm1  cm_proxy:1342  pcpst.c(82):1950 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	(1342): pcp_connect(), connecting - failed
+E Wed Sep 30 11:01:23 2015  cubnbrm1  cm_proxy:1342  pcm.c(57):192 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:01:23 2015  cubnbrm1  cm_proxy:1342  pcm_conn.c(6):282 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	pcm_connect: bad pcm_context_open, err 27
+W Wed Sep 30 11:01:23 2015  cubnbrm1  cm_proxy:1343  pcpst.c(82):360 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED, err=111
+W Wed Sep 30 11:01:23 2015  cubnbrm1  cm_proxy:1343  pcpst.c(82):1910 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED,  returned ebufp->pin_err=27
+E Wed Sep 30 11:01:23 2015  cubnbrm1  cm_proxy:1343  pcpst.c(82):1950 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	(1343): pcp_connect(), connecting - failed
+E Wed Sep 30 11:01:23 2015  cubnbrm1  cm_proxy:1343  pcm.c(57):192 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:01:23 2015  cubnbrm1  cm_proxy:1343  pcm_conn.c(6):282 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	pcm_connect: bad pcm_context_open, err 27
+W Wed Sep 30 11:01:23 2015  cubnbrm1  cm_proxy:1341  pcpst.c(82):360 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED, err=111
+W Wed Sep 30 11:01:23 2015  cubnbrm1  cm_proxy:1341  pcpst.c(82):1910 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED,  returned ebufp->pin_err=27
+E Wed Sep 30 11:01:23 2015  cubnbrm1  cm_proxy:1341  pcpst.c(82):1950 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	(1341): pcp_connect(), connecting - failed
+E Wed Sep 30 11:01:23 2015  cubnbrm1  cm_proxy:1341  pcm.c(57):192 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:01:23 2015  cubnbrm1  cm_proxy:1341  pcm_conn.c(6):282 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	pcm_connect: bad pcm_context_open, err 27
+W Wed Sep 30 11:01:23 2015  cubnbrm1  cm_proxy:1339  pcpst.c(82):360 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED, err=111
+W Wed Sep 30 11:01:23 2015  cubnbrm1  cm_proxy:1339  pcpst.c(82):1910 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED,  returned ebufp->pin_err=27
+E Wed Sep 30 11:01:23 2015  cubnbrm1  cm_proxy:1339  pcpst.c(82):1950 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	(1339): pcp_connect(), connecting - failed
+E Wed Sep 30 11:01:23 2015  cubnbrm1  cm_proxy:1339  pcm.c(57):192 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:01:23 2015  cubnbrm1  cm_proxy:1339  pcm_conn.c(6):282 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	pcm_connect: bad pcm_context_open, err 27
+W Wed Sep 30 11:01:23 2015  cubnbrm1  cm_proxy:1337  pcpst.c(82):360 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED, err=111
+W Wed Sep 30 11:01:23 2015  cubnbrm1  cm_proxy:1337  pcpst.c(82):1910 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED,  returned ebufp->pin_err=27
+E Wed Sep 30 11:01:23 2015  cubnbrm1  cm_proxy:1337  pcpst.c(82):1950 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	(1337): pcp_connect(), connecting - failed
+E Wed Sep 30 11:01:23 2015  cubnbrm1  cm_proxy:1337  pcm.c(57):192 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:01:23 2015  cubnbrm1  cm_proxy:1337  pcm_conn.c(6):282 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	pcm_connect: bad pcm_context_open, err 27
+W Wed Sep 30 11:01:23 2015  cubnbrm1  cm_proxy:1340  pcpst.c(82):360 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED, err=111
+W Wed Sep 30 11:01:23 2015  cubnbrm1  cm_proxy:1340  pcpst.c(82):1910 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED,  returned ebufp->pin_err=27
+E Wed Sep 30 11:01:23 2015  cubnbrm1  cm_proxy:1340  pcpst.c(82):1950 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	(1340): pcp_connect(), connecting - failed
+E Wed Sep 30 11:01:23 2015  cubnbrm1  cm_proxy:1340  pcm.c(57):192 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:01:23 2015  cubnbrm1  cm_proxy:1340  pcm_conn.c(6):282 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	pcm_connect: bad pcm_context_open, err 27
+W Wed Sep 30 11:01:23 2015  cubnbrm1  cm_proxy:1336  pcpst.c(82):360 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED, err=111
+W Wed Sep 30 11:01:23 2015  cubnbrm1  cm_proxy:1336  pcpst.c(82):1910 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED,  returned ebufp->pin_err=27
+E Wed Sep 30 11:01:23 2015  cubnbrm1  cm_proxy:1336  pcpst.c(82):1950 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	(1336): pcp_connect(), connecting - failed
+E Wed Sep 30 11:01:23 2015  cubnbrm1  cm_proxy:1336  pcm.c(57):192 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:01:23 2015  cubnbrm1  cm_proxy:1336  pcm_conn.c(6):282 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	pcm_connect: bad pcm_context_open, err 27
+W Wed Sep 30 11:01:23 2015  cubnbrm1  cm_proxy:1338  pcpst.c(82):360 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED, err=111
+W Wed Sep 30 11:01:23 2015  cubnbrm1  cm_proxy:1338  pcpst.c(82):1910 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	connect to host=cubnbrm1, port=11960 FAILED,  returned ebufp->pin_err=27
+E Wed Sep 30 11:01:23 2015  cubnbrm1  cm_proxy:1338  pcpst.c(82):1950 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	(1338): pcp_connect(), connecting - failed
+E Wed Sep 30 11:01:23 2015  cubnbrm1  cm_proxy:1338  pcm.c(57):192 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	Connect open failed in pcm_context_open
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:01:23 2015  cubnbrm1  cm_proxy:1338  pcm_conn.c(6):282 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	pcm_connect: bad pcm_context_open, err 27
+E Wed Sep 30 11:01:39 2015  cubnbrm1  cm_proxy:1342  qbe_proxy.c:127 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	be_init_process: bad connect
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:01:39 2015  cubnbrm1  cm_proxy:1342  qm_back.c(9):231 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	QMbe#6: can't do qm_if_be_init_process(), err 27
+E Wed Sep 30 11:01:39 2015  cubnbrm1  cm_proxy:1342  qm_main.c(18):2976 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	QM back end [0] qm_die: "", errno 111
+E Wed Sep 30 11:01:39 2015  cubnbrm1  cm_proxy:1334  qm_main.c(18):772 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	QMm: sigchld: back end 6, pid 1342, stat 0x100
+E Wed Sep 30 11:01:39 2015  cubnbrm1  cm_proxy:1334  qm_main.c(18):788 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	QMm: DDD sigchld: pin_conf restart_children OK. 0
+E Wed Sep 30 11:01:39 2015  cubnbrm1  cm_proxy:1343  qbe_proxy.c:127 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	be_init_process: bad connect
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:01:39 2015  cubnbrm1  cm_proxy:1343  qm_back.c(9):231 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	QMbe#7: can't do qm_if_be_init_process(), err 27
+E Wed Sep 30 11:01:39 2015  cubnbrm1  cm_proxy:1343  qm_main.c(18):2976 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	QM back end [0] qm_die: "", errno 111
+E Wed Sep 30 11:01:39 2015  cubnbrm1  cm_proxy:1334  qm_main.c(18):772 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	QMm: sigchld: back end 7, pid 1343, stat 0x100
+E Wed Sep 30 11:01:39 2015  cubnbrm1  cm_proxy:1334  qm_main.c(18):788 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	QMm: DDD sigchld: pin_conf restart_children OK. 0
+E Wed Sep 30 11:01:39 2015  cubnbrm1  cm_proxy:1341  qbe_proxy.c:127 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	be_init_process: bad connect
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:01:39 2015  cubnbrm1  cm_proxy:1341  qm_back.c(9):231 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	QMbe#5: can't do qm_if_be_init_process(), err 27
+E Wed Sep 30 11:01:39 2015  cubnbrm1  cm_proxy:1341  qm_main.c(18):2976 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	QM back end [0] qm_die: "", errno 111
+E Wed Sep 30 11:01:39 2015  cubnbrm1  cm_proxy:1334  qm_main.c(18):772 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	QMm: sigchld: back end 5, pid 1341, stat 0x100
+E Wed Sep 30 11:01:39 2015  cubnbrm1  cm_proxy:1334  qm_main.c(18):788 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	QMm: DDD sigchld: pin_conf restart_children OK. 0
+E Wed Sep 30 11:01:39 2015  cubnbrm1  cm_proxy:1339  qbe_proxy.c:127 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	be_init_process: bad connect
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:01:39 2015  cubnbrm1  cm_proxy:1339  qm_back.c(9):231 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	QMbe#3: can't do qm_if_be_init_process(), err 27
+E Wed Sep 30 11:01:39 2015  cubnbrm1  cm_proxy:1339  qm_main.c(18):2976 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	QM back end [0] qm_die: "", errno 111
+E Wed Sep 30 11:01:39 2015  cubnbrm1  cm_proxy:1334  qm_main.c(18):772 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	QMm: sigchld: back end 3, pid 1339, stat 0x100
+E Wed Sep 30 11:01:39 2015  cubnbrm1  cm_proxy:1334  qm_main.c(18):788 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	QMm: DDD sigchld: pin_conf restart_children OK. 0
+E Wed Sep 30 11:01:39 2015  cubnbrm1  cm_proxy:1337  qbe_proxy.c:127 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	be_init_process: bad connect
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:01:39 2015  cubnbrm1  cm_proxy:1337  qm_back.c(9):231 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	QMbe#1: can't do qm_if_be_init_process(), err 27
+E Wed Sep 30 11:01:39 2015  cubnbrm1  cm_proxy:1337  qm_main.c(18):2976 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	QM back end [0] qm_die: "", errno 111
+E Wed Sep 30 11:01:39 2015  cubnbrm1  cm_proxy:1334  qm_main.c(18):772 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	QMm: sigchld: back end 1, pid 1337, stat 0x100
+E Wed Sep 30 11:01:39 2015  cubnbrm1  cm_proxy:1334  qm_main.c(18):788 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	QMm: DDD sigchld: pin_conf restart_children OK. 0
+E Wed Sep 30 11:01:39 2015  cubnbrm1  cm_proxy:1340  qbe_proxy.c:127 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	be_init_process: bad connect
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:01:39 2015  cubnbrm1  cm_proxy:1340  qm_back.c(9):231 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	QMbe#4: can't do qm_if_be_init_process(), err 27
+E Wed Sep 30 11:01:39 2015  cubnbrm1  cm_proxy:1340  qm_main.c(18):2976 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	QM back end [0] qm_die: "", errno 111
+E Wed Sep 30 11:01:39 2015  cubnbrm1  cm_proxy:1334  qm_main.c(18):772 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	QMm: sigchld: back end 4, pid 1340, stat 0x100
+E Wed Sep 30 11:01:39 2015  cubnbrm1  cm_proxy:1334  qm_main.c(18):788 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	QMm: DDD sigchld: pin_conf restart_children OK. 0
+E Wed Sep 30 11:01:39 2015  cubnbrm1  cm_proxy:1336  qbe_proxy.c:127 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	be_init_process: bad connect
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:01:39 2015  cubnbrm1  cm_proxy:1336  qm_back.c(9):231 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	QMbe#0: can't do qm_if_be_init_process(), err 27
+E Wed Sep 30 11:01:39 2015  cubnbrm1  cm_proxy:1336  qm_main.c(18):2976 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	QM back end [0] qm_die: "", errno 111
+E Wed Sep 30 11:01:39 2015  cubnbrm1  cm_proxy:1334  qm_main.c(18):772 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	QMm: sigchld: back end 0, pid 1336, stat 0x100
+E Wed Sep 30 11:01:39 2015  cubnbrm1  cm_proxy:1334  qm_main.c(18):788 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	QMm: DDD sigchld: pin_conf restart_children OK. 0
+E Wed Sep 30 11:01:39 2015  cubnbrm1  cm_proxy:1338  qbe_proxy.c:127 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	be_init_process: bad connect
+	<location=PIN_ERRLOC_PCP:2 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NAP_CONNECT_FAILED:27>
+	<field num=0:0,0 recid=0 reserved=111 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:01:39 2015  cubnbrm1  cm_proxy:1338  qm_back.c(9):231 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	QMbe#2: can't do qm_if_be_init_process(), err 27
+E Wed Sep 30 11:01:39 2015  cubnbrm1  cm_proxy:1338  qm_main.c(18):2976 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	QM back end [0] qm_die: "", errno 111
+E Wed Sep 30 11:01:39 2015  cubnbrm1  cm_proxy:1334  qm_main.c(18):772 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	QMm: sigchld: back end 2, pid 1338, stat 0x100
+E Wed Sep 30 11:01:39 2015  cubnbrm1  cm_proxy:1334  qm_main.c(18):788 1:cubnbrm1:cm_proxy:1334:-144267568:0:1443591027:0
+	QMm: DDD sigchld: pin_conf restart_children OK. 0

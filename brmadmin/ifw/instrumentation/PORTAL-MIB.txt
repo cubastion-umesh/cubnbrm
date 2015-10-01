@@ -1,0 +1,791 @@
+PORTAL-MIB DEFINITIONS ::= BEGIN
+
+IMPORTS
+	OBJECT-TYPE, Integer32,
+	MODULE-IDENTITY, enterprises		FROM SNMPv2-SMI
+	DisplayString				FROM SNMPv2-TC
+	MODULE-COMPLIANCE, OBJECT-GROUP		FROM SNMPv2-CONF;
+
+portal MODULE-IDENTITY
+	LAST-UPDATED	"200705030000Z"	-- May 03, 2007
+	ORGANIZATION	"Oracle Corporation"
+	CONTACT-INFO	"www.oracle.com"
+	DESCRIPTION	"The MIB module file defines all objects 
+			that can be used for managing Portal processes."
+	REVISION	"200705030000Z"	-- May 03, 2007
+	DESCRIPTION	"Initial version"
+	::= { enterprises 3512 }
+
+--
+
+components			 OBJECT IDENTIFIER ::= { portal 1 }
+
+--
+
+dmt				 OBJECT IDENTIFIER ::= { components 1 }
+txm				 OBJECT IDENTIFIER ::= { components 2 }
+log				 OBJECT IDENTIFIER ::= { components 3 }
+omf				 OBJECT IDENTIFIER ::= { components 4 }
+mtf				 OBJECT IDENTIFIER ::= { components 5 }
+oal				 OBJECT IDENTIFIER ::= { components 6 }
+dat				 OBJECT IDENTIFIER ::= { components 7 }
+mml				 OBJECT IDENTIFIER ::= { components 8 }
+plg				 OBJECT IDENTIFIER ::= { components 9 }
+fct				 OBJECT IDENTIFIER ::= { components 10 }
+ppl				 OBJECT IDENTIFIER ::= { components 11 }
+
+--
+
+connectionPool			 OBJECT IDENTIFIER ::= { dat 1 }
+connectionMonitor		 OBJECT IDENTIFIER ::= { dat 2 }
+numberPortability		 OBJECT IDENTIFIER ::= { dat 3 }
+dataMigrator			 OBJECT IDENTIFIER ::= { dmt 1 }
+rocSyncManager			 OBJECT IDENTIFIER ::= { dmt 2 }
+poidIdManager			 OBJECT IDENTIFIER ::= { dmt 3 }
+hotStandbyManager		 OBJECT IDENTIFIER ::= { dmt 4 }
+heartBeat			 OBJECT IDENTIFIER ::= { dmt 5 }
+haManager			 OBJECT IDENTIFIER ::= { dmt 6 }
+bulkDataSyncManager		 OBJECT IDENTIFIER ::= { dmt 7 }
+transientObjManager		 OBJECT IDENTIFIER ::= { dmt 8 }
+haRoleMediator			 OBJECT IDENTIFIER ::= { dmt 9 }
+opcodePlugIn			 OBJECT IDENTIFIER ::= { fct 1 }
+streamITO			 OBJECT IDENTIFIER ::= { log 1 }
+memoryManager			 OBJECT IDENTIFIER ::= { mml 1 }
+highAvailabilityManager		 OBJECT IDENTIFIER ::= { mtf 1 }
+connectionConfigurations	 OBJECT IDENTIFIER ::= { mtf 2 }
+threadCheckManager		 OBJECT IDENTIFIER ::= { mtf 3 }
+threadPool			 OBJECT IDENTIFIER ::= { mtf 4 }
+stateManager			 OBJECT IDENTIFIER ::= { mtf 5 }
+storageManager			 OBJECT IDENTIFIER ::= { oal 1 }
+indexController			 OBJECT IDENTIFIER ::= { oal 2 }
+poidIndexController		 OBJECT IDENTIFIER ::= { oal 3 }
+http				 OBJECT IDENTIFIER ::= { omf 1 }
+snmp				 OBJECT IDENTIFIER ::= { omf 2 }
+diagnosticDataHandler		 OBJECT IDENTIFIER ::= { omf 3 }
+statistic			 OBJECT IDENTIFIER ::= { plg 1 }
+inputController			 OBJECT IDENTIFIER ::= { ppl 1 }
+transactionManager		 OBJECT IDENTIFIER ::= { txm 1 }
+
+--
+-- processTable
+--
+-- 1.3.6.1.4.1.3512.1.101
+processTable OBJECT-TYPE
+	SYNTAX		SEQUENCE OF ProcessEntry
+	MAX-ACCESS	not-accessible
+	STATUS		current
+	DESCRIPTION	"A List of Portal Processes"
+	::= { components 101 }
+
+-- 1.3.6.1.4.1.3512.1.101.1
+processEntry OBJECT-TYPE
+	SYNTAX		ProcessEntry
+	MAX-ACCESS	not-accessible
+	STATUS		current
+	DESCRIPTION	"An Entry of Portal Process in processTable"
+	INDEX { processIndex }
+	::= { processTable 1 }
+
+ProcessEntry ::= SEQUENCE {
+	processIndex			Integer32,
+	processDescr			DisplayString
+}
+
+-- 1.3.6.1.4.1.3512.1.101.1.1
+processIndex OBJECT-TYPE
+	SYNTAX		Integer32
+	MAX-ACCESS	read-only
+	STATUS		current
+	DESCRIPTION	"Reference Index for Each Observed Process"
+	::= { processEntry 1 }
+
+-- 1.3.6.1.4.1.3512.1.101.1.2
+processDescr OBJECT-TYPE
+	SYNTAX		DisplayString
+	MAX-ACCESS	read-only
+	STATUS		current
+	DESCRIPTION	"Process Description To Be Checked On"
+	::= { processEntry 2 }
+
+
+--
+-- registryTable
+--
+-- 1.3.6.1.4.1.3512.1.102
+registryTable OBJECT-TYPE
+	SYNTAX		SEQUENCE OF RegistryEntry
+	MAX-ACCESS	not-accessible
+	STATUS		current
+	DESCRIPTION	"A List of Registry Names within a Process"
+	::= { components 102 }
+
+-- 1.3.6.1.4.1.3512.1.102.1
+registryEntry OBJECT-TYPE
+	SYNTAX		RegistryEntry
+	MAX-ACCESS	not-accessible
+	STATUS		current
+	DESCRIPTION	"An Entry of Registry Name in registryTable"
+	INDEX { processIndex, registryIndex }
+	::= { registryTable 1 }
+
+RegistryEntry ::= SEQUENCE {
+	registryIndex			Integer32,
+	registryName			DisplayString
+}
+
+-- 1.3.6.1.4.1.3512.1.102.1.1
+registryIndex OBJECT-TYPE
+	SYNTAX		Integer32
+	MAX-ACCESS	read-only
+	STATUS		current
+	DESCRIPTION	"Reference Index for Each Observed Registered Object"
+	::= { registryEntry 1 }
+
+-- 1.3.6.1.4.1.3512.1.102.1.2
+registryName OBJECT-TYPE
+	SYNTAX		DisplayString
+	MAX-ACCESS	read-only
+	STATUS		current
+	DESCRIPTION	"Registered Object Name in the Dotted Notation"
+	::= { registryEntry 2 }
+
+--
+-- snmpInfo
+--
+-- 1.3.6.1.4.1.3512.1.4.2.1
+snmpInfo OBJECT-TYPE
+	SYNTAX		SEQUENCE OF SnmpInfoEntry
+	MAX-ACCESS	not-accessible
+	STATUS		current
+	DESCRIPTION	"Snmp Information"
+	::= { snmp 1 }
+
+-- 1.3.6.1.4.1.3512.1.4.2.1.1
+snmpInfoEntry OBJECT-TYPE
+	SYNTAX		SnmpInfoEntry
+	MAX-ACCESS	not-accessible
+	STATUS		current
+	DESCRIPTION	"An Entry of Snmp Information"
+	INDEX { processIndex, registryIndex, snmpInfoIndex }
+	::= { snmpInfo 1 }
+
+SnmpInfoEntry ::= SEQUENCE {
+	port				Integer32,
+	numSnmpRequests			Integer32,
+	snmpInfoIndex			Integer32
+}
+
+-- 1.3.6.1.4.1.3512.1.4.2.1.1.1
+port OBJECT-TYPE
+	SYNTAX		Integer32
+	MAX-ACCESS	read-only
+	STATUS		current
+	DESCRIPTION	"AgentX Port"
+	::= { snmpInfoEntry 1 }
+
+-- 1.3.6.1.4.1.3512.1.4.2.1.1.2
+numSnmpRequests OBJECT-TYPE
+	SYNTAX		Integer32
+	MAX-ACCESS	read-only
+	STATUS		current
+	DESCRIPTION	"Number of Requests Received"
+	::= { snmpInfoEntry 2 }
+
+-- 1.3.6.1.4.1.3512.1.4.2.1.1.3
+snmpInfoIndex OBJECT-TYPE
+	SYNTAX		Integer32
+	MAX-ACCESS	not-accessible
+	STATUS		current
+	DESCRIPTION	"Snmp Information Index"
+	::= { snmpInfoEntry 3 }
+
+--
+-- snmpTable
+--
+-- 1.3.6.1.4.1.3512.1.4.2.2
+snmpTable OBJECT-TYPE
+	SYNTAX		SEQUENCE OF SnmpTableEntry
+	MAX-ACCESS	not-accessible
+	STATUS		current
+	DESCRIPTION	"Snmp Mib Table Info"
+	::= { snmp 2 }
+
+-- 1.3.6.1.4.1.3512.1.4.2.2.1
+snmpTableEntry OBJECT-TYPE
+	SYNTAX		SnmpTableEntry
+	MAX-ACCESS	not-accessible
+	STATUS		current
+	DESCRIPTION	"Snmp Mib Table Entry"
+	INDEX { processIndex, registryIndex, snmpTableIndex }
+	::= { snmpTable 1 }
+
+SnmpTableEntry ::= SEQUENCE {
+	snmpTableIndex			Integer32,
+	snmpTableOid			DisplayString,
+	snmpTableName			DisplayString,
+	numSnmpGetRequests		Integer32,
+	numSnmpGetNextRequests		Integer32,
+	numSnmpSetRequests		Integer32
+}
+
+-- 1.3.6.1.4.1.3512.1.4.2.2.1.1
+snmpTableIndex OBJECT-TYPE
+	SYNTAX		Integer32
+	MAX-ACCESS	read-only
+	STATUS		current
+	DESCRIPTION	"Snmp Mib Table Index"
+	::= { snmpTableEntry 1 }
+
+-- 1.3.6.1.4.1.3512.1.4.2.2.1.2
+snmpTableOid OBJECT-TYPE
+	SYNTAX		DisplayString
+	MAX-ACCESS	read-only
+	STATUS		current
+	DESCRIPTION	"Snmp Mib Table Oid"
+	::= { snmpTableEntry 2 }
+
+-- 1.3.6.1.4.1.3512.1.4.2.2.1.3
+snmpTableName OBJECT-TYPE
+	SYNTAX		DisplayString
+	MAX-ACCESS	read-only
+	STATUS		current
+	DESCRIPTION	"Mib Table Name"
+	::= { snmpTableEntry 3 }
+
+-- 1.3.6.1.4.1.3512.1.4.2.2.1.4
+numSnmpGetRequests OBJECT-TYPE
+	SYNTAX		Integer32
+	MAX-ACCESS	read-only
+	STATUS		current
+	DESCRIPTION	"Number of 'GET' Requests"
+	::= { snmpTableEntry 4 }
+
+-- 1.3.6.1.4.1.3512.1.4.2.2.1.5
+numSnmpGetNextRequests OBJECT-TYPE
+	SYNTAX		Integer32
+	MAX-ACCESS	read-only
+	STATUS		current
+	DESCRIPTION	"Number of 'GETNEXT' Requests"
+	::= { snmpTableEntry 5 }
+
+-- 1.3.6.1.4.1.3512.1.4.2.2.1.6
+numSnmpSetRequests OBJECT-TYPE
+	SYNTAX		Integer32
+	MAX-ACCESS	read-only
+	STATUS		current
+	DESCRIPTION	"Number of 'SET' Requests"
+	::= { snmpTableEntry 6 }
+
+--
+-- httpInfo
+--
+-- 1.3.6.1.4.1.3512.1.4.1.1
+httpInfo OBJECT-TYPE
+	SYNTAX		SEQUENCE OF HttpInfoEntry
+	MAX-ACCESS	not-accessible
+	STATUS		current
+	DESCRIPTION	"Http Information"
+	::= { http 1 }
+
+-- 1.3.6.1.4.1.3512.1.4.1.1.1
+httpInfoEntry OBJECT-TYPE
+	SYNTAX		HttpInfoEntry
+	MAX-ACCESS	not-accessible
+	STATUS		current
+	DESCRIPTION	"An Entry of Http Information"
+	INDEX { processIndex, registryIndex, httpInfoIndex }
+	::= { httpInfo 1 }
+
+HttpInfoEntry ::= SEQUENCE {
+	port				Integer32,
+	styleSheetName			DisplayString,
+	portalLogoName			DisplayString,
+	numHttpRequests			Integer32,
+	httpInfoIndex			Integer32
+}
+
+-- 1.3.6.1.4.1.3512.1.4.1.1.1.1
+port OBJECT-TYPE
+	SYNTAX		Integer32
+	MAX-ACCESS	read-only
+	STATUS		current
+	DESCRIPTION	"Listening Port"
+	::= { httpInfoEntry 1 }
+
+-- 1.3.6.1.4.1.3512.1.4.1.1.1.2
+styleSheetName OBJECT-TYPE
+	SYNTAX		DisplayString
+	MAX-ACCESS	read-only
+	STATUS		current
+	DESCRIPTION	"Style Sheet Name"
+	::= { httpInfoEntry 2 }
+
+-- 1.3.6.1.4.1.3512.1.4.1.1.1.3
+portalLogoName OBJECT-TYPE
+	SYNTAX		DisplayString
+	MAX-ACCESS	read-only
+	STATUS		current
+	DESCRIPTION	"Portal Logo Name"
+	::= { httpInfoEntry 3 }
+
+-- 1.3.6.1.4.1.3512.1.4.1.1.1.4
+numHttpRequests OBJECT-TYPE
+	SYNTAX		Integer32
+	MAX-ACCESS	read-only
+	STATUS		current
+	DESCRIPTION	"Number of Requests Received"
+	::= { httpInfoEntry 4 }
+
+-- 1.3.6.1.4.1.3512.1.4.1.1.1.5
+httpInfoIndex OBJECT-TYPE
+	SYNTAX		Integer32
+	MAX-ACCESS	not-accessible
+	STATUS		current
+	DESCRIPTION	"Http Information Index"
+	::= { httpInfoEntry 5 }
+
+--
+-- diagnosticDataHandlerGroup
+--
+-- 1.3.6.1.4.1.3512.1.4.3.1
+diagnosticDataHandlerGroup OBJECT-TYPE
+	SYNTAX		SEQUENCE OF DiagnosticDataHandlerGroupEntry
+	MAX-ACCESS	not-accessible
+	STATUS		current
+	DESCRIPTION	"Diagnostic Data Handler"
+	::= { diagnosticDataHandler 1 }
+
+-- 1.3.6.1.4.1.3512.1.4.3.1.1
+diagnosticDataHandlerGroupEntry OBJECT-TYPE
+	SYNTAX		DiagnosticDataHandlerGroupEntry
+	MAX-ACCESS	not-accessible
+	STATUS		current
+	DESCRIPTION	"An Entry of Diagnostic Data Handler"
+	INDEX { processIndex, registryIndex, diagnosticDataHandlerGroupIndex }
+	::= { diagnosticDataHandlerGroup 1 }
+
+DiagnosticDataHandlerGroupEntry ::= SEQUENCE {
+	createSnapshot			DisplayString,
+	diagnosticDataHandlerGroupIndex	Integer32
+}
+
+-- 1.3.6.1.4.1.3512.1.4.3.1.1.1
+createSnapshot OBJECT-TYPE
+	SYNTAX		DisplayString
+	MAX-ACCESS	read-write
+	STATUS		current
+	DESCRIPTION	"Create Snapshot"
+	::= { diagnosticDataHandlerGroupEntry 1 }
+
+-- 1.3.6.1.4.1.3512.1.4.3.1.1.2
+diagnosticDataHandlerGroupIndex OBJECT-TYPE
+	SYNTAX		Integer32
+	MAX-ACCESS	not-accessible
+	STATUS		current
+	DESCRIPTION	"Diagnostic Data Handler Index"
+	::= { diagnosticDataHandlerGroupEntry 2 }
+
+--
+-- inputControllerGroup
+--
+-- 1.3.6.1.4.1.3512.1.11.1.1
+inputControllerGroup OBJECT-TYPE
+	SYNTAX		SEQUENCE OF InputControllerGroupEntry
+	MAX-ACCESS	not-accessible
+	STATUS		current
+	DESCRIPTION	"Input Controller"
+	::= { inputController 1 }
+
+-- 1.3.6.1.4.1.3512.1.11.1.1.1
+inputControllerGroupEntry OBJECT-TYPE
+	SYNTAX		InputControllerGroupEntry
+	MAX-ACCESS	not-accessible
+	STATUS		current
+	DESCRIPTION	"An Entry of Input Controller"
+	INDEX { processIndex, registryIndex, inputControllerGroupIndex }
+	::= { inputControllerGroup 1 }
+
+InputControllerGroupEntry ::= SEQUENCE {
+	maxProcessingTime		DisplayString,
+	minProcessingTime		DisplayString,
+	inputControllerGroupIndex	Integer32
+}
+
+-- 1.3.6.1.4.1.3512.1.11.1.1.1.1
+maxProcessingTime OBJECT-TYPE
+	SYNTAX		DisplayString
+	MAX-ACCESS	read-only
+	STATUS		current
+	DESCRIPTION	"Maximum Processing Time (ns)"
+	::= { inputControllerGroupEntry 1 }
+
+-- 1.3.6.1.4.1.3512.1.11.1.1.1.2
+minProcessingTime OBJECT-TYPE
+	SYNTAX		DisplayString
+	MAX-ACCESS	read-only
+	STATUS		current
+	DESCRIPTION	"Minimum Processing Time (ns)"
+	::= { inputControllerGroupEntry 2 }
+
+-- 1.3.6.1.4.1.3512.1.11.1.1.1.3
+inputControllerGroupIndex OBJECT-TYPE
+	SYNTAX		Integer32
+	MAX-ACCESS	not-accessible
+	STATUS		current
+	DESCRIPTION	"Input Controller Index"
+	::= { inputControllerGroupEntry 3 }
+
+--
+-- processingTimeTable
+--
+-- 1.3.6.1.4.1.3512.1.11.1.2
+processingTimeTable OBJECT-TYPE
+	SYNTAX		SEQUENCE OF ProcessingTimeEntry
+	MAX-ACCESS	not-accessible
+	STATUS		current
+	DESCRIPTION	"Last Processing Times"
+	::= { inputController 2 }
+
+-- 1.3.6.1.4.1.3512.1.11.1.2.1
+processingTimeEntry OBJECT-TYPE
+	SYNTAX		ProcessingTimeEntry
+	MAX-ACCESS	not-accessible
+	STATUS		current
+	DESCRIPTION	"Processing Time Table Entry"
+	INDEX { processIndex, registryIndex, processingTimeTableIndex }
+	::= { processingTimeTable 1 }
+
+ProcessingTimeEntry ::= SEQUENCE {
+	processingTimeTableIndex	Integer32,
+	processingTime			Integer32,
+	timestamp			DisplayString
+}
+
+-- 1.3.6.1.4.1.3512.1.11.1.2.1.1
+processingTimeTableIndex OBJECT-TYPE
+	SYNTAX		Integer32
+	MAX-ACCESS	read-only
+	STATUS		current
+	DESCRIPTION	"Index"
+	::= { processingTimeEntry 1 }
+
+-- 1.3.6.1.4.1.3512.1.11.1.2.1.2
+processingTime OBJECT-TYPE
+	SYNTAX		Integer32
+	MAX-ACCESS	read-only
+	STATUS		current
+	DESCRIPTION	"Processing Time (ns)"
+	::= { processingTimeEntry 2 }
+
+-- 1.3.6.1.4.1.3512.1.11.1.2.1.3
+timestamp OBJECT-TYPE
+	SYNTAX		DisplayString
+	MAX-ACCESS	read-only
+	STATUS		current
+	DESCRIPTION	"Timestamp"
+	::= { processingTimeEntry 3 }
+
+--
+-- statisticGroup
+--
+-- 1.3.6.1.4.1.3512.1.9.1.1
+statisticGroup OBJECT-TYPE
+	SYNTAX		SEQUENCE OF StatisticGroupEntry
+	MAX-ACCESS	not-accessible
+	STATUS		current
+	DESCRIPTION	"Throughput Statistics"
+	::= { statistic 1 }
+
+-- 1.3.6.1.4.1.3512.1.9.1.1.1
+statisticGroupEntry OBJECT-TYPE
+	SYNTAX		StatisticGroupEntry
+	MAX-ACCESS	not-accessible
+	STATUS		current
+	DESCRIPTION	"An Entry of Throughput Statistics"
+	INDEX { processIndex, registryIndex, statisticGroupIndex }
+	::= { statisticGroup 1 }
+
+StatisticGroupEntry ::= SEQUENCE {
+	totalEdrCount			Integer32,
+	totalTxnEdrCount		Integer32,
+	totalProcTime			Integer32,
+	totalTxnCount			Integer32,
+	statisticGroupIndex		Integer32
+}
+
+-- 1.3.6.1.4.1.3512.1.9.1.1.1.1
+totalEdrCount OBJECT-TYPE
+	SYNTAX		Integer32
+	MAX-ACCESS	read-only
+	STATUS		current
+	DESCRIPTION	"Total EDR Count (real-time)"
+	::= { statisticGroupEntry 1 }
+
+-- 1.3.6.1.4.1.3512.1.9.1.1.1.2
+totalTxnEdrCount OBJECT-TYPE
+	SYNTAX		Integer32
+	MAX-ACCESS	read-only
+	STATUS		current
+	DESCRIPTION	"Total EDR Count (after transaction ended)"
+	::= { statisticGroupEntry 2 }
+
+-- 1.3.6.1.4.1.3512.1.9.1.1.1.3
+totalProcTime OBJECT-TYPE
+	SYNTAX		Integer32
+	MAX-ACCESS	read-only
+	STATUS		current
+	DESCRIPTION	"Accumulated Txn Processing Time (sec)"
+	::= { statisticGroupEntry 3 }
+
+-- 1.3.6.1.4.1.3512.1.9.1.1.1.4
+totalTxnCount OBJECT-TYPE
+	SYNTAX		Integer32
+	MAX-ACCESS	read-only
+	STATUS		current
+	DESCRIPTION	"Total Txn Count"
+	::= { statisticGroupEntry 4 }
+
+-- 1.3.6.1.4.1.3512.1.9.1.1.1.5
+statisticGroupIndex OBJECT-TYPE
+	SYNTAX		Integer32
+	MAX-ACCESS	not-accessible
+	STATUS		current
+	DESCRIPTION	"Throughput Statistics Index"
+	::= { statisticGroupEntry 5 }
+
+--
+-- statisticTable
+--
+-- 1.3.6.1.4.1.3512.1.9.1.2
+statisticTable OBJECT-TYPE
+	SYNTAX		SEQUENCE OF StatisticEntry
+	MAX-ACCESS	not-accessible
+	STATUS		current
+	DESCRIPTION	"Last Throughputs"
+	::= { statistic 2 }
+
+-- 1.3.6.1.4.1.3512.1.9.1.2.1
+statisticEntry OBJECT-TYPE
+	SYNTAX		StatisticEntry
+	MAX-ACCESS	not-accessible
+	STATUS		current
+	DESCRIPTION	"Throughput Table Entry"
+	INDEX { processIndex, registryIndex, statisticTableIndex }
+	::= { statisticTable 1 }
+
+StatisticEntry ::= SEQUENCE {
+	statisticTableIndex		Integer32,
+	throughput			Integer32,
+	throughputTimestamp		DisplayString
+}
+
+-- 1.3.6.1.4.1.3512.1.9.1.2.1.1
+statisticTableIndex OBJECT-TYPE
+	SYNTAX		Integer32
+	MAX-ACCESS	read-only
+	STATUS		current
+	DESCRIPTION	"Index"
+	::= { statisticEntry 1 }
+
+-- 1.3.6.1.4.1.3512.1.9.1.2.1.2
+throughput OBJECT-TYPE
+	SYNTAX		Integer32
+	MAX-ACCESS	read-only
+	STATUS		current
+	DESCRIPTION	"Throughput (edrs/sec)"
+	::= { statisticEntry 2 }
+
+-- 1.3.6.1.4.1.3512.1.9.1.2.1.3
+throughputTimestamp OBJECT-TYPE
+	SYNTAX		DisplayString
+	MAX-ACCESS	read-only
+	STATUS		current
+	DESCRIPTION	"Timestamp"
+	::= { statisticEntry 3 }
+
+--
+-- connectionPoolGroup
+--
+-- 1.3.6.1.4.1.3512.1.7.1.1
+connectionPoolGroup OBJECT-TYPE
+	SYNTAX		SEQUENCE OF ConnectionPoolGroupEntry
+	MAX-ACCESS	not-accessible
+	STATUS		current
+	DESCRIPTION	"ConnectionPool Plugin"
+	::= { connectionPool 1 }
+
+-- 1.3.6.1.4.1.3512.1.7.1.1.1
+connectionPoolGroupEntry OBJECT-TYPE
+	SYNTAX		ConnectionPoolGroupEntry
+	MAX-ACCESS	not-accessible
+	STATUS		current
+	DESCRIPTION	"An Entry of ConnectionPool Plugin"
+	INDEX { processIndex, registryIndex, connectionPoolGroupIndex }
+	::= { connectionPoolGroup 1 }
+
+ConnectionPoolGroupEntry ::= SEQUENCE {
+	rebalanceConnection		DisplayString,
+	connectionPoolGroupIndex	Integer32
+}
+
+-- 1.3.6.1.4.1.3512.1.7.1.1.1.1
+rebalanceConnection OBJECT-TYPE
+	SYNTAX		DisplayString
+	MAX-ACCESS	read-write
+	STATUS		current
+	DESCRIPTION	"Re-balance Connection"
+	::= { connectionPoolGroupEntry 1 }
+
+-- 1.3.6.1.4.1.3512.1.7.1.1.1.2
+connectionPoolGroupIndex OBJECT-TYPE
+	SYNTAX		Integer32
+	MAX-ACCESS	not-accessible
+	STATUS		current
+	DESCRIPTION	"ConnectionPool Plugin Index"
+	::= { connectionPoolGroupEntry 2 }
+
+--
+-- connectionMonitorGroup
+--
+-- 1.3.6.1.4.1.3512.1.7.2.1
+connectionMonitorGroup OBJECT-TYPE
+	SYNTAX		SEQUENCE OF ConnectionMonitorGroupEntry
+	MAX-ACCESS	not-accessible
+	STATUS		current
+	DESCRIPTION	"ConnectionMonitor Plugin"
+	::= { connectionMonitor 1 }
+
+-- 1.3.6.1.4.1.3512.1.7.2.1.1
+connectionMonitorGroupEntry OBJECT-TYPE
+	SYNTAX		ConnectionMonitorGroupEntry
+	MAX-ACCESS	not-accessible
+	STATUS		current
+	DESCRIPTION	"An Entry of ConnectionMonitor Plugin"
+	INDEX { processIndex, registryIndex, connectionMonitorGroupIndex }
+	::= { connectionMonitorGroup 1 }
+
+ConnectionMonitorGroupEntry ::= SEQUENCE {
+	sendDPR				DisplayString,
+	connectionMonitorGroupIndex	Integer32
+}
+
+-- 1.3.6.1.4.1.3512.1.7.2.1.1.1
+sendDPR OBJECT-TYPE
+	SYNTAX		DisplayString
+	MAX-ACCESS	read-write
+	STATUS		current
+	DESCRIPTION	"send Disconnect Peer Request"
+	::= { connectionMonitorGroupEntry 1 }
+
+-- 1.3.6.1.4.1.3512.1.7.2.1.1.2
+connectionMonitorGroupIndex OBJECT-TYPE
+	SYNTAX		Integer32
+	MAX-ACCESS	not-accessible
+	STATUS		current
+	DESCRIPTION	"ConnectionMonitor Plugin Index"
+	::= { connectionMonitorGroupEntry 2 }
+
+--
+-- opcodePlugInGroup
+--
+-- 1.3.6.1.4.1.3512.1.10.1.1
+opcodePlugInGroup OBJECT-TYPE
+	SYNTAX		SEQUENCE OF OpcodePlugInGroupEntry
+	MAX-ACCESS	not-accessible
+	STATUS		current
+	DESCRIPTION	"Opcode PlugIn"
+	::= { opcodePlugIn 1 }
+
+-- 1.3.6.1.4.1.3512.1.10.1.1.1
+opcodePlugInGroupEntry OBJECT-TYPE
+	SYNTAX		OpcodePlugInGroupEntry
+	MAX-ACCESS	not-accessible
+	STATUS		current
+	DESCRIPTION	"An Entry of Opcode PlugIn"
+	INDEX { processIndex, registryIndex, opcodePlugInGroupIndex }
+	::= { opcodePlugInGroup 1 }
+
+OpcodePlugInGroupEntry ::= SEQUENCE {
+	totalOpcodeCalls		Integer32,
+	totalLatency			Integer32,
+	opcodePlugInGroupIndex		Integer32
+}
+
+-- 1.3.6.1.4.1.3512.1.10.1.1.1.1
+totalOpcodeCalls OBJECT-TYPE
+	SYNTAX		Integer32
+	MAX-ACCESS	read-only
+	STATUS		current
+	DESCRIPTION	"Total Opcode Calls"
+	::= { opcodePlugInGroupEntry 1 }
+
+-- 1.3.6.1.4.1.3512.1.10.1.1.1.2
+totalLatency OBJECT-TYPE
+	SYNTAX		Integer32
+	MAX-ACCESS	read-only
+	STATUS		current
+	DESCRIPTION	"Accumulated Latency (ns)"
+	::= { opcodePlugInGroupEntry 2 }
+
+-- 1.3.6.1.4.1.3512.1.10.1.1.1.3
+opcodePlugInGroupIndex OBJECT-TYPE
+	SYNTAX		Integer32
+	MAX-ACCESS	not-accessible
+	STATUS		current
+	DESCRIPTION	"Opcode PlugIn Index"
+	::= { opcodePlugInGroupEntry 3 }
+
+--
+-- latencyTable
+--
+-- 1.3.6.1.4.1.3512.1.10.1.2
+latencyTable OBJECT-TYPE
+	SYNTAX		SEQUENCE OF LatencyEntry
+	MAX-ACCESS	not-accessible
+	STATUS		current
+	DESCRIPTION	"Last Latencies"
+	::= { opcodePlugIn 2 }
+
+-- 1.3.6.1.4.1.3512.1.10.1.2.1
+latencyEntry OBJECT-TYPE
+	SYNTAX		LatencyEntry
+	MAX-ACCESS	not-accessible
+	STATUS		current
+	DESCRIPTION	"Opcode Latency Table Entry"
+	INDEX { processIndex, registryIndex, latencyTableIndex }
+	::= { latencyTable 1 }
+
+LatencyEntry ::= SEQUENCE {
+	latencyTableIndex		Integer32,
+	latency				Integer32,
+	latencyTimestamp		DisplayString
+}
+
+-- 1.3.6.1.4.1.3512.1.10.1.2.1.1
+latencyTableIndex OBJECT-TYPE
+	SYNTAX		Integer32
+	MAX-ACCESS	read-only
+	STATUS		current
+	DESCRIPTION	"Index"
+	::= { latencyEntry 1 }
+
+-- 1.3.6.1.4.1.3512.1.10.1.2.1.2
+latency OBJECT-TYPE
+	SYNTAX		Integer32
+	MAX-ACCESS	read-only
+	STATUS		current
+	DESCRIPTION	"Latency (ns)"
+	::= { latencyEntry 2 }
+
+-- 1.3.6.1.4.1.3512.1.10.1.2.1.3
+latencyTimestamp OBJECT-TYPE
+	SYNTAX		DisplayString
+	MAX-ACCESS	read-only
+	STATUS		current
+	DESCRIPTION	"Timestamp"
+	::= { latencyEntry 3 }
+
+
+--
+-- END
+END

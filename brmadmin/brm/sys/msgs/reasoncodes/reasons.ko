@@ -1,0 +1,872 @@
+##########################################################################
+#
+# Copyright (c) 1999, 2011, Oracle and/or its affiliates. All rights reserved. 
+#       This material is the confidential property of Oracle Corporation
+#       or its licensors and may be used, reproduced, stored or transmitted
+#       only in accordance with a valid Oracle license or sublicense agreement.
+#
+##########################################################################
+#
+#   File:  reasons.ko
+#
+#   Description:
+#
+#	This file contains localized string object definitions.
+#
+#	Locale:  ko ( Korean )
+#
+#	Domain:  Reason Codes-Active Status Reasons (version = 2)
+#		 Reason Codes-Charge Reasons  (version = 5)
+#		 Reason Codes-Closed Status Reasons (version = 4)
+#		 Reason Codes-Credit Reasons (version = 8)
+#		 Reason Codes-Credit Limit Reasons (version = 7)
+#		 Reason Codes-Debit Reasons (version = 1)
+#		 Reason Codes-Inactive Status Reasons (version = 3)
+#		 Reason Codes-Refund Reasons (version = 6)
+#		 
+#		 Reason Domains for Payment Processing
+#		 reserved from 13 - 20
+#
+#		 Reason Codes-Failed Payment Reasons (version = 13)
+#		 Reason Codes-Suspense Payment Reasons (version = 14)
+#		 Reason Codes-Payment Suspense Management Action Owner (version = 15)
+#		 Reason Codes-Payment Suspense Management, Reversal Reasons (version = 16)
+#
+#		 Reason Domains for Adjustments, Disputes and settlements
+#		 reserved from 21 - 50
+#
+#		 Reason Codes-Credit Reasons Non-Currency Account
+#			      Adjustments(version = 21)
+#		 Reason Codes-Debit Reasons Non-Currency Account
+#			      Adjustments(version = 22)
+#
+#		 Reason Codes-Credit Reasons Bill Adjustments (version = 23)
+#		 Reason Codes-Debit Reasons Bill Adjustments (version = 24)
+#		 Reason Codes-Credit Reasons Bill Disputes (version = 25)
+#		 Reason Codes-Debit Reasons Bill Disputes (version = 26)
+#		 Reason Codes-Reasons Bill Settlements (version = 27)
+#
+#		 Reason Codes-Credit Reasons Currency Connection
+#			      Adjustments (version = 28)
+#		 Reason Codes-Debit Reasons Currency Connection
+#			      Adjustments (version = 29)
+#		 Reason Codes-Credit Reasons Non-Currency Connection
+#			      Disputes (version = 30)
+#		 Reason Codes-Debit Reasons Non-Currency Connection
+#			      Disputes (version = 31)
+#
+#		 Reason Codes-Credit Reasons Item Adjustments (version = 32)
+#		 Reason Codes-Debit Reasons Item Adjustments (version = 33)
+#		 Reason Codes-Credit Reasons Item Disputes (version = 34)
+#		 Reason Codes-Debit Reasons Item Disputes (version = 35)
+#		 Reason Codes-Reasons Item Settlements (version = 36)
+#		 
+#		 Reason Codes-Credit Reasons Event Adjustments (version = 37)
+#		 Reason Codes-Debit Reasons Event Adjustments (version = 38)
+#		 Reason Codes-Credit Reasons Event Disputes (version = 39)
+#		 Reason Codes-Debit Reasons Event Disputes (version = 40)
+#		 Reason Codes-Reasons Event Settlements (version = 41)
+#		 Reason Codes-Reasons Write-off level (version = 42)
+#		 Reason Codes-Reasons Bill Correction Reasons (version = 43)
+#
+#		 Reason Codes-Others (version = 100)
+#   Rules:
+#
+#	[1] Uniqueness:
+#
+#	    The combination of locale, domain, string ID, and string
+#	    version must uniquely define a string object within the
+#	    universe of all string objects.
+#	    
+#	    NOTE:
+#	    =====
+#	    This uniqueness must be ensured while creating or updating
+#	    this Reason Codes file. If there are duplicate entries,
+#	    the programs behaviour depends on the option used. If the
+#	    -f option is used then the last duplicate string definition
+#	    will overwrite any previous ones. If the -f option is not
+#	    used then, duplicate string definitions will be rejected,
+#	    except for the Event-GLID mappings which are always 
+#	    overwritten.
+#
+#	[2] Locale
+#
+#	    Only one locale may be specified in this file.  The locale
+#	    definition must be the first non-comment statement.
+#
+#	[3] Domain
+#
+#	    There may be multiple domains specified in this file.  The
+#	    domain will apply to all string definitions that follow
+#	    until the next domain definition statement appears.
+#
+#	[4] String Format:
+#
+#	    Within this file all strings must be delimited by an opening
+#	    and closing double-quote character.  The quotes will not be
+#	    part of the string stored in the database.  A double-quote
+#	    character can be an element of the string if it is escaped
+#	    with a backslash, for example "Delete \"unneeded\" files."
+#	    will be stored as "Delete "unneeded" files.".
+#
+#	    Substitution parameters can be specified with %i, where i is
+#	    an integer from 0 to 99.  The percent character can be an
+#	    element of the string if it is escaped with a backslash, for
+#	    example "It is 100\% good.".  Here is an example of an error
+#	    string that specifies one substitution parameter:
+#
+#				File %0 not found.
+#
+#	    If the substitution string is "pin.conf" the formatted
+#	    string will be "File pin.conf not found.".
+#
+#           The STRING and optional HELPSTR are localizable.  This file must be
+#           in UTF-8 encoding. The LOCALE and DOMAIN strings are assumed
+#           to be ASCII (no extended-ASCII characters nor multiple byte
+#           characters are allowed).
+#
+#	[5] String ID:
+#
+#	    A string ID must be unique within a domain.
+#	    
+#	    NOTE:
+#	    =====
+#	    This uniqueness must be ensured while creating or updating
+#	    this Reason Codes file. Please see the note about 
+#	    uniqueness above.
+#
+#	[6] String Version:
+#
+#	    For reason codes, this field will be used to specify the
+#	    domain that the reason belongs to, for example, Credit or 
+#           Debit. The values have been predefined; they must not be 
+#	    changed.
+#
+#	[7] Event to G/L ID mapping:
+#
+#	    These mappings are specified in this file. 
+#
+#	    G/L IDs can now be assigned based on Reason Codes. This is
+#	    currently applicable for Account level adjustments only.
+#
+#	    Events associated with specific Debit or Credit reasons are 
+#	    listed under the corresponding reason code and they start
+#	    with the header "EVENT-GLID" and end with "EVENT-GLID-END".
+#
+#	    In the earlier releases of Infranet, G/L ID mappings
+#	    for pre-rated events could be specified using the 
+#	    Policy Configuration tool. Now these mappings must
+#	    be specified in this file. A new domain named "Others"
+#	    has been created for providing the G/L ID mappings
+#	    for these events. 
+#   
+#	    All the mappings shown are examples and need to be
+#	    changed appropriately during setup.
+#
+##########################################################################
+
+LOCALE = "ko" ;
+
+DOMAIN = "Reason Codes-Active Status Reasons" ;
+STR
+	ID = 1 ;
+	VERSION = 2 ;
+	STRING = "고객의 재활성화 요구" ;
+END
+STR
+	ID = 2 ;
+	VERSION = 2 ;
+	STRING = "연체료가 지불됨" ;
+END
+STR
+	ID = 3 ;
+	VERSION = 2 ;
+	STRING = "신용 카드 사용 가능" ;
+END
+STR
+	ID = 4 ;
+	VERSION = 2 ;
+	STRING = "다른 문제가 해결됨" ;
+END
+
+DOMAIN = "Reason Codes-Charge Reasons" ;
+STR
+	ID = 11 ;
+	VERSION = 5 ;
+	STRING = "계정의 재활성화" ;
+END
+STR
+	ID = 12 ;
+	VERSION = 5 ;
+	STRING = "신용 카드가 허가됨" ;
+END
+STR
+	ID = 13 ;
+	VERSION = 5 ;
+	STRING = "고객의 선불 요청" ;
+END
+STR
+	ID = 14 ;
+	VERSION = 5 ;
+	STRING = "신규 발급된 신용 카드" ;
+END
+
+DOMAIN = "Reason Codes-Closed Status Reasons" ;
+STR
+	ID = 1 ;
+	VERSION = 4 ;
+	STRING = "중복된 계정" ;
+END
+STR
+	ID = 2 ;
+	VERSION = 4 ;
+	STRING = "해당 지역이 아님" ;
+END
+STR
+	ID = 3 ;
+	VERSION = 4 ;
+	STRING = "서비스 불만족" ;
+END
+STR
+	ID = 4 ;
+	VERSION = 4 ;
+	STRING = "회사 정책에 위배됨" ;
+END
+
+DOMAIN = "Reason Codes-Credit Reasons" ;
+STR
+	ID = 1 ;
+	VERSION = 8 ;
+	STRING = "고객의 서비스 불만족" ;
+	EVENT-GLID
+		"/event/billing/adjustment/account"		105 ;
+	EVENT-GLID-END
+END
+STR
+	ID = 2 ;
+	VERSION = 8 ;
+	STRING = "고객이 요금 지급에 대해 알지 못함" ;
+	EVENT-GLID
+		"/event/billing/adjustment/account"		105 ;
+	EVENT-GLID-END
+END
+STR
+	ID = 3 ;
+	VERSION = 8 ;
+	STRING = "실수로 계정의 차변에 기입" ;
+	EVENT-GLID
+		"/event/billing/adjustment/account"		105 ;
+	EVENT-GLID-END
+END
+
+DOMAIN = "Reason Codes-Debit Reasons" ;
+STR
+	ID = 1 ;
+	VERSION = 1 ;
+	STRING = "기술 및 지원 요금" ;
+	EVENT-GLID
+		"/event/billing/adjustment/account"		105 ;
+	EVENT-GLID-END
+END
+STR
+	ID = 2 ;
+	VERSION = 1 ;
+	STRING = "서비스 요금" ;
+	EVENT-GLID
+		"/event/billing/adjustment/account"		105 ;
+	EVENT-GLID-END
+END
+STR
+	ID = 3 ;
+	VERSION = 1 ;
+	STRING = "실수로 계정의 대변에 기입" ;
+	EVENT-GLID
+		"/event/billing/adjustment/account"		105 ;
+	EVENT-GLID-END
+END
+
+DOMAIN = "Reason Codes-Credit Limit Reasons" ;
+STR
+	ID = 1 ;
+	VERSION = 7 ;
+	STRING = "고객의 요청" ;
+END
+STR
+	ID = 2 ;
+	VERSION = 7 ;
+	STRING = "우수 신용, 종종 한도 초과" ;
+END
+STR
+	ID = 3 ;
+	VERSION = 7 ;
+	STRING = "증가된 서비스 요금으로 인한 요구" ;
+END
+STR
+	ID = 4 ;
+	VERSION = 7 ;
+	STRING = "특수한 상황" ;
+END
+
+DOMAIN = "Reason Codes-Inactive Status Reasons" ;
+STR
+	ID = 1 ;
+	VERSION = 3 ;
+	STRING = "고객의 비활성화 요구" ;
+END
+STR
+	ID = 2 ;
+	VERSION = 3 ;
+	STRING = "신용 카드/신용 한도 문제" ;
+END
+STR
+	ID = 3 ;
+	VERSION = 3 ;
+	STRING = "과금 미지불" ;
+END
+STR
+	ID = 4 ;
+	VERSION = 3 ;
+	STRING = "고객의 잘못된 행동" ;
+END
+
+DOMAIN = "Reason Codes-Refund Reasons" ;
+STR
+	ID = 1 ;
+	VERSION = 6 ;
+	STRING = "고객의 서비스 불만족" ;
+END
+STR
+	ID = 2 ;
+	VERSION = 6 ;
+	STRING = "고객이 요금 지급에 대해 알지 못함" ;
+END
+STR
+	ID = 3 ;
+	VERSION = 6 ;
+	STRING = "계정 열기를 거부함" ;
+END
+STR
+	ID = 4 ;
+	VERSION = 6 ;
+	STRING = "실수로 계정에 요금 청구" ;
+END
+
+DOMAIN = "Reason Codes-Insert Action" ;
+STR
+        ID = 1 ;
+        VERSION = 10 ;
+        STRING = "고객이 지정 일자까지 지불하기로 약속";
+END
+STR
+        ID = 2 ;
+        VERSION = 10 ;
+        STRING = "고객과 연락이 되지 않음";
+END
+STR
+        ID = 3 ;
+        VERSION = 10 ;
+        STRING = "고객이 원본 독촉장을 수신하지 않음";
+END
+STR
+        ID = 4 ;
+        VERSION = 10 ;
+        STRING = "고객이 요청에 따라 전화 회신을 주지 않음";
+END
+
+DOMAIN = "Reason Codes-Reschedule Action" ;
+STR
+        ID = 1 ;
+        VERSION = 9 ;
+        STRING = "고객과 연락이 되지 않음";
+END
+STR
+        ID = 2 ;
+        VERSION = 9 ;
+        STRING = "고객이 지정 일자까지 지불하기로 약속";
+END
+STR
+        ID = 3 ;
+        VERSION = 9 ;
+        STRING = "고객이 원본 독촉장을 수신하지 않음";
+END
+STR
+        ID = 4 ;
+        VERSION = 9 ;
+        STRING = "고객이 요청에 따라 전화 회신을 주지 않음";
+END
+
+DOMAIN = "Reason Codes-Exempt Account" ;
+STR
+        ID = 1 ;
+        VERSION = 11 ;
+        STRING = "파산 신�";
+END
+STR
+        ID = 2 ;
+        VERSION = 11 ;
+        STRING = "법률 심리 대기 중";
+END
+STR
+        ID = 3 ;
+        VERSION = 11 ;
+        STRING = "소송 대기 중" ;
+END
+STR
+        ID = 4 ;
+        VERSION = 11 ;
+        STRING = "특수 계약/지불 조건을 포함한 전략 계정";
+END
+
+DOMAIN = "Reason codes-Payment Failure Reasons" ;
+STR
+	ID = 1001 ;
+	VERSION = 13 ;
+	STRING = "부적합한 카드";
+END
+STR
+	ID = 1002 ;
+	VERSION = 13 ;
+	STRING = "잘못된 금액";
+END
+STR
+	ID = 1003 ;
+	VERSION = 13 ;
+	STRING = "알 수 없는 오류";
+END
+STR
+	ID = 1004 ;
+	VERSION = 13 ;
+	STRING = "네트워크 오류";
+END
+STR
+	ID = 1005 ;
+	VERSION = 13 ;
+	STRING = "자금 부족/신용 한도 초과";
+END
+STR
+	ID = 1006 ;
+	VERSION = 13 ;
+	STRING = "카드 거부됨";
+END
+STR
+	ID = 1007 ;
+	VERSION = 13 ;
+	STRING = "발행사가 카드 소지자와 음성 통화를 원함";
+END
+STR
+	ID = 1008 ;
+	VERSION = 13 ;
+	STRING = "승인/거부";
+END
+STR
+	ID = 1009 ;
+	VERSION = 13 ;
+	STRING = "카드 발행사가 카드 반납을 원함";
+END
+STR
+	ID = 1010 ;
+	VERSION = 13 ;
+	STRING = "도난/분실 신고된 카드";
+END
+STR
+	ID = 1011 ;
+	VERSION = 13 ;
+	STRING = "카드 유효기간이 만료됨";
+END
+STR
+	ID = 1012 ;
+	VERSION = 13 ;
+	STRING = "일반 거부 - 발행사가 기타 정보를 제공하지 않음";
+END
+STR
+	ID = 1013 ;
+	VERSION = 13 ;
+	STRING = "카드가 불량이지만 Mod 10 검사 숫자 루틴을 통과함 ";
+END
+STR
+	ID = 1014 ;
+	VERSION = 13 ;
+	STRING = "카드가 만료되었거나 잘못된 일자가 보내짐. 올바른 일자를 확인하십시오.";
+END
+STR
+	ID = 1015 ;
+	VERSION = 13 ;
+	STRING = "발행사가 이러한 종류의 거래를 허용하지 않음";
+END
+STR
+	ID = 1016 ;
+	VERSION = 13 ;
+	STRING = "네트워크에서 금액을 승인하지 않음";
+END
+STR
+	ID = 1017 ;
+	VERSION = 13 ;
+	STRING = "카드가 제한되었음";
+END
+STR
+	ID = 1018 ;
+	VERSION = 13 ;
+	STRING = "Paymentech가 승인 네트워크로부터 응답을 받지 못함";
+END
+STR
+	ID = 1019 ;
+	VERSION = 13 ;
+	STRING = "편집 오류 - AVS 데이터가 부적합함";
+END
+STR
+	ID = 1020 ;
+	VERSION = 13 ;
+	STRING = "부적합한 위치가 지정됨";
+END
+STR
+	ID = 1021 ;
+	VERSION = 13 ;
+	STRING = "부적합한 우편번호가 지정됨";
+END
+STR
+	ID = 1022 ;
+	VERSION = 13 ;
+	STRING = "카드가 불량이지만 Mod 10 검사 숫자 루틴을 통과함 ";
+END
+STR
+	ID = 1023 ;
+	VERSION = 13 ;
+	STRING = "일시 거부";
+END
+STR
+	ID = 1024 ;
+	VERSION = 13 ;
+	STRING = "시스템을 사용할 수 없거나 시간 초과됨";
+END
+STR
+	ID = 1025 ;
+	VERSION = 13 ;
+	STRING = "영구 거부";
+END
+STR
+	ID = 1026 ;
+	VERSION = 13 ;
+	STRING = "부과할 금액 없음";
+END
+STR
+	ID = 1027 ;
+	VERSION = 13 ;
+	STRING = "부적합한 명령";
+END
+STR
+	ID = 1028 ;
+	VERSION = 13 ;
+	STRING = "항목을 선택하지 않음";
+END
+STR
+	ID = 1029 ;
+	VERSION = 13 ;
+	STRING = "부적합한 CVV";
+END
+STR
+	ID = 1030 ;
+	VERSION = 13 ;
+	STRING = "자금 부족/신용 한도 초과";
+END
+STR
+	ID = 1031 ;
+	VERSION = 13 ;
+	STRING = "논리적 문제";
+END
+STR
+	ID = 1032 ;
+	VERSION = 13 ;
+	STRING = "계정의 숫자 형식이 올바르지 않음";
+END
+STR
+	ID = 1033 ;
+	VERSION = 13 ;
+	STRING = "계정 번호에 부적합한 문자가 있음";
+END
+STR
+	ID = 1034 ;
+	VERSION = 13 ;
+	STRING = "발행사 측에 시스템 오류/오작동 발생";
+END
+
+DOMAIN = "Reason codes-Payment Suspense Management" ;
+STR
+	ID = 2999 ;
+	VERSION = 14 ;
+	STRING = "기본 이유 ID";
+	HELPSTR = "이유 ID가 지정되지 않음" ;
+END
+STR
+	ID = 2001 ;
+	VERSION = 14 ;
+	STRING = "계정 번호 없음";
+	HELPSTR = "데이터베이스에서 계정 번호를 찾지 못함" ;
+END
+STR
+	ID = 2002 ;
+	VERSION = 14 ;
+	STRING = "계정 상태가 마감됨 ";
+	HELPSTR = "계정 상태가 마감됨" ;
+END
+STR
+	ID = 2003 ;
+	VERSION = 14 ;
+	STRING = "과금 없음";
+	HELPSTR = "데이터베이스에 과금 없음 " ;
+END
+STR
+	ID = 2004 ;
+	VERSION = 14 ;
+	STRING = "부적합한 거래 ID";
+	HELPSTR = "부적합한 지불 거래 ID가 지정됨" ;
+END
+STR
+	ID = 2005 ;
+	VERSION = 14 ;
+	STRING = "거래 ID 누락";
+	HELPSTR = "미지불의 거래 ID 누락" ;
+END
+STR
+	ID = 2006 ;
+	VERSION = 14 ;
+	STRING  = "재활용에 따른 지불";
+	HELPSTR = "재활용에 따른 지불";
+	EVENT-GLID
+		"/event/billing/payment"		113 ;
+	EVENT-GLID-END
+END
+STR
+	ID = 2007 ;
+	VERSION = 14 ;
+	STRING = "MBI 분배 필요";
+	HELPSTR = "이 지불에 대해 MBI 분배 필요";
+END
+
+DOMAIN = "Reason Codes-Payment Suspense Management Action Owner" ;
+STR
+	ID = 3999 ;
+	VERSION = 15 ;
+	STRING = "기본 작업 소유자 ";
+	HELPSTR = "지불 미정산 관리의 기본 작업 소유자" ;
+END
+
+DOMAIN = "Reason Codes-Payment Suspense Management, Reversal Reasons" ;
+STR
+	ID = 4999 ;
+	VERSION = 16 ;
+	STRING	= "지불을 수정할 수 없음" ;
+	HELPSTR = "지불을 수정할 수 없음" ; 
+	EVENT-GLID
+		"/event/billing/reversal"		112 ;
+	EVENT-GLID-END
+END
+STR
+	ID = 4001 ;
+	VERSION = 16 ;
+	STRING	= "재활용으로 인한 역분개" ;
+	HELPSTR = "재활용으로 인한 역분개" ; 
+	EVENT-GLID
+		"/event/billing/reversal"		113 ;
+	EVENT-GLID-END
+END
+
+DOMAIN = "Reason Codes-Credit Reasons Non-Currency Account Adjustments" ;
+STR
+        ID = 1 ;
+        VERSION = 21 ;
+        STRING = "고객이 서비스에 만족하지 못함";
+END
+
+DOMAIN = "Reason Codes-Debit Reasons Non-Currency Account Adjustments" ;
+STR
+        ID = 1 ;
+        VERSION = 22 ;
+        STRING = "실수로 대변 기입된 계정";
+END
+
+DOMAIN = "Reason Codes-Credit Reasons Bill Adjustments" ;
+STR
+        ID = 1 ;
+        VERSION = 23 ;
+        STRING = "고객이 서비스에 만족하지 못함";
+END
+
+DOMAIN = "Reason Codes-Debit Reasons Bill Adjustments" ;
+STR
+        ID = 1 ;
+        VERSION = 24 ;
+        STRING = "서비스 요금";
+END
+
+DOMAIN = "Reason Codes-Credit Reasons Bill Disputes" ;
+STR
+        ID = 1 ;
+        VERSION = 25 ;
+        STRING = "고객이 서비스에 만족하지 못함";
+END
+
+DOMAIN = "Reason Codes-Debit Reasons Bill Disputes" ;
+STR
+        ID = 1 ;
+        VERSION = 26 ;
+        STRING = "실수로 대변 기입된 과금";
+END
+
+DOMAIN = "Reason Codes-Reasons Bill Settlements" ;
+STR
+        ID = 1 ;
+        VERSION = 27 ;
+        STRING = "고객이 서비스에 만족하지 못함";
+END
+
+DOMAIN = "Reason Codes-Credit Reasons Currency Connection Adjustments" ;
+STR
+        ID = 1 ;
+        VERSION = 28 ;
+        STRING = "고객이 서비스에 만족하지 못함";
+END
+
+DOMAIN = "Reason Codes-Debit Reasons Currency Connection Adjustments" ;
+STR
+        ID = 1 ;
+        VERSION = 29 ;
+        STRING = "실수로 대변 기입됨";
+END
+
+DOMAIN = "Reason Codes-Credit Reasons Non-Currency Connection Disputes" ;
+STR
+        ID = 1 ;
+        VERSION = 30 ;
+        STRING = "고객이 서비스에 만족하지 못함";
+END
+
+DOMAIN = "Reason Codes-Debit Reasons Non-Currency Connection Disputes" ;
+STR
+        ID = 1 ;
+        VERSION = 31 ;
+        STRING = "실수로 대변 기입됨";
+END
+
+DOMAIN = "Reason Codes-Credit Reasons Item Adjustments" ;
+STR
+        ID = 1 ;
+        VERSION = 32 ;
+        STRING = "고객이 서비스에 만족하지 못함";
+END
+
+DOMAIN = "Reason Codes-Debit Reasons Item Adjustments" ;
+STR
+        ID = 1 ;
+        VERSION = 33 ;
+        STRING = "실수로 대변 기입됨";
+END
+
+DOMAIN = "Reason Codes-Credit Reasons Item Disputes" ;
+STR
+        ID = 1 ;
+        VERSION = 34 ;
+        STRING = "고객이 서비스에 만족하지 못함";
+END
+
+DOMAIN = "Reason Codes-Debit Reasons Item Disputes" ;
+STR
+        ID = 1 ;
+        VERSION = 35 ;
+        STRING = "실수로 대변 기입됨";
+END
+
+DOMAIN = "Reason Codes-Reasons Item Settlements" ;
+STR
+        ID = 1 ;
+        VERSION = 36 ;
+        STRING = "고객이 서비스에 만족하지 못함";
+END
+
+DOMAIN = "Reason Codes-Credit Reasons Event Adjustments" ;
+STR
+        ID = 1 ;
+        VERSION = 37 ;
+        STRING = "고객이 서비스에 만족하지 못함";
+END
+
+DOMAIN = "Reason Codes-Debit Reasons Event Adjustments" ;
+STR
+        ID = 1 ;
+        VERSION = 38 ;
+        STRING = "실수로 대변 기입됨";
+END
+
+DOMAIN = "Reason Codes-Credit Reasons Event Disputes" ;
+STR
+        ID = 1 ;
+        VERSION = 39 ;
+        STRING = "고객이 서비스에 만족하지 못함";
+END
+
+DOMAIN = "Reason Codes-Debit Reasons Event Disputes" ;
+STR
+        ID = 1 ;
+        VERSION = 40 ;
+        STRING = "실수로 대변 기입됨";
+END
+
+DOMAIN = "Reason Codes-Reasons Event Settlements" ;
+STR
+        ID = 1 ;
+        VERSION = 41 ;
+        STRING = "고객이 서비스에 만족하지 못함";
+END
+
+DOMAIN = "Reason Codes-Reasons Write-off level" ;
+STR
+        ID = 1 ;
+        VERSION = 42 ;
+        STRING = "계정 제거";
+END
+STR
+        ID = 2 ;
+        VERSION = 42 ;
+        STRING = "과금 정보 제거";
+END
+
+DOMAIN = "Reason Codes-Bill Correction Reasons" ;
+STR
+        ID = 0 ;
+        VERSION = 43 ;
+        STRING = "기타";
+END
+STR
+        ID = 1 ;
+        VERSION = 43 ;
+        STRING = "청구서 주소로 업데이트";
+END
+STR
+        ID = 2 ;
+        VERSION = 43 ;
+        STRING = "수동 조정";
+END
+STR
+        ID = 3 ;
+        VERSION = 43 ;
+        STRING = "가격 수정";
+END
+
+DOMAIN = "Others" ;
+STR
+	EVENT-GLID
+		"/event/billing/adjustment"		105 ;
+		"/event/billing/adjustment/account"	105 ;
+		"/event/billing/adjustment/item"   		105 ;
+		"/event/billing/payment"			109 ;
+		"/event/billing/reversal"			109 ;
+		"/event/billing/dispute"			107 ;
+		"/event/billing/dispute/item"		107 ;
+		"/event/billing/settlement"			108 ;
+		"/event/billing/settlement/item"		108 ;
+ 		"/event/billing/writeoff"			106 ;
+		"/event/billing/writeoff/item"		106 ;
+		"/event/billing/refund"			109 ;
+		"/event/billing/writeoff_reversal"		111 ;
+		"/event/journal/epsilon"			1512 ;
+	EVENT-GLID-END
+END

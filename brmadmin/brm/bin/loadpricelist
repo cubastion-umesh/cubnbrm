@@ -1,0 +1,2 @@
+#!/bin/sh
+/apps/brm/ThirdParty/jre/1.6.0/bin/java -cp "/apps/brm/brmadmin/brm/jars/loadpricelist.jar:/apps/brm/brmadmin/brm/jars/xercesImpl.jar:/apps/brm/brmadmin/brm/jars/xmlParserAPIs.jar:/apps/brm/brmadmin/brm/jars/pcm.jar:/apps/brm/brmadmin/brm/jars/pcmext.jar:/apps/brm/brmadmin/brm/apps/load_price_list" com.portal.loadpricelist.LoadPriceList "$@"

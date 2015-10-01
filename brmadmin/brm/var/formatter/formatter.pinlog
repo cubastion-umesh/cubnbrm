@@ -1,0 +1,4 @@
+Debug 09/30/15 11:01:03:0455 AM ( 1443591063456 )  T:main PCMJavaServer JSConfig 1:cubnbrm1:js:0:main:0:1443591063:0
+	JSConfig.JSConfig(): Java Server log file opened.
+Error 09/30/15 11:01:03:0473 AM ( 1443591063473 )  T:main InvoiceFormatter JSFrameWork 1:cubnbrm1:js:0:main:0:1443591063:0
+	JSFrameWork.JSFrameWork(): IOException Address already in use

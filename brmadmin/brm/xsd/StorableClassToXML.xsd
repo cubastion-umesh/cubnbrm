@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            elementFormDefault="qualified">
+  <xsd:element name="flist">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="OBJ_DESC" maxOccurs="unbounded">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="NAME" type="xsd:string"/>
+              <xsd:element name="OBJ_ELEM" type="ObjElemType" minOccurs="0" maxOccurs="unbounded"/>
+            </xsd:sequence>
+            <xsd:attribute name="elem" type="xsd:integer"/>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:complexType name="ObjElemType">
+    <xsd:sequence>
+      <xsd:element name="FIELD_NAME" type="xsd:string"/>
+      <xsd:element name="OBJ_ELEM" type="ObjElemType" minOccurs="0" maxOccurs="unbounded"/>
+      <xsd:element name="TYPE_STR" type="xsd:string"/>
+    </xsd:sequence>
+    <xsd:attribute name="elem" type="xsd:integer"/>
+  </xsd:complexType>
+</xsd:schema>

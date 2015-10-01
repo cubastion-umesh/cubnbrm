@@ -1,0 +1,29 @@
+E Wed Sep 30 11:01:27 2015  cubnbrm1  cm:1677  ../pcm/pin_conf_beid.c:99 1:cubnbrm1:cm:1677:-154409264:0:1443591087:0
+	fm_utils_init_config_beid: fm_utils_init_cfg_beid NULL
+	<location=PIN_ERRLOC_FLIST:6 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NONE:0>
+	<field num=PIN_FLD_RESULTS:9,51 recid=0 reserved=0 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:01:27 2015  cubnbrm1  cm:1677  fm_bill_utils_beid.c:452 1:cubnbrm1:cm:1677:-154409264:0:1443591087:0
+	fm_utils_beid_get_rounding(): Rounding not defined at natural scale in beid
+	<location=Unknown pin location:0 class=UNKNOWN:0 errno=PIN_ERR_NONE:0>
+	<field num=0:0,0 recid=0 reserved=0 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:01:27 2015  cubnbrm1  cm:1677  fm_price_init.c:377 1:cubnbrm1:cm:1677:-154409264:0:1443591087:0
+	fm_price_init: Beids are not loaded. Please load Beids and restart cm
+E Wed Sep 30 11:01:27 2015  cubnbrm1  cm:1677  fm_price_init.c:389 1:cubnbrm1:cm:1677:-154409264:0:1443591087:0
+	fm_price_init: Glids are not loaded. Please load Glids and restart cm
+E Wed Sep 30 11:01:27 2015  cubnbrm1  cm:1677  fm_price_cache.c:286 1:cubnbrm1:cm:1677:-154409264:0:1443591087:0
+	Rum cache does not exist
+	<location=PIN_ERRLOC_FM:5 class=PIN_ERRCLASS_SYSTEM_DETERMINATE:1 errno=PIN_ERR_NOT_FOUND:3>
+	<field num=0:0,0 recid=0 reserved=3 reserved2=0 time(sec:usec)=0:0>
+	<facility=0 msg_id=0 version=0>
+E Wed Sep 30 11:01:27 2015  cubnbrm1  cm:1677  fm_price_init.c:401 1:cubnbrm1:cm:1677:-154409264:0:1443591087:0
+	fm_price_init: Rums are not loaded. Please load Rums and restart cm
+D Wed Sep 30 11:01:27 2015  cubnbrm1  cm:1677  ../cm_main.c:4115 1:cubnbrm1:cm:1677:-154409264:0:1443591087:0
+	cm started at "Wed Sep 30 11:01:27 2015"
+D Wed Sep 30 11:02:36 2015  cubnbrm1  cm:1936  ../cm_main.c:4115 1:cubnbrm1:cm:1936:-154122544:0:1443591156:0
+	cm started at "Wed Sep 30 11:02:36 2015"
+D Wed Sep 30 11:03:41 2015  cubnbrm1  cm:2270  ../cm_main.c:4115 1:cubnbrm1:cm:2270:-154315056:0:1443591220:0
+	cm started at "Wed Sep 30 11:03:41 2015"
+D Wed Sep 30 11:04:09 2015  cubnbrm1  cm:2480  ../cm_main.c:4115 1:cubnbrm1:cm:2480:-154958128:0:1443591248:0
+	cm started at "Wed Sep 30 11:04:09 2015"

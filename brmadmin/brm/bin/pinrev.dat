@@ -1,0 +1,117 @@
+========================================================================
+==================================INSTALLED=============================
+
+PRODUCT_NAME=Portal_Base
+VERSION=7.5.0
+COMPONENTS= "Portal Base Install Scripts","Rogue Wave Libraries","TT Billing","Common Database Scripts","batch_controller","pin_billd","pin_cfg_bpdump","pin_inv","cmmp","cm_proxy","sample","dm_email","pin_export_price","config_export","credit_control","sox_unlock_service","adu","infmgr","infmgr_cli","dm_invoice","dm_oracle","bip_udf","formatter","null","nmgr","pin_subscription","testnap","uei","cm","Java PCM Files","Shared Objects for Communication","Shared Perl Modules","load_config","storable_class_to_xml","Common Install Scripts", 
+BUILD_TIME= 10-31-2011 10:17:10 
+INSTALLED_TIME=Thu, 17 Sep 2015 16:54:29 +0530
+========================================================================
+========================================================================
+==================================UNINSTALLED=============================
+
+PRODUCT_NAME=Portal_Base
+VERSION=7.5.0
+COMPONENTS= "Portal Base Install Scripts","Rogue Wave Libraries","TT Billing","Common Database Scripts","batch_controller","pin_billd","pin_cfg_bpdump","pin_inv","cmmp","cm_proxy","sample","dm_email","pin_export_price","config_export","credit_control","sox_unlock_service","adu","infmgr","infmgr_cli","dm_invoice","dm_oracle","bip_udf","formatter","null","nmgr","pin_subscription","testnap","uei","cm","Java PCM Files","Shared Objects for Communication","Shared Perl Modules","load_config","storable_class_to_xml","Common Install Scripts", 
+BUILD_TIME= 10-31-2011 10:17:10 
+UNINSTALLED_TIME=Tue, 29 Sep 2015 15:01:07 +0530
+========================================================================
+========================================================================
+==================================INSTALLED=============================
+
+PRODUCT_NAME=Portal_Base
+VERSION=7.5.0
+COMPONENTS= "Portal Base Install Scripts","Rogue Wave Libraries","Common Database Scripts","batch_controller","pin_billd","pin_cfg_bpdump","pin_inv","cmmp","cm_proxy","sample","dm_email","pin_export_price","config_export","credit_control","sox_unlock_service","adu","infmgr","infmgr_cli","dm_invoice","DM Feature","dm_oracle","bip_udf","formatter","null","nmgr","pin_subscription","testnap","uei","cm","Java PCM Files","Shared Objects for Communication","Shared Perl Modules","load_config","storable_class_to_xml","Common Install Scripts", 
+BUILD_TIME= 10-31-2011 10:17:10 
+INSTALLED_TIME=Tue, 29 Sep 2015 15:47:00 +0530
+========================================================================
+========================================================================
+==================================UNINSTALLED=============================
+
+PRODUCT_NAME=Portal_Base
+VERSION=7.5.0
+COMPONENTS= "Portal Base Install Scripts","Rogue Wave Libraries","Common Database Scripts","batch_controller","pin_billd","pin_cfg_bpdump","pin_inv","cmmp","cm_proxy","sample","dm_email","pin_export_price","config_export","credit_control","sox_unlock_service","adu","infmgr","infmgr_cli","dm_invoice","DM Feature","dm_oracle","bip_udf","formatter","null","nmgr","pin_subscription","testnap","uei","cm","Java PCM Files","Shared Objects for Communication","Shared Perl Modules","load_config","storable_class_to_xml","Common Install Scripts", 
+BUILD_TIME= 10-31-2011 10:17:10 
+UNINSTALLED_TIME=Tue, 29 Sep 2015 18:16:55 +0530
+========================================================================
+========================================================================
+==================================INSTALLED=============================
+
+PRODUCT_NAME=Portal_Base
+VERSION=7.5.0
+COMPONENTS= "Portal Base Install Scripts","Rogue Wave Libraries","Common Database Scripts","batch_controller","pin_billd","pin_cfg_bpdump","pin_inv","cmmp","cm_proxy","sample","dm_email","pin_export_price","config_export","credit_control","sox_unlock_service","adu","infmgr","infmgr_cli","dm_invoice","DM Feature","dm_oracle","bip_udf","formatter","null","nmgr","pin_subscription","testnap","uei","cm","Java PCM Files","Shared Objects for Communication","Shared Perl Modules","load_config","storable_class_to_xml","Common Install Scripts", 
+BUILD_TIME= 10-31-2011 10:17:10 
+INSTALLED_TIME=Tue, 29 Sep 2015 18:20:10 +0530
+========================================================================
+========================================================================
+==================================INSTALLED=============================
+
+PRODUCT_NAME=VertexMgr
+VERSION=7.5.0
+COMPONENTS= "dm_vertex", 
+BUILD_TIME= 10-31-2011 10:22:42 
+INSTALLED_TIME=Wed, 30 Sep 2015 01:47:55 +0530
+========================================================================
+========================================================================
+==================================INSTALLED=============================
+
+PRODUCT_NAME=CollectionsMgr
+VERSION=7.5.0
+COMPONENTS= "pin_collections", 
+BUILD_TIME= 10-31-2011 10:6:31 
+INSTALLED_TIME=Wed, 30 Sep 2015 01:48:46 +0530
+========================================================================
+========================================================================
+==================================INSTALLED=============================
+
+PRODUCT_NAME=PaymentechMgr
+VERSION=7.5.0
+COMPONENTS= "dm_fusa", 
+BUILD_TIME= 10-31-2011 10:16:5 
+INSTALLED_TIME=Wed, 30 Sep 2015 01:55:40 +0530
+========================================================================
+========================================================================
+==================================UNINSTALLED=============================
+
+PRODUCT_NAME=PaymentechMgr
+VERSION=7.5.0
+COMPONENTS= "dm_fusa", 
+BUILD_TIME= 10-31-2011 10:16:5 
+UNINSTALLED_TIME=Wed, 30 Sep 2015 10:38:10 +0530
+========================================================================
+========================================================================
+==================================UNINSTALLED=============================
+
+PRODUCT_NAME=CollectionsMgr
+VERSION=7.5.0
+COMPONENTS= "pin_collections", 
+BUILD_TIME= 10-31-2011 10:6:31 
+UNINSTALLED_TIME=Wed, 30 Sep 2015 10:46:21 +0530
+========================================================================
+========================================================================
+==================================UNINSTALLED=============================
+
+PRODUCT_NAME=VertexMgr
+VERSION=7.5.0
+COMPONENTS= "dm_vertex", 
+BUILD_TIME= 10-31-2011 10:22:42 
+UNINSTALLED_TIME=Wed, 30 Sep 2015 10:47:09 +0530
+========================================================================
+========================================================================
+==================================UNINSTALLED=============================
+
+PRODUCT_NAME=Portal_Base
+VERSION=7.5.0
+COMPONENTS= "Portal Base Install Scripts","Rogue Wave Libraries","Common Database Scripts","batch_controller","pin_billd","pin_cfg_bpdump","pin_inv","cmmp","cm_proxy","sample","dm_email","pin_export_price","config_export","credit_control","sox_unlock_service","adu","infmgr","infmgr_cli","dm_invoice","DM Feature","dm_oracle","bip_udf","formatter","null","nmgr","pin_subscription","testnap","uei","cm","Java PCM Files","Shared Objects for Communication","Shared Perl Modules","load_config","storable_class_to_xml","Common Install Scripts", 
+BUILD_TIME= 10-31-2011 10:17:10 
+UNINSTALLED_TIME=Wed, 30 Sep 2015 10:49:11 +0530
+========================================================================
+========================================================================
+==================================INSTALLED=============================
+
+PRODUCT_NAME=Portal_Base
+VERSION=7.5.0
+COMPONENTS= "Portal Base Install Scripts","Rogue Wave Libraries","TT Billing","Common Database Scripts","batch_controller","pin_billd","pin_cfg_bpdump","pin_inv","cmmp","cm_proxy","sample","dm_email","pin_export_price","config_export","credit_control","sox_unlock_service","adu","infmgr","infmgr_cli","dm_invoice","dm_oracle","bip_udf","formatter","null","nmgr","pin_subscription","testnap","uei","cm","Java PCM Files","Shared Objects for Communication","Shared Perl Modules","load_config","storable_class_to_xml","Common Install Scripts", 
+BUILD_TIME= 10-31-2011 10:17:10 
+INSTALLED_TIME=Wed, 30 Sep 2015 10:55:44 +0530
+========================================================================

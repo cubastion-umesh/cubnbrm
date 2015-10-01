@@ -1,0 +1,52 @@
+#!/bin/sh
+#
+#	@(#) %full_filespec: init-d.pin.infmgr.sh~5:shsrc:1 %
+#
+#       Copyright (c) 1996 - 2006 Oracle. All rights reserved.
+#      
+#       This material is the confidential property of Oracle Corporation or its
+#       licensors and may be used, reproduced, stored or transmitted only in
+#       accordance with a valid Oracle license or sublicense agreement.
+#
+
+#
+# /etc/init.d/pin.infmgr
+#
+# used to start/stop the INFMGR via init(1m).
+# ought to be linked to:
+#	/etc/rc2.d/S97pin.infmgr(mp)
+#	/etc/rc2.d/K03pin.infmgr(mp)
+#
+PATH=/usr/bin:/bin
+
+VERSION=7.5
+
+DIR=/apps/brm/brmadmin/brm/bin
+
+INFMGR=infmgr
+START_INFMGR=${DIR}/start_${INFMGR}
+STOP_INFMGR=${DIR}/stop_${INFMGR}
+
+case $1 in
+'start')
+	if [ ! -x ${START_INFMGR} ]; then
+		echo "$0: HELP: no executable ${START_INFMGR} !"
+		exit 1
+	fi       
+	${START_INFMGR}
+	rc=$?
+	;;
+'stop')
+	if [ ! -x ${STOP_INFMGR} ]; then
+		echo "$0: HELP: no executable ${STOP_INFMGR} !"
+		exit 1
+	fi       
+	${STOP_INFMGR}
+	rc=$?
+	;;
+*)
+	echo "usage: $0 {start|stop}"
+	exit 1
+	;;
+esac
+exit ${rc}
